@@ -735,11 +735,11 @@ export default function DentistWebsite() {
 
               <div className="grid grid-cols-3 gap-3 w-full border-t border-neutral-200/60 pt-4">
                 <div className="text-center md:text-left">
-                  <span className="block text-sm font-black text-neutral-900 font-mono leading-none">420+</span>
+                  <span className="block text-sm font-black text-neutral-900 font-mono leading-none">124</span>
                   <span className="block text-[7px] text-neutral-400 font-black uppercase tracking-widest mt-1">Posts</span>
                 </div>
                 <div className="text-center md:text-left">
-                  <span className="block text-sm font-black text-neutral-900 font-mono leading-none">12.4K</span>
+                  <span className="block text-sm font-black text-neutral-900 font-mono leading-none">1,332</span>
                   <span className="block text-[7px] text-neutral-400 font-black uppercase tracking-widest mt-1">Followers</span>
                 </div>
                 <div className="text-center md:text-left">
