@@ -769,12 +769,6 @@ export default function DentistWebsite() {
                   playsInline
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
-                <div className="absolute bottom-4 left-4 right-4 z-20 bg-neutral-950/80 border border-white/5 p-4 rounded-xl text-white backdrop-blur-sm text-left">
-                  <span className="text-[7px] font-black text-[#5b72ff] uppercase tracking-widest">Featured Showcase</span>
-                  <h4 className="text-[10px] font-black uppercase tracking-wider mt-0.5">Your Dentist Patna Tour</h4>
-                  <p className="text-[8px] text-neutral-400 font-bold uppercase tracking-wider mt-0.5">Dr. Aryan Parmar Clinic</p>
-                </div>
               </div>
             </div>
           </div>
