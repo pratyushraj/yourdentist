@@ -553,8 +553,8 @@ export default function DentistWebsite() {
         </div>
       </section>
 
-      {/* SECTION 2: GOOGLE REVIEWS + STATS BAR (CRO Priority 3) */}
-      <section className="bg-white border-y border-neutral-100 py-8 px-6 relative z-20">
+      {/* SECTION 2: GOOGLE REVIEWS + STATS BAR - hidden on mobile */}
+      <section className="hidden sm:block bg-white border-y border-neutral-100 py-8 px-6 relative z-20">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-neutral-100">
           <div className="space-y-1 py-2 md:py-0">
             <span className="block text-2xl font-black text-neutral-900 font-mono tracking-tight">★★★★★</span>
@@ -575,8 +575,8 @@ export default function DentistWebsite() {
         </div>
       </section>
 
-      {/* SECTION 3: BEFORE / AFTER TRANSFORMATIONS (CRO Priority 3) */}
-      <section id="transformations" className="py-28 px-6 bg-white relative overflow-hidden">
+      {/* SECTION 3: BEFORE / AFTER TRANSFORMATIONS */}
+      <section id="transformations" className="py-14 sm:py-28 px-6 bg-white relative overflow-hidden">
         {/* Watermark */}
         <div className="absolute left-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
           SMILE DESIGN
@@ -686,85 +686,9 @@ export default function DentistWebsite() {
         </div>
       </section>
 
-      {/* SECTION 4: CLINICAL SUCCESS CASES (CRO Priority 3 & 5) */}
-      <section id="cases" className="py-28 px-6 bg-neutral-50 relative overflow-hidden border-y border-neutral-100">
-        {/* Watermark */}
-        <div className="absolute right-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
-          IMPLANTS
-        </div>
 
-        <div className="max-w-6xl mx-auto space-y-16 relative z-10">
-          <div className="text-center space-y-4 max-w-2xl mx-auto">
-            <span className="text-[9px] font-black text-[#5b72ff] uppercase tracking-widest">Real Cases</span>
-            <h2 className="text-3xl sm:text-4xl font-black uppercase text-neutral-900 leading-tight">
-              Clinical Success Cases <br />
-              <span className="font-editorial italic normal-case font-light text-neutral-500">Actual Patient Outcomes & Metrics</span>
-            </h2>
-            <p className="text-xs text-neutral-500 font-medium leading-relaxed">
-              Transparent cases proving our clinical speed, safety, and outcomes. Click video to play actual recovery diaries.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {PATIENT_CASES.map((item, idx) => (
-              <div key={idx} className="bg-white border border-neutral-200/60 rounded-3xl overflow-hidden flex flex-col justify-between shadow-lg hover:shadow-xl transition-all duration-300 relative group">
-                <div className="space-y-4">
-                  {/* Media Banner with Video Trigger */}
-                  <div 
-                    onClick={() => setActiveVideoUrl(item.video)}
-                    className="relative aspect-video w-full overflow-hidden bg-neutral-950 cursor-pointer"
-                  >
-                    <img 
-                      src={item.thumbnail} 
-                      alt={item.title} 
-                      className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500" 
-                    />
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                      <div className="w-10 h-10 rounded-full bg-white/95 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                        <Play className="h-4.5 w-4.5 fill-black text-black ml-0.5" />
-                      </div>
-                    </div>
-                    <div className="absolute bottom-3 left-3 bg-neutral-950/80 border border-white/10 text-white px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest">
-                      🎬 Watch Testimonial Reel
-                    </div>
-                  </div>
-
-                  <div className="p-6 space-y-3">
-                    <span className="text-[8px] bg-neutral-100 text-[#5b72ff] border border-neutral-200 px-2 py-0.5 rounded font-black uppercase tracking-widest">
-                      {item.treatment}
-                    </span>
-                    <h3 className="text-base font-black uppercase text-neutral-900 tracking-tight leading-snug mt-1">
-                      {item.title}
-                    </h3>
-                    
-                    {/* Case Metadata - Premium Clinic Metrics (CRO Priority 5) */}
-                    <div className="grid grid-cols-3 gap-2 bg-neutral-50 border border-neutral-100 rounded-xl p-3 text-[10px] font-black uppercase tracking-wider text-center">
-                      {item.metrics.map((m, mIdx) => (
-                        <div key={mIdx} className="space-y-0.5">
-                          <span className="block text-[7px] text-neutral-400 font-bold uppercase">{m.label}</span>
-                          <span className="text-neutral-800 font-mono font-black">{m.value}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <p className="text-xs text-neutral-600 font-medium leading-relaxed italic pt-2">
-                      "{item.testimonial}"
-                    </p>
-                  </div>
-                </div>
-
-                <div className="p-6 pt-0 border-t border-neutral-50 mt-4 flex items-center justify-between text-[9px] font-black uppercase tracking-widest text-neutral-400">
-                  <span>Patient: {item.patientName}</span>
-                  <span className="text-emerald-500">✓ Verified Case</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION: INSTAGRAM SOCIAL PROOF (CRO Priority 6) */}
-      <section className="py-28 px-6 bg-white border-t border-neutral-100 relative overflow-hidden">
+      {/* SECTION: INSTAGRAM SOCIAL PROOF */}
+      <section className="py-14 sm:py-28 px-6 bg-white border-t border-neutral-100 relative overflow-hidden">
         {/* Watermark */}
         <div className="absolute left-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
           TRANSFORMATIONS
@@ -858,8 +782,8 @@ export default function DentistWebsite() {
         </div>
       </section>
 
-      {/* SECTION 5: SERVICES (Treatments Grid with Cost - CRO Priority 4) */}
-      <section id="services" className="py-28 px-6 bg-white relative overflow-hidden">
+      {/* SECTION 5: SERVICES */}
+      <section id="services" className="py-14 sm:py-28 px-6 bg-white relative overflow-hidden">
         {/* Watermark */}
         <div className="absolute left-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
           ALIGNERS
@@ -929,8 +853,8 @@ export default function DentistWebsite() {
         </div>
       </section>
 
-      {/* SECTION 6: MEDICAL BOARD TEAM (3 Specialists Grid & Credentials Details) */}
-      <section id="dr-aryan" className="py-28 px-6 bg-neutral-50 relative overflow-hidden border-y border-neutral-100">
+      {/* SECTION 6: DOCTOR */}
+      <section id="dr-aryan" className="py-14 sm:py-28 px-6 bg-neutral-50 relative overflow-hidden border-y border-neutral-100">
         {/* Watermark */}
         <div className="absolute right-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
           PAINLESS DENTISTRY
@@ -1008,36 +932,12 @@ export default function DentistWebsite() {
               </div>
             </div>
 
-            {/* Right Column: Purexa Collaboration Card */}
-            <div className="lg:col-span-5 bg-white border border-neutral-200/80 rounded-[32px] p-5 flex flex-col justify-between shadow-sm relative overflow-hidden group text-left">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <span className="text-[9px] font-black text-emerald-600 uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-2.5 py-0.5 rounded">✓ Certified Partnership</span>
-                </div>
-                <h3 className="text-base font-black uppercase text-neutral-900 tracking-tight leading-snug">
-                  Premium Post-Care <br />
-                  <span className="font-editorial italic normal-case font-light text-neutral-500">Purexa Oral Hygiene Systems</span>
-                </h3>
-                <p className="text-xs text-neutral-500 font-medium leading-relaxed">
-                  Every implant, veneers, or whitening treatment includes a custom Purexa clinical recovery kit to accelerate healing and protect enamel.
-                </p>
-              </div>
-              
-              {/* Product Image Frame */}
-              <div className="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-neutral-50 border border-neutral-100 relative mt-4">
-                <img
-                  src="/assets/yourdentist/purexa_products.png"
-                  alt="Purexa Clinical Products partnership"
-                  className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* NEW SECTION: RESTORATIVE STUDIO GALLERY (Clinic Environment Slideshow) */}
-      <section id="studio-gallery" className="py-28 px-6 bg-white relative overflow-hidden border-b border-neutral-100">
+      {/* STUDIO GALLERY */}
+      <section id="studio-gallery" className="py-14 sm:py-28 px-6 bg-white relative overflow-hidden border-b border-neutral-100">
         {/* Watermark */}
         <div className="absolute left-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
           RESTORE STUDIO
@@ -1109,7 +1009,7 @@ export default function DentistWebsite() {
       </section>
 
       {/* SECTION 7: CONSULTATION BOOKING (Urgency Form - CRO Priority 7) */}
-      <section id="booking" className="py-32 px-6 bg-white relative overflow-hidden">
+      <section id="booking" className="py-14 sm:py-32 px-6 bg-white relative overflow-hidden">
         {/* Watermark */}
         <div className="absolute left-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
           CONSULTATION
@@ -1364,7 +1264,7 @@ export default function DentistWebsite() {
       </section>
 
       {/* SECTION 8: GOOGLE REVIEWS SCREENSHOTS (CRO Priority 10) */}
-      <section id="reviews" className="py-28 px-6 bg-[#0c0d12] text-white relative overflow-hidden border-t border-white/5">
+      <section id="reviews" className="py-14 sm:py-28 px-6 bg-[#0c0d12] text-white relative overflow-hidden border-t border-white/5">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[14vw] font-black text-white/[0.03] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
           REVIEWS
         </div>
@@ -1511,56 +1411,9 @@ export default function DentistWebsite() {
         </div>
       </section>
 
-      {/* SECTION 9: LOCAL SEO SPECIFIC BLOCK (CRO Priority 9) */}
-      <section className="py-24 px-6 bg-white border-t border-neutral-100 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto space-y-12">
-          <div className="text-center space-y-4 max-w-2xl mx-auto">
-            <span className="text-[9px] font-black text-[#5b72ff] uppercase tracking-widest">Local Care Center</span>
-            <h2 className="text-3xl sm:text-4xl font-black uppercase text-neutral-900 leading-tight">
-              Why Patients Choose Us in <br />
-              <span className="font-editorial italic normal-case font-light text-neutral-500">Patliputra Colony & Patna</span>
-            </h2>
-            <p className="text-xs text-neutral-500 font-medium leading-relaxed">
-              Serving premium restorative solutions across Patna's primary neighborhoods with localized diagnostic teams.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-            <div className="border border-neutral-200/80 rounded-2xl p-6 space-y-3.5 text-left bg-neutral-50/50 shadow-sm">
-              <div className="w-8 h-8 rounded-lg bg-[#5b72ff]/5 border border-[#5b72ff]/10 flex items-center justify-center text-xs font-black text-[#5b72ff]">
-                01
-              </div>
-              <h3 className="text-sm font-black uppercase tracking-wider text-neutral-900">Area Coverage</h3>
-              <p className="text-xs text-neutral-500 leading-relaxed font-medium">
-                Our clinic is centrally located in **Patliputra Colony**, making it easily accessible for families residing in **Boring Road**, **Bailey Road**, and surrounding **Patna** sub-districts.
-              </p>
-            </div>
-
-            <div className="border border-neutral-200/80 rounded-2xl p-6 space-y-3.5 text-left bg-neutral-50/50 shadow-sm">
-              <div className="w-8 h-8 rounded-lg bg-[#5b72ff]/5 border border-[#5b72ff]/10 flex items-center justify-center text-xs font-black text-[#5b72ff]">
-                02
-              </div>
-              <h3 className="text-sm font-black uppercase tracking-wider text-neutral-900">Specialized Treatments</h3>
-              <p className="text-xs text-neutral-500 leading-relaxed font-medium">
-                We are Patna's authority for **Dental Implants**, **Clear Aligners**, **Root Canal Treatment (RCT)**, **Porcelain Veneers**, and professional **Teeth Whitening** systems.
-              </p>
-            </div>
-
-            <div className="border border-neutral-200/80 rounded-2xl p-6 space-y-3.5 text-left bg-neutral-50/50 shadow-sm">
-              <div className="w-8 h-8 rounded-lg bg-[#5b72ff]/5 border border-[#5b72ff]/10 flex items-center justify-center text-xs font-black text-[#5b72ff]">
-                03
-              </div>
-              <h3 className="text-sm font-black uppercase tracking-wider text-neutral-900">Clinical Standards</h3>
-              <p className="text-xs text-neutral-500 leading-relaxed font-medium">
-                Our sterile diagnostics include full computerized alignment plans, ensuring safe oral surgery and cosmetic smile makeovers in Bihar.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 10: FAQs */}
-      <section id="faqs" className="py-28 px-6 bg-neutral-50 relative overflow-hidden border-t border-neutral-100">
+      {/* SECTION: FAQs */}
+      <section id="faqs" className="py-14 sm:py-28 px-6 bg-neutral-50 relative overflow-hidden border-t border-neutral-100">
         <div className="max-w-4xl mx-auto space-y-16 relative z-10">
           <div className="text-center space-y-4">
             <span className="text-[9px] font-black text-[#5b72ff] uppercase tracking-widest">Frequently Asked Questions</span>
