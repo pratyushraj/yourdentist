@@ -948,7 +948,7 @@ export default function DentistWebsite() {
       {/* STUDIO GALLERY */}
       <section id="studio-gallery" className="py-14 sm:py-28 px-6 bg-white relative overflow-hidden border-b border-neutral-100">
         {/* Watermark */}
-        <div className="absolute left-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
+        <div className="hidden sm:block absolute left-10 top-1/2 -translate-y-1/2 text-[14vw] font-black text-neutral-950/[0.035] select-none pointer-events-none tracking-widest uppercase font-sans z-0">
           RESTORE STUDIO
         </div>
 
@@ -967,23 +967,32 @@ export default function DentistWebsite() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Left Viewport - Featured Photo */}
             <div className="lg:col-span-8 flex flex-col justify-between">
-              <div className="relative rounded-[28px] overflow-hidden border border-neutral-200 bg-neutral-950 shadow-xl aspect-[16/10] flex items-center justify-center">
-                <AnimatePresence mode="wait">
-                  <motion.img
-                    key={activeStudioPhoto.id}
-                    src={activeStudioPhoto.img}
-                    alt={activeStudioPhoto.name}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="w-full h-full object-cover"
-                  />
-                </AnimatePresence>
-                <div className="absolute bottom-6 left-6 right-6 z-20 bg-neutral-950/90 border border-white/5 p-5 rounded-2xl text-white backdrop-blur-sm text-left">
+              <div>
+                <div className="relative rounded-[28px] overflow-hidden border border-neutral-200 bg-neutral-950 shadow-xl aspect-[16/10] flex items-center justify-center">
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={activeStudioPhoto.id}
+                      src={activeStudioPhoto.img}
+                      alt={activeStudioPhoto.name}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="w-full h-full object-cover"
+                    />
+                  </AnimatePresence>
+                  {/* Desktop absolute-positioned overlay */}
+                  <div className="hidden sm:block absolute bottom-6 left-6 right-6 z-20 bg-neutral-950/90 border border-white/5 p-5 rounded-2xl text-white backdrop-blur-sm text-left">
+                    <span className="text-[8px] font-black text-[#5b72ff] uppercase tracking-widest">Studio Perspective</span>
+                    <h4 className="text-sm font-black uppercase tracking-wider mt-1">{activeStudioPhoto.name}</h4>
+                    <p className="text-xs text-neutral-400 font-medium mt-1.5 leading-relaxed">{activeStudioPhoto.desc}</p>
+                  </div>
+                </div>
+                {/* Mobile description card below the image */}
+                <div className="block sm:hidden mt-3 p-4 bg-neutral-50 border border-neutral-200/60 rounded-2xl text-left">
                   <span className="text-[8px] font-black text-[#5b72ff] uppercase tracking-widest">Studio Perspective</span>
-                  <h4 className="text-sm font-black uppercase tracking-wider mt-1">{activeStudioPhoto.name}</h4>
-                  <p className="text-xs text-neutral-400 font-medium mt-1.5 leading-relaxed">{activeStudioPhoto.desc}</p>
+                  <h4 className="text-xs font-black uppercase tracking-wider text-neutral-900 mt-1">{activeStudioPhoto.name}</h4>
+                  <p className="text-[11px] text-neutral-500 font-semibold mt-1 leading-relaxed">{activeStudioPhoto.desc}</p>
                 </div>
               </div>
             </div>
