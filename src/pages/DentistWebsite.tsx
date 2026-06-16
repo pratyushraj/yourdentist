@@ -348,11 +348,11 @@ export default function DentistWebsite() {
           "image": "https://creatorarmour.com/assets/yourdentist/exterior_day.jpg",
           "@id": "https://creatorarmour.com/dentist-website#clinic",
           "url": "https://creatorarmour.com/dentist-website",
-          "telephone": "+919876543210",
+          "telephone": "+916201478033",
           "priceRange": "INR",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "H/No 12, Pataliputra Colony",
+            "streetAddress": "Tara Kunj, 1F/111, Beside Lotus Apartment, New Patliputra Colony",
             "addressLocality": "Patna",
             "addressRegion": "Bihar",
             "postalCode": "800013",
@@ -507,7 +507,7 @@ export default function DentistWebsite() {
                   Book Appointment
                 </a>
                 <a
-                  href="https://wa.me/919876543210?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment."
+                  href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full text-[10px] font-black uppercase tracking-widest transition-all text-center flex items-center justify-center gap-2 shadow-md"
@@ -533,7 +533,7 @@ export default function DentistWebsite() {
                     ✓ Direct Diagnostic Consultation
                   </div>
                   <div className="absolute bottom-4 right-4 bg-neutral-900/90 border border-neutral-800 px-3 py-1.5 rounded-lg text-[8px] font-black uppercase tracking-widest text-neutral-200">
-                    Patliputra Colony, Patna
+                    New Patliputra Colony, Patna
                   </div>
                 </div>
                 <div className="p-4 text-left space-y-1">
@@ -569,7 +569,7 @@ export default function DentistWebsite() {
             <span className="block text-[9px] text-neutral-400 font-black uppercase tracking-widest">Dental Procedures Completed</span>
           </div>
           <div className="space-y-1 py-2 md:py-0">
-            <span className="block text-lg font-black text-neutral-900 uppercase tracking-tight leading-none mt-1">PATLIPUTRA COLONY</span>
+            <span className="block text-lg font-black text-neutral-900 uppercase tracking-tight leading-none mt-1">NEW PATLIPUTRA COLONY</span>
             <span className="block text-[8px] text-neutral-400 font-black uppercase tracking-widest mt-1">Patna, Bihar 800013</span>
           </div>
         </div>
@@ -945,10 +945,10 @@ export default function DentistWebsite() {
             </h2>
           </div>
 
-          {/* 3-Specialist Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Single Specialist Card */}
+          <div className="flex justify-center">
             {/* Dr. Aryan Parmar Card */}
-            <div className="relative w-full aspect-[4/5] rounded-[32px] overflow-hidden border border-neutral-200 shadow-xl group bg-white p-3 flex flex-col justify-between">
+            <div className="relative w-full max-w-sm aspect-[4/5] rounded-[32px] overflow-hidden border border-neutral-200 shadow-xl group bg-white p-3 flex flex-col justify-between">
               <div className="relative w-full h-full rounded-[24px] overflow-hidden bg-neutral-950">
                 <img
                   src="/assets/yourdentist/doctor_profile.png"
@@ -960,38 +960,6 @@ export default function DentistWebsite() {
                 <h4 className="text-xs font-black uppercase tracking-wider">Dr. Aryan Parmar</h4>
                 <p className="text-[7px] text-neutral-400 font-bold uppercase tracking-widest mt-1">Lead Surgeon & Restorative Director</p>
                 <p className="text-[9px] text-[#5b72ff] font-mono font-black uppercase tracking-widest mt-2">BDS, MDS • 12+ Years Exp</p>
-              </div>
-            </div>
-
-            {/* Dr. Clara Collins Card */}
-            <div className="relative w-full aspect-[4/5] rounded-[32px] overflow-hidden border border-neutral-200 shadow-xl group bg-white p-3 flex flex-col justify-between">
-              <div className="relative w-full h-full rounded-[24px] overflow-hidden bg-neutral-950">
-                <img
-                  src="/assets/yourdentist/clara_collins.png"
-                  alt="Dr. Clara Collins"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="absolute bottom-6 left-6 right-6 z-20 bg-neutral-950/95 border border-white/5 p-4 rounded-xl shadow-2xl text-white">
-                <h4 className="text-xs font-black uppercase tracking-wider">Dr. Clara Collins</h4>
-                <p className="text-[7px] text-neutral-400 font-bold uppercase tracking-widest mt-1">Prosthodontist & Veneer Specialist</p>
-                <p className="text-[9px] text-[#5b72ff] font-mono font-black uppercase tracking-widest mt-2">BDS, MDS • 8+ Years Exp</p>
-              </div>
-            </div>
-
-            {/* Dr. Mason Carter Card */}
-            <div className="relative w-full aspect-[4/5] rounded-[32px] overflow-hidden border border-neutral-200 shadow-xl group bg-white p-3 flex flex-col justify-between">
-              <div className="relative w-full h-full rounded-[24px] overflow-hidden bg-neutral-950">
-                <img
-                  src="/assets/yourdentist/mason_carter.png"
-                  alt="Dr. Mason Carter"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="absolute bottom-6 left-6 right-6 z-20 bg-neutral-950/95 border border-white/5 p-4 rounded-xl shadow-2xl text-white">
-                <h4 className="text-xs font-black uppercase tracking-wider">Dr. Mason Carter</h4>
-                <p className="text-[7px] text-neutral-400 font-bold uppercase tracking-widest mt-1">Implantologist & Oral Surgeon</p>
-                <p className="text-[9px] text-[#5b72ff] font-mono font-black uppercase tracking-widest mt-2">BDS, MDS • 10+ Years Exp</p>
               </div>
             </div>
           </div>
@@ -1185,7 +1153,7 @@ export default function DentistWebsite() {
               <Phone className="h-5 w-5 text-neutral-900 shrink-0" />
               <div>
                 <p className="text-[8px] font-black text-neutral-400 uppercase tracking-widest">Clinic Helpline</p>
-                <p className="text-xs font-black text-neutral-900 mt-0.5">+91 98765 43210</p>
+                <p className="text-xs font-black text-neutral-900 mt-0.5">062014 78033</p>
               </div>
             </div>
           </div>
@@ -1669,7 +1637,8 @@ export default function DentistWebsite() {
             <h4 className="text-xs font-black uppercase text-white tracking-widest">Location address</h4>
             <div className="space-y-1 text-xs font-medium leading-relaxed">
               <p className="font-black text-white uppercase tracking-wider">Patliputra Restorative Studio:</p>
-              <p className="text-neutral-500 font-bold uppercase tracking-wider text-[10px]">H/No 12, Pataliputra Colony, Patna, Bihar 800013</p>
+              <p className="text-neutral-500 font-bold uppercase tracking-wider text-[10px]">Tara Kunj, 1F/111, Beside Lotus Apartment,<br/>New Patliputra Colony, Patna, Bihar 800013</p>
+              <p className="text-neutral-500 font-bold uppercase tracking-wider text-[10px] mt-1">📞 062014 78033</p>
             </div>
           </div>
         </div>
@@ -1719,7 +1688,7 @@ export default function DentistWebsite() {
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
         {/* Floating WhatsApp Action Capsule (Sticky on Mobile & Desktop) */}
         <a
-          href="https://wa.me/919876543210?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment."
+          href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 rounded-full flex items-center gap-2.5 shadow-2xl transition-transform hover:scale-105 active:scale-95 border border-emerald-500/20 text-xs font-black uppercase tracking-wider"
