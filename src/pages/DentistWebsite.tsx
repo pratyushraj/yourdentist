@@ -48,7 +48,7 @@ const SERVICES: Service[] = [
     price: "Starting from ₹24,999",
     description: "Permanent, natural-looking tooth replacements utilizing top-tier titanium implants.",
     icon: "implants",
-    img: "/assets/yourdentist/interior_operatory.jpg"
+    img: "/assets/yourdentist/premium_implants.png"
   },
   {
     name: "Porcelain Veneers & Smile Makeovers",
@@ -325,16 +325,16 @@ export default function DentistWebsite() {
       <SEOHead
         title="YOUR DENTIST | Dr. Aryan Parmar Patna — Painless Dentistry"
         description="Premium dental clinic in Patna. Painless implants, laser whitening, root canals, and invisible aligners under Dr. Aryan Parmar."
-        image="/assets/yourdentist/exterior_day.jpg"
-        imageAlt="YOUR DENTIST Patna Clinic"
-        canonicalUrl="https://creatorarmour.com/dentist-website"
+        image="/assets/yourdentist/interior_operatory.jpg"
+        imageAlt="YOUR DENTIST Patna Clinic Operatory Studio"
+        canonicalUrl="https://yourdentist-website.vercel.app"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Dentist",
           "name": "YOUR DENTIST - Dr. Aryan Parmar",
-          "image": "https://creatorarmour.com/assets/yourdentist/exterior_day.jpg",
-          "@id": "https://creatorarmour.com/dentist-website#clinic",
-          "url": "https://creatorarmour.com/dentist-website",
+          "image": "https://yourdentist-website.vercel.app/assets/yourdentist/interior_operatory.jpg",
+          "@id": "https://yourdentist-website.vercel.app#clinic",
+          "url": "https://yourdentist-website.vercel.app",
           "telephone": "+916201478033",
           "priceRange": "INR",
           "address": {
