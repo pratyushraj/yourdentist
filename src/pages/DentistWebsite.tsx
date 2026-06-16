@@ -64,7 +64,7 @@ const SERVICES: Service[] = [
     price: "Starting from ₹45,000",
     description: "Invisible teeth straightening braces with complete digital 3D planning.",
     icon: "aligners",
-    img: "/assets/yourdentist/dr_with_patient_1.jpg"
+    img: "/assets/yourdentist/clear_aligners.png"
   },
   {
     name: "Painless Root Canal",
@@ -72,7 +72,7 @@ const SERVICES: Service[] = [
     price: "Starting from ₹5,999",
     description: "Save damaged teeth with computerized micro-dentistry under local anesthesia.",
     icon: "rootcanal",
-    img: "/assets/yourdentist/clinic_in_action.jpg"
+    img: "/assets/yourdentist/painless_root_canal.png"
   },
   {
     name: "Laser Teeth Whitening",
@@ -80,7 +80,7 @@ const SERVICES: Service[] = [
     price: "Starting from ₹4,999",
     description: "Brighten your smile up to 8 shades in a single session with our painless laser technology.",
     icon: "cleaning",
-    img: "/assets/yourdentist/patient_happy_1.jpg"
+    img: "/assets/yourdentist/laser_whitening.png"
   },
   {
     name: "Teeth Cleaning & Polish",
@@ -88,7 +88,7 @@ const SERVICES: Service[] = [
     price: "Starting from ₹999",
     description: "Deep scaling to remove plaque and calculus, finished with professional stains polishing.",
     icon: "pediatric",
-    img: "/assets/yourdentist/patient_happy_3.png"
+    img: "/assets/yourdentist/teeth_cleaning.png"
   }
 ];
 
