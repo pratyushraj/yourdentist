@@ -758,34 +758,24 @@ export default function DentistWebsite() {
               </a>
             </div>
 
-            {/* Reels Mockup Grid */}
-            <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {[
-                { views: "450K+", type: "Clinic Tour", file: "/assets/yourdentist/yourdentist_promo.mp4", thumbnail: "/assets/yourdentist/clinic_in_action.jpg" },
-                { views: "820K+", type: "Patient Consult", file: "/assets/yourdentist/yourdentist_promo.mp4", thumbnail: "/assets/yourdentist/dr_with_patient_1.jpg" },
-                { views: "1.2M+", type: "Aesthetics", file: "/assets/yourdentist/yourdentist_promo.mp4", thumbnail: "/assets/yourdentist/patient_happy_3.png" }
-              ].map((reel, idx) => (
-                <div
-                  key={idx}
-                  onClick={() => setActiveVideoUrl(reel.file)}
-                  className="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-md cursor-pointer hover:shadow-lg transition-all duration-300"
-                >
-                  <img
-                    src={reel.thumbnail}
-                    alt={`${reel.type} transformation reel`}
-                    className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/45 transition-colors flex flex-col justify-between p-3">
-                    <span className="self-end bg-black/60 px-2 py-0.5 rounded text-[7px] font-black uppercase tracking-widest text-white border border-white/5">
-                      ▶ {reel.views}
-                    </span>
-                    <div>
-                      <span className="block text-[8px] font-black uppercase tracking-widest text-[#5b72ff]">{reel.type}</span>
-                      <span className="block text-[7px] text-neutral-200 font-bold uppercase tracking-wider mt-0.5">View Makeover &rarr;</span>
-                    </div>
-                  </div>
+            {/* Real Video Showcase */}
+            <div className="md:col-span-8 flex justify-center items-center">
+              <div className="relative aspect-[9/16] w-full max-w-[270px] rounded-[28px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
+                <video
+                  src="/assets/yourdentist/yourdentist_promo.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+                <div className="absolute bottom-4 left-4 right-4 z-20 bg-neutral-950/80 border border-white/5 p-4 rounded-xl text-white backdrop-blur-sm text-left">
+                  <span className="text-[7px] font-black text-[#5b72ff] uppercase tracking-widest">Featured Showcase</span>
+                  <h4 className="text-[10px] font-black uppercase tracking-wider mt-0.5">Your Dentist Patna Tour</h4>
+                  <p className="text-[8px] text-neutral-400 font-bold uppercase tracking-wider mt-0.5">Dr. Aryan Parmar Clinic</p>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
