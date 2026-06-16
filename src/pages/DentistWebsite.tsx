@@ -377,10 +377,26 @@ export default function DentistWebsite() {
       <FAQSchema faqs={FAQS} />
 
       {/* Ticker Banner */}
-      <div className="bg-neutral-950 text-white text-center py-2.5 px-4 text-[10px] font-black uppercase tracking-widest flex items-center justify-center gap-2.5 relative z-50 border-b border-white/5">
-        <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping shrink-0" />
-        <span>LIMITED OFFERS: ✓ Free Smile assessment · ✓ 0% EMI financing · ✓ laser whitening discounts</span>
-        <a href="#booking" className="underline hover:text-neutral-300 ml-2 font-black transition-colors">Secure Free Slot &rarr;</a>
+      <div className="bg-neutral-950 text-white py-2 px-4 relative z-50 border-b border-white/5 overflow-hidden">
+        <div className="flex items-center gap-6 animate-[marquee_20s_linear_infinite] whitespace-nowrap w-max">
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+          <span className="text-[10px] font-black uppercase tracking-widest">✓ Free Smile Assessment</span>
+          <span className="text-neutral-600">·</span>
+          <span className="text-[10px] font-black uppercase tracking-widest">✓ 0% EMI Financing</span>
+          <span className="text-neutral-600">·</span>
+          <span className="text-[10px] font-black uppercase tracking-widest">✓ Laser Whitening Discounts</span>
+          <span className="text-neutral-600">·</span>
+          <a href="#booking" className="text-[10px] font-black uppercase tracking-widest text-emerald-400 hover:text-emerald-300 transition-colors">Secure Free Slot →</a>
+          <span className="text-neutral-600 mx-4">·</span>
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+          <span className="text-[10px] font-black uppercase tracking-widest">✓ Free Smile Assessment</span>
+          <span className="text-neutral-600">·</span>
+          <span className="text-[10px] font-black uppercase tracking-widest">✓ 0% EMI Financing</span>
+          <span className="text-neutral-600">·</span>
+          <span className="text-[10px] font-black uppercase tracking-widest">✓ Laser Whitening Discounts</span>
+          <span className="text-neutral-600">·</span>
+          <a href="#booking" className="text-[10px] font-black uppercase tracking-widest text-emerald-400 hover:text-emerald-300 transition-colors">Secure Free Slot →</a>
+        </div>
       </div>
 
       {/* Floating Glassmorphic Navbar capsule */}
@@ -417,7 +433,7 @@ export default function DentistWebsite() {
       </nav>
 
       {/* SECTION 1: HERO */}
-      <section className="bg-white pt-8 pb-20 px-4 sm:px-6 relative overflow-hidden">
+      <section className="bg-white pt-6 pb-8 sm:pb-20 px-4 sm:px-6 relative overflow-hidden">
         {/* Glowy ambient backgrounds */}
         <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-[#5b72ff]/5 rounded-full blur-[100px] pointer-events-none" />
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none" />
@@ -427,9 +443,9 @@ export default function DentistWebsite() {
           SMILE MAKEOVER
         </div>
 
-        <div className="max-w-6xl mx-auto rounded-[32px] overflow-hidden bg-neutral-50/70 backdrop-blur-md border border-neutral-200/80 text-neutral-900 p-6 sm:p-10 relative shadow-[0_20px_50px_rgba(0,0,0,0.04)] flex flex-col justify-between min-h-[640px] z-10">
+        <div className="max-w-6xl mx-auto rounded-[28px] overflow-hidden bg-neutral-50/70 backdrop-blur-md border border-neutral-200/80 text-neutral-900 p-5 sm:p-10 relative shadow-[0_20px_50px_rgba(0,0,0,0.04)] flex flex-col justify-between z-10">
           {/* Card Navbar */}
-          <div className="flex justify-between items-center w-full mb-12 relative z-20">
+          <div className="flex justify-between items-center w-full mb-6 sm:mb-12 relative z-20">
             <div className="flex items-center gap-2.5">
               <img
                 src="/assets/yourdentist/logo_cropped.png"
@@ -458,22 +474,28 @@ export default function DentistWebsite() {
           </div>
 
           {/* Hero Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center flex-grow py-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center flex-grow py-2 sm:py-4 relative z-10">
             {/* Left Column: Heading and Tagline */}
-            <div className="lg:col-span-6 space-y-6 text-center lg:text-left flex flex-col justify-center h-full">
-              <h1 className="text-4xl sm:text-5xl lg:text-[62px] font-black uppercase tracking-tight leading-[0.95] text-neutral-900">
+            <div className="lg:col-span-6 space-y-4 sm:space-y-6 text-center lg:text-left flex flex-col justify-center h-full">
+              <h1 className="text-[42px] sm:text-5xl lg:text-[62px] font-black uppercase tracking-tight leading-[0.9] text-neutral-900">
                 Smile With <br />
                 <span className="text-neutral-500 font-editorial italic normal-case block font-light mt-1">Confidence Again</span>
               </h1>
 
               {/* Trust stats directly below the headline */}
-              <div className="flex flex-wrap items-center gap-3 py-2 bg-neutral-100/50 border-y border-neutral-200/80 my-2 justify-center lg:justify-start w-fit mx-auto lg:mx-0 text-[10px] font-black uppercase tracking-wider text-neutral-700 px-4 rounded-lg">
-                <span className="text-amber-500 font-mono tracking-normal text-xs leading-none">★★★★★</span>
-                <span className="text-neutral-900 font-bold">4.9 Google Rating</span>
-                <span className="text-neutral-300">|</span>
-                <span className="text-neutral-600">163+ Reviews</span>
-                <span className="text-neutral-300">|</span>
-                <span className="text-neutral-600">5,000+ Patients Treated</span>
+              <div className="grid grid-cols-3 gap-2 w-full max-w-xs mx-auto lg:mx-0">
+                <div className="bg-neutral-100/70 border border-neutral-200/80 rounded-xl py-2 px-1 text-center">
+                  <span className="block text-amber-500 font-mono text-sm leading-none">★ 4.9</span>
+                  <span className="block text-[8px] text-neutral-500 font-black uppercase tracking-wider mt-1">Google</span>
+                </div>
+                <div className="bg-neutral-100/70 border border-neutral-200/80 rounded-xl py-2 px-1 text-center">
+                  <span className="block text-neutral-900 font-black text-sm leading-none">163+</span>
+                  <span className="block text-[8px] text-neutral-500 font-black uppercase tracking-wider mt-1">Reviews</span>
+                </div>
+                <div className="bg-neutral-100/70 border border-neutral-200/80 rounded-xl py-2 px-1 text-center">
+                  <span className="block text-neutral-900 font-black text-sm leading-none">5K+</span>
+                  <span className="block text-[8px] text-neutral-500 font-black uppercase tracking-wider mt-1">Patients</span>
+                </div>
               </div>
 
               {/* Doctor badge for quick clinical authority */}
@@ -491,34 +513,34 @@ export default function DentistWebsite() {
                 </div>
               </div>
               
-              <p className="text-xs sm:text-sm text-[#5b72ff] font-black uppercase tracking-widest">
-                Premium Dental Implants, Aligners & Smile Makeovers in Patna
+              <p className="text-[10px] sm:text-xs text-[#5b72ff] font-black uppercase tracking-widest">
+                Premium Implants, Aligners & Smile Makeovers · Patna
               </p>
 
-              <p className="text-xs text-neutral-600 font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
+              <p className="hidden sm:block text-xs text-neutral-600 font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
                 Skip the generic dental clinic experience. Dr. Aryan Parmar offers state-of-the-art computerized procedures, pain-free anesthesia, and natural-looking cosmetic veneer transformations tailored for your facial structure.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
+              <div className="flex flex-row gap-2.5 justify-center lg:justify-start pt-1">
                 <a
                   href="#booking"
-                  className="px-6 py-3.5 bg-neutral-900 text-white hover:bg-neutral-800 rounded-full text-[10px] font-black uppercase tracking-widest transition-all shadow-lg text-center animate-pulse"
+                  className="flex-1 sm:flex-none px-5 py-3.5 bg-neutral-900 text-white hover:bg-neutral-800 rounded-full text-[10px] font-black uppercase tracking-widest transition-all shadow-lg text-center"
                 >
-                  Book Appointment
+                  Book Free Slot
                 </a>
                 <a
                   href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full text-[10px] font-black uppercase tracking-widest transition-all text-center flex items-center justify-center gap-2 shadow-md"
+                  className="flex-1 sm:flex-none px-5 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full text-[10px] font-black uppercase tracking-widest transition-all text-center flex items-center justify-center gap-2 shadow-md"
                 >
-                  💬 WhatsApp Us
+                  💬 WhatsApp
                 </a>
               </div>
             </div>
 
             {/* Right Column: Real Clinic Consultation (Authenticity Focused) */}
-            <div className="lg:col-span-6 flex justify-center relative min-h-[300px] lg:min-h-[400px] items-center">
+            <div className="lg:col-span-6 flex justify-center relative min-h-[220px] sm:min-h-[300px] lg:min-h-[400px] items-center">
               <div className="absolute w-[280px] h-[280px] bg-[#5b72ff]/10 rounded-full blur-[80px] opacity-40 mix-blend-screen pointer-events-none" />
               
               {/* Premium Clinical Consultation Frame */}
@@ -544,8 +566,8 @@ export default function DentistWebsite() {
             </div>
           </div>
 
-          {/* Card Footer row */}
-          <div className="border-t border-neutral-200/80 pt-6 mt-8 flex flex-col sm:flex-row justify-between items-center w-full gap-4 text-[9px] font-black uppercase tracking-widest text-neutral-500 relative z-20">
+          {/* Card Footer row - hidden on mobile to save space */}
+          <div className="hidden sm:flex border-t border-neutral-200/80 pt-6 mt-8 flex-col sm:flex-row justify-between items-center w-full gap-4 text-[9px] font-black uppercase tracking-widest text-neutral-500 relative z-20">
             <span>PAINLESS TECHNOLOGY LEADER</span>
             <span className="font-mono text-[#5b72ff] tracking-widest">{`Patna, India — ${timeString || '22:00:00'} IST`}</span>
             <span>HYGIENE STANDARD CERTIFIED</span>
@@ -1538,17 +1560,17 @@ export default function DentistWebsite() {
       </AnimatePresence>
 
       {/* FLOATING ACTION ITEMS (WhatsApp Sticky Capsule - CRO Priority 8) */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
-        {/* Floating WhatsApp Action Capsule (Sticky on Mobile & Desktop) */}
+      <div className="fixed bottom-6 right-4 sm:right-6 z-50 flex flex-col gap-3 items-end">
+        {/* Floating WhatsApp — icon-only on mobile, full capsule on desktop */}
         <a
           href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment."
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 rounded-full flex items-center gap-2.5 shadow-2xl transition-transform hover:scale-105 active:scale-95 border border-emerald-500/20 text-xs font-black uppercase tracking-wider"
+          className="bg-emerald-600 hover:bg-emerald-700 text-white w-14 h-14 sm:w-auto sm:h-auto sm:px-5 sm:py-3 rounded-full flex items-center justify-center sm:justify-start gap-2.5 shadow-2xl transition-transform hover:scale-105 active:scale-95 border border-emerald-500/20 sm:text-xs font-black sm:uppercase sm:tracking-wider"
           title="Book on WhatsApp"
         >
-          <span className="text-lg leading-none">💬</span>
-          <span>Book on WhatsApp</span>
+          <span className="text-2xl sm:text-lg leading-none">💬</span>
+          <span className="hidden sm:inline">Book on WhatsApp</span>
         </a>
 
         {/* AI Dentist Assistant Widget */}
