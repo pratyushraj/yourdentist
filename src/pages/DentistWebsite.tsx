@@ -24,7 +24,7 @@ import {
   Target,
   ChevronLeft,
   ChevronRight,
-  MessageSquare,
+
   Play,
   HelpCircle,
   Video,
@@ -253,12 +253,7 @@ export default function DentistWebsite() {
   // Active studio photo for interactive gallery
   const [activeStudioPhoto, setActiveStudioPhoto] = useState(CLINIC_PHOTOS[0]);
 
-  // AI Assistant Widget States
-  const [chatOpen, setChatOpen] = useState<boolean>(false);
-  const [chatMessages, setChatMessages] = useState<Array<{ sender: 'ai' | 'user', text: string }>>([
-    { sender: 'ai', text: "👋 Hi\nI'm Your Dentist Assistant.\nHow can I help you today?" }
-  ]);
-  const [isTyping, setIsTyping] = useState<boolean>(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -323,15 +318,7 @@ export default function DentistWebsite() {
     setSliderPosition(Number(e.target.value));
   };
 
-  const triggerChatOption = (option: string, responseText: string) => {
-    setChatMessages((prev) => [...prev, { sender: 'user', text: option }]);
-    setIsTyping(true);
 
-    setTimeout(() => {
-      setChatMessages((prev) => [...prev, { sender: 'ai', text: responseText }]);
-      setIsTyping(false);
-    }, 850);
-  };
 
   return (
     <div className="min-h-screen bg-white text-neutral-900 font-sora antialiased overflow-x-hidden selection:bg-neutral-900 selection:text-white pb-[60px] md:pb-0">
@@ -1569,98 +1556,13 @@ export default function DentistWebsite() {
           className="bg-emerald-600 hover:bg-emerald-700 text-white w-14 h-14 sm:w-auto sm:h-auto sm:px-5 sm:py-3 rounded-full flex items-center justify-center sm:justify-start gap-2.5 shadow-2xl transition-transform hover:scale-105 active:scale-95 border border-emerald-500/20 sm:text-xs font-black sm:uppercase sm:tracking-wider"
           title="Book on WhatsApp"
         >
-          <span className="text-2xl sm:text-lg leading-none">💬</span>
+          <svg className="h-6 w-6 sm:h-5 sm:w-5 fill-current text-white" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.733-1.458L0 24zm6.208-3.82c1.676.994 3.373 1.517 5.737 1.519 5.37 0 9.739-4.321 9.742-9.63.002-2.573-1.002-4.992-2.83-6.82-1.829-1.83-4.254-2.836-6.83-2.837-5.376 0-9.744 4.322-9.748 9.632-.001 2.181.564 4.309 1.644 6.177l-1.077 3.935 4.093-1.073zm11.218-6.195c-.299-.15-1.772-.875-2.046-.975-.275-.1-.475-.15-.675.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-3.579-1.79-4.757-3.69-5.187-4.437-.175-.3-.025-.462.125-.612.135-.135.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.589-.491-.51-.675-.52l-.575-.01c-.2-.008-.525.067-.8.367-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.224 5.112 4.521.714.309 1.272.493 1.707.631.719.228 1.373.196 1.892.119.579-.086 1.772-.725 2.022-1.425.25-.7.25-1.293.175-1.425-.075-.133-.275-.213-.575-.363z"/>
+          </svg>
           <span className="hidden sm:inline">Book on WhatsApp</span>
         </a>
 
-        {/* AI Dentist Assistant Widget */}
-        <div className="relative flex flex-col items-end">
-          <AnimatePresence>
-            {chatOpen && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                className="bg-white border border-neutral-200 w-[300px] sm:w-[340px] rounded-3xl shadow-2xl overflow-hidden mb-3 flex flex-col"
-              >
-                {/* Chat Header */}
-                <div className="bg-neutral-950 text-white p-4 flex justify-between items-center border-b border-white/5">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                    <div>
-                      <h4 className="text-[10px] font-black uppercase tracking-widest">YOUR DENTIST AI</h4>
-                      <p className="text-[8px] text-neutral-400 font-bold uppercase tracking-wider">Patna Clinic Assistant</p>
-                    </div>
-                  </div>
-                  <button onClick={() => setChatOpen(false)} className="text-neutral-400 hover:text-white transition-colors">
-                    <X className="h-4 w-4" />
-                  </button>
-                </div>
 
-                {/* Chat Message Scroll */}
-                <div className="p-4 h-[220px] overflow-y-auto space-y-3 bg-neutral-50/50 flex flex-col whitespace-pre-wrap text-left">
-                  {chatMessages.map((msg, i) => (
-                    <div
-                      key={i}
-                      className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-xs leading-relaxed ${
-                        msg.sender === 'user'
-                          ? 'bg-neutral-950 text-white self-end rounded-tr-none shadow-sm'
-                          : 'bg-white border border-neutral-100 text-neutral-800 self-start rounded-tl-none shadow-sm'
-                      }`}
-                    >
-                      {msg.text}
-                    </div>
-                  ))}
-                  {isTyping && (
-                    <div className="bg-white border border-neutral-100 text-neutral-400 self-start rounded-2xl rounded-tl-none px-3.5 py-2.5 text-xs animate-pulse">
-                      Assistant is typing...
-                    </div>
-                  )}
-                </div>
-
-                {/* Quick Option Menu */}
-                <div className="p-4 border-t border-neutral-200 bg-white space-y-2">
-                  <p className="text-[8px] font-black uppercase text-neutral-400 tracking-widest mb-2 text-left">Select inquiry topic:</p>
-                  <div className="flex flex-wrap gap-1.5 justify-start">
-                    <button
-                      onClick={() => triggerChatOption("Book Appointment", "Great! To book a Free Smile Assessment, please scroll down to our reservation form, or WhatsApp us directly at +91 98765 43210. 📅")}
-                      className="px-3 py-1.5 bg-neutral-50 hover:bg-neutral-100 text-neutral-800 text-[9px] font-black uppercase tracking-wider rounded-lg border border-neutral-200 transition-colors"
-                    >
-                      📅 Booking
-                    </button>
-                    <button
-                      onClick={() => triggerChatOption("Implants Price", "Dr. Aryan specializes in premium implants starting at ₹24,999 using top titanium brands. We offer 0% EMI diagnostics. Book a free consultation slot above! 🔩")}
-                      className="px-3 py-1.5 bg-neutral-50 hover:bg-neutral-100 text-neutral-800 text-[9px] font-black uppercase tracking-wider rounded-lg border border-neutral-200 transition-colors"
-                    >
-                      🔩 Implants
-                    </button>
-                    <button
-                      onClick={() => triggerChatOption("Clear Aligners", "Clear Invisible Aligners consultation is 100% Free! We do complete 3D scanner mapping on day 1 to plan your alignment journey. 🎯")}
-                      className="px-3 py-1.5 bg-neutral-50 hover:bg-neutral-100 text-neutral-800 text-[9px] font-black uppercase tracking-wider rounded-lg border border-neutral-200 transition-colors"
-                    >
-                      🎯 Aligners
-                    </button>
-                    <button
-                      onClick={() => triggerChatOption("Talk to Team", "Our team is available immediately! Click the WhatsApp bubble directly above this assistant to start chatting live with our front desk. 📞")}
-                      className="px-3 py-1.5 bg-neutral-50 hover:bg-neutral-100 text-neutral-800 text-[9px] font-black uppercase tracking-wider rounded-lg border border-neutral-200 transition-colors"
-                    >
-                      📞 Live Chat
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          {/* Assistant Trigger Button */}
-          <button
-            onClick={() => setChatOpen(!chatOpen)}
-            className="bg-neutral-950 hover:bg-neutral-900 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-105 active:scale-95 border border-white/5"
-            title="Chat Assistant"
-          >
-            {chatOpen ? <X className="h-5 w-5" /> : <MessageSquare className="h-5 w-5" />}
-          </button>
-        </div>
       </div>
     </div>
   );
