@@ -1,15 +1,11 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  // force tailwind jit cache bust - 2026-03-02
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -57,16 +53,6 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
         // Emerald green (primary accent)
         emerald: {
           50: "#ecfdf5",
@@ -81,14 +67,7 @@ export default {
           900: "#14532d",
           950: "#052e16",
         },
-        // Semantic
-        success: "hsl(var(--success))",
-        warning: "hsl(var(--warning))",
-        info: "hsl(var(--info))",
-        destructive: "hsl(var(--destructive))",
-
-        // Design tokens (OKLCH/HEX), usable via `text-ds-text`, `bg-ds-surface-2`, etc.
-        // These are additive; existing app colors remain mapped to HSL variables.
+        // Design tokens (OKLCH/HEX)
         ds: {
           bg: "var(--ds-bg)",
           surface1: "var(--ds-surface-1)",
@@ -131,20 +110,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -155,20 +126,13 @@ export default {
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
     function({ addUtilities }: any) {
       addUtilities({
-        '.pt-safe': {
-          paddingTop: 'env(safe-area-inset-top, 0px)',
-        },
-        '.pb-safe': {
-          paddingBottom: 'env(safe-area-inset-bottom, 0px)',
-        },
-        '.pl-safe': {
-          paddingLeft: 'env(safe-area-inset-left, 0px)',
-        },
-        '.pr-safe': {
-          paddingRight: 'env(safe-area-inset-right, 0px)',
-        },
+        '.pt-safe': { paddingTop: 'env(safe-area-inset-top, 0px)' },
+        '.pb-safe': { paddingBottom: 'env(safe-area-inset-bottom, 0px)' },
+        '.pl-safe': { paddingLeft: 'env(safe-area-inset-left, 0px)' },
+        '.pr-safe': { paddingRight: 'env(safe-area-inset-right, 0px)' },
         '.px-safe': {
           paddingLeft: 'env(safe-area-inset-left, 0px)',
           paddingRight: 'env(safe-area-inset-right, 0px)',
@@ -177,12 +141,8 @@ export default {
           paddingTop: 'env(safe-area-inset-top, 0px)',
           paddingBottom: 'env(safe-area-inset-bottom, 0px)',
         },
-        '.mt-safe': {
-          marginTop: 'env(safe-area-inset-top, 0px)',
-        },
-        '.mb-safe': {
-          marginBottom: 'env(safe-area-inset-bottom, 0px)',
-        },
+        '.mt-safe': { marginTop: 'env(safe-area-inset-top, 0px)' },
+        '.mb-safe': { marginBottom: 'env(safe-area-inset-bottom, 0px)' },
       })
     }
   ],

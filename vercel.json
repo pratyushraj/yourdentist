@@ -1,0 +1,9 @@
+{
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/((?!assets/|favicon|sw\\.js|site\\.webmanifest|manifest\\.json).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
