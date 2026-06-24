@@ -564,7 +564,7 @@ export default function App() {
             },
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "H/No 12, Pataliputra Colony",
+              "streetAddress": "Tara Kunj, House Number - 111, Road No - 1F, Near Lotus Apartment, New Patliputra Colony",
               "addressLocality": "Patna",
               "addressRegion": "Bihar",
               "postalCode": "800013",
@@ -1234,10 +1234,12 @@ export default function App() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="absolute bottom-6 left-6 right-6 z-20 bg-neutral-950/95 border border-white/5 p-4 rounded-xl shadow-2xl text-white">
+              <div className="absolute bottom-6 left-6 right-6 z-20 bg-neutral-950/95 border border-white/5 p-4 rounded-xl shadow-2xl text-white text-left">
                 <h4 className="text-xs font-black uppercase tracking-wider">Dr. Aryan Parmar</h4>
-                <p className="text-[7px] text-neutral-400 font-bold uppercase tracking-widest mt-1">Lead Surgeon & Restorative Director</p>
-                <p className="text-[9px] text-[#5b72ff] font-mono font-black uppercase tracking-widest mt-2">BDS, MDS • 12+ Years Exp</p>
+                <p className="text-[7px] text-neutral-400 font-bold uppercase tracking-widest mt-1">Chief Dental Surgeon & Restorative Director</p>
+                <p className="text-[7.5px] text-[#5b72ff] font-mono font-bold uppercase tracking-wide mt-2 leading-relaxed">
+                  BDS (Hons), BIDSH · FAD (Aesthetics) · Fellowship in Implantology (S. Korea) · Reg No. 11172/A
+                </p>
               </div>
             </div>
 
@@ -2121,10 +2123,20 @@ export default function App() {
 
           {/* Location details */}
           <div className="space-y-3 text-left">
-            <h4 className="text-xs font-black uppercase text-white tracking-widest">Location address</h4>
-            <div className="space-y-1 text-xs font-medium leading-relaxed">
-              <p className="font-black text-white uppercase tracking-wider">Patliputra Restorative Studio:</p>
-              <p className="text-neutral-500 font-bold uppercase tracking-wider text-[10px]">H/No 12, Pataliputra Colony, Patna, Bihar 800013</p>
+            <h4 className="text-xs font-black uppercase text-white tracking-widest">Locations & Contacts</h4>
+            <div className="space-y-3 text-xs font-medium leading-relaxed">
+              <div className="text-[10px] font-bold uppercase tracking-wider">
+                <p className="font-black text-white">Patna Clinic (Main):</p>
+                <p className="text-neutral-500">Tara Kunj, House Number - 111, Road No - 1F, Near Lotus Apartment, New Patliputra Colony, Patna - 800013</p>
+              </div>
+              <div className="text-[10px] font-bold uppercase tracking-wider">
+                <p className="font-black text-white">Purnea Clinic (Branch):</p>
+                <p className="text-neutral-500">Line Bazar, Purnea</p>
+              </div>
+              <div className="text-[10px] font-bold uppercase tracking-wider text-neutral-400">
+                <p>Phones: +91 62014 78033, +91 61279 63104</p>
+                <p>Email: yourdentistpatna@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
