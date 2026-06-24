@@ -1016,8 +1016,9 @@ export default function App() {
             </div>
 
             {/* Real Video Showcase */}
-            <div className="md:col-span-8 flex justify-center items-center">
-              <div className="relative aspect-[9/16] w-full max-w-[270px] rounded-[28px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
+            <div className="md:col-span-8 flex flex-wrap justify-center items-center gap-6">
+              {/* Video 1: Aligners Promo */}
+              <div className="relative aspect-[9/16] w-full max-w-[200px] rounded-[28px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
                 <video
                   src="/assets/yourdentist/aligners_promo.mp4"
                   autoPlay
@@ -1026,6 +1027,24 @@ export default function App() {
                   playsInline
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-neutral-900/90 border border-neutral-800 px-2.5 py-1.5 rounded-lg text-[7px] font-black uppercase tracking-widest text-emerald-400 whitespace-nowrap z-20">
+                  Aligners Treatment
+                </div>
+              </div>
+
+              {/* Video 2: Clinic Promo */}
+              <div className="relative aspect-[9/16] w-full max-w-[200px] rounded-[28px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
+                <video
+                  src="/assets/yourdentist/yourdentist_promo.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-neutral-900/90 border border-neutral-800 px-2.5 py-1.5 rounded-lg text-[7px] font-black uppercase tracking-widest text-neutral-200 whitespace-nowrap z-20">
+                  Clinic Showcase
+                </div>
               </div>
             </div>
           </div>
