@@ -205,7 +205,7 @@ const PATIENT_CASES = [
     ],
     patientName: "Anjali S. (Patna)",
     testimonial: "I couldn't smile confidently for years. Dr. Aryan completed my veneers in just 2 sessions. Completely painless and life-changing.",
-    video: "/assets/yourdentist/yourdentist_promo.mp4",
+    video: "/assets/yourdentist/aligners_promo.mp4",
     thumbnail: "/assets/yourdentist/patient_happy_1.jpg"
   },
   {
@@ -231,7 +231,7 @@ const PATIENT_CASES = [
     ],
     patientName: "Rishav Raj (Patna)",
     testimonial: "Clear veneers changed my life. Dr. Aryan explained everything so well. Gaps closed and teeth whitened in exactly 14 days as predicted.",
-    video: "/assets/yourdentist/yourdentist_promo.mp4",
+    video: "/assets/yourdentist/aligners_promo.mp4",
     thumbnail: "/assets/yourdentist/patient_happy_4.jpg"
   }
 ];
@@ -1019,7 +1019,7 @@ export default function App() {
             <div className="md:col-span-8 flex justify-center items-center">
               <div className="relative aspect-[9/16] w-full max-w-[270px] rounded-[28px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
                 <video
-                  src="/assets/yourdentist/yourdentist_promo.mp4"
+                  src="/assets/yourdentist/aligners_promo.mp4"
                   autoPlay
                   loop
                   muted
