@@ -139,7 +139,7 @@ const BEFORE_AFTER_IMAGES = [
 
 const CLINIC_PHOTOS = [
   { id: "operatory", name: "Operatory Studio", desc: "Sterile surgical operatory with digital alignment systems.", img: "/assets/yourdentist/interior_operatory.jpg" },
-  { id: "consult", name: "Clinical Consult", desc: "Dr. Aryan performing diagnostic digital scanner screening with a patient.", img: "/assets/yourdentist/dr_with_patient_1.jpg" },
+  { id: "consult", name: "Clinical Consult", desc: "Dr. Aryan performing diagnostic digital scanner screening with a patient.", img: "/assets/yourdentist/dr_with_patient_1.png" },
   { id: "treatment", name: "Clinical Action", desc: "Dr. Aryan operating under computerized micro-dentistry systems.", img: "/assets/yourdentist/clinic_in_action.jpg" },
   { id: "lobby", name: "Executive Lobby", desc: "Patient lounge and custom wall branding reception.", img: "/assets/yourdentist/wall_brand.png" },
   { id: "exterior_day", name: "Day Exterior", desc: "Centrally located premium clinic facade in Patliputra Colony.", img: "/assets/yourdentist/exterior_day.jpg" },
@@ -791,7 +791,7 @@ export default function App() {
               <div className="relative z-10 w-full max-w-md rounded-[32px] overflow-hidden border border-neutral-200/80 bg-white p-3 shadow-2xl">
                 <div className="aspect-[4/3] w-full rounded-[24px] overflow-hidden bg-neutral-50 border border-neutral-100 relative">
                   <img
-                    src="/assets/yourdentist/dr_with_patient_1.jpg"
+                    src="/assets/yourdentist/dr_with_patient_1.png"
                     alt="Dr. Aryan Parmar in Consultation"
                     className="w-full h-full object-cover"
                   />
