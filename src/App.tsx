@@ -798,9 +798,14 @@ export default function App() {
                   <div className="absolute top-4 left-4 bg-neutral-900/90 border border-neutral-800 px-3 py-1.5 rounded-lg text-[8px] font-black uppercase tracking-widest text-emerald-400">
                     ✓ Direct Diagnostic Consultation
                   </div>
-                  <div className="absolute bottom-4 right-4 bg-neutral-900/90 border border-neutral-800 px-3 py-1.5 rounded-lg text-[8px] font-black uppercase tracking-widest text-neutral-200">
-                    New Patliputra Colony, Patna
-                  </div>
+                  <a 
+                    href="https://maps.google.com/?q=YOUR+DENTIST+Tara+Kunj+Road+No+1F+Patliputra+Colony+Patna" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="absolute bottom-4 right-4 bg-neutral-900/90 border border-neutral-800 px-3 py-1.5 rounded-lg text-[8px] font-black uppercase tracking-widest text-neutral-200 hover:text-emerald-400 transition-colors cursor-pointer"
+                  >
+                    New Patliputra Colony, Patna 📍
+                  </a>
                 </div>
                 <div className="p-4 text-left space-y-1">
                   <h4 className="text-[10px] font-black uppercase text-neutral-800 tracking-wider">Clinical Standards in Action</h4>
@@ -834,10 +839,15 @@ export default function App() {
             <span className="block text-2xl font-black text-neutral-900 font-mono tracking-tight">1,000+</span>
             <span className="block text-[9px] text-neutral-400 font-black uppercase tracking-widest">Dental Procedures Completed</span>
           </div>
-          <div className="space-y-1 py-2 md:py-0">
-            <span className="block text-lg font-black text-neutral-900 uppercase tracking-tight leading-none mt-1">NEW PATLIPUTRA COLONY</span>
+          <a 
+            href="https://maps.google.com/?q=YOUR+DENTIST+Tara+Kunj+Road+No+1F+Patliputra+Colony+Patna" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="space-y-1 py-2 md:py-0 block hover:text-[#5b72ff] transition-colors cursor-pointer"
+          >
+            <span className="block text-lg font-black text-neutral-900 uppercase tracking-tight leading-none mt-1">NEW PATLIPUTRA COLONY 📍</span>
             <span className="block text-[8px] text-neutral-400 font-black uppercase tracking-widest mt-1">Patna, Bihar 800013</span>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -1941,8 +1951,15 @@ export default function App() {
           <div className="space-y-3 text-left">
             <h4 className="text-xs font-black uppercase text-white tracking-widest">Location address</h4>
             <div className="space-y-1 text-xs font-medium leading-relaxed">
-              <p className="font-black text-white uppercase tracking-wider">Patliputra Restorative Studio:</p>
-              <p className="text-neutral-500 font-bold uppercase tracking-wider text-[10px]">Tara Kunj, 1F/111, Beside Lotus Apartment,<br/>New Patliputra Colony, Patna, Bihar 800013</p>
+              <a 
+                href="https://maps.google.com/?q=YOUR+DENTIST+Tara+Kunj+Road+No+1F+Patliputra+Colony+Patna" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block hover:text-white group transition-colors"
+              >
+                <p className="font-black text-white uppercase tracking-wider group-hover:text-emerald-400 transition-colors">Patliputra Restorative Studio 📍:</p>
+                <p className="text-neutral-500 font-bold uppercase tracking-wider text-[10px] group-hover:text-neutral-300 transition-colors">Tara Kunj, 1F/111, Beside Lotus Apartment,<br/>New Patliputra Colony, Patna, Bihar 800013</p>
+              </a>
               <p className="text-neutral-500 font-bold uppercase tracking-wider text-[10px] mt-1">📞 062014 78033</p>
             </div>
           </div>
