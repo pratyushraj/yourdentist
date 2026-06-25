@@ -433,6 +433,11 @@ export default function App() {
 
         const rxTemplateName = clinic.booking_template_name || 'booking';
 
+        let appTimeVal = selectedTime;
+        if (rxTemplateName === 'booking') {
+          appTimeVal = `${selectedTime}\n📍 Directions: https://maps.google.com/?q=YOUR+DENTIST+Tara+Kunj+Road+No+1F+Patliputra+Colony+Patna`;
+        }
+
         const payload = {
           messaging_product: 'whatsapp',
           to: formattedPhone,
@@ -446,7 +451,7 @@ export default function App() {
                 parameters: [
                   { type: 'text', text: patientName },
                   { type: 'text', text: formattedDateString },
-                  { type: 'text', text: selectedTime }
+                  { type: 'text', text: appTimeVal }
                 ]
               }
             ]
