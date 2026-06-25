@@ -50,7 +50,7 @@ const SERVICES: Service[] = [
   {
     name: "Premium Dental Implants",
     duration: "90 mins",
-    price: "Starting from ₹24,999",
+    price: "",
     description: "Permanent, natural-looking tooth replacements utilizing top-tier titanium implants.",
     icon: "implants",
     img: "/assets/yourdentist/premium_implants.png"
@@ -58,7 +58,7 @@ const SERVICES: Service[] = [
   {
     name: "Porcelain Veneers & Smile Makeovers",
     duration: "120 mins",
-    price: "Starting from ₹12,000/tooth",
+    price: "",
     description: "Porcelain and composite veneers for full arch cosmetic smile transformations.",
     icon: "whitening",
     img: "/assets/yourdentist/veneer_case_1.png"
@@ -66,7 +66,7 @@ const SERVICES: Service[] = [
   {
     name: "Clear Aligners",
     duration: "30 mins",
-    price: "Starting from ₹45,000",
+    price: "",
     description: "Invisible teeth straightening braces with complete digital 3D planning.",
     icon: "aligners",
     img: "/assets/yourdentist/clear_aligners.png"
@@ -74,7 +74,7 @@ const SERVICES: Service[] = [
   {
     name: "Painless Root Canal",
     duration: "90 mins",
-    price: "Starting from ₹5,999",
+    price: "",
     description: "Save damaged teeth with computerized micro-dentistry under local anesthesia.",
     icon: "rootcanal",
     img: "/assets/yourdentist/painless_root_canal.png"
@@ -82,7 +82,7 @@ const SERVICES: Service[] = [
   {
     name: "Laser Teeth Whitening",
     duration: "60 mins",
-    price: "Starting from ₹4,999",
+    price: "",
     description: "Brighten your smile up to 8 shades in a single session with our painless laser technology.",
     icon: "cleaning",
     img: "/assets/yourdentist/laser_whitening.png"
@@ -90,7 +90,7 @@ const SERVICES: Service[] = [
   {
     name: "Teeth Cleaning & Polish",
     duration: "45 mins",
-    price: "Starting from ₹999",
+    price: "",
     description: "Deep scaling to remove plaque and calculus, finished with professional stains polishing.",
     icon: "pediatric",
     img: "/assets/yourdentist/teeth_cleaning.png"
@@ -182,7 +182,7 @@ const FAQS = [
   },
   {
     question: "Do you offer EMI payments for expensive treatments?",
-    answer: "Yes! We offer 0% EMI financing options through Bajaj Finance and other banking partners for dental treatments above ₹5,000, making implants and straightening affordable."
+    answer: "Yes! We offer 0% EMI financing options through Bajaj Finance and other banking partners for dental treatments, making implants and straightening affordable."
   },
   {
     question: "How long does teeth whitening last?",
@@ -503,7 +503,7 @@ export default function App() {
           isBlogDetail && activeBlog
             ? activeBlog.metaDescription
             : isBlogIndex
-            ? "Browse articles about clear aligners cost in Patna, braces treatments, teeth cleaning safety, and teeth gap closure options at YOUR DENTIST."
+            ? "Browse articles about clear aligners, braces treatments, teeth cleaning safety, and teeth gap closure options at YOUR DENTIST."
             : "Premium dental clinic in Patna. Painless implants, laser whitening, root canals, and invisible aligners under Dr. Aryan Parmar."
         }
         image={
@@ -1101,9 +1101,6 @@ export default function App() {
                         <span className="text-[8px] text-neutral-900 font-mono font-black uppercase bg-neutral-100 border border-neutral-200 px-2 py-0.5 rounded">
                           {service.duration}
                         </span>
-                        <span className="text-[8px] text-[#5b72ff] font-mono font-black uppercase bg-[#5b72ff]/5 border border-[#5b72ff]/10 px-2 py-0.5 rounded">
-                          {service.price}
-                        </span>
                       </div>
                     </div>
                     <p className="text-xs text-neutral-500 font-medium leading-relaxed">
@@ -1311,7 +1308,7 @@ export default function App() {
             <div className="space-y-4 pt-4 border-t border-neutral-100">
               {[
                 { title: "Google Calendar Integration", desc: "Instantly synchronized with Dr. Aryan's clinical calendar." },
-                { title: "Free Diagnostic assessment", desc: "Includes high-res scanner review (worth ₹1,500)." },
+                { title: "Free Diagnostic assessment", desc: "Includes high-res scanner review." },
                 { title: "Instant SMS Confirmation", desc: "Confirmation details will be dispatched immediately." }
               ].map((badge, idx) => (
                 <div key={idx} className="flex items-start gap-3">
@@ -1380,7 +1377,7 @@ export default function App() {
                       </div>
                       <div className="flex items-center gap-1.5">
                         <span className="text-emerald-400">✓</span>
-                        <span>Cost Estimate</span>
+                        <span>Custom Quote</span>
                       </div>
                       <div className="flex items-center gap-1.5">
                         <span className="text-emerald-400">✓</span>
@@ -1425,7 +1422,7 @@ export default function App() {
                         className="w-full bg-neutral-900/60 border border-white/5 rounded-xl px-4 py-3 text-xs outline-none text-white focus:border-[#5b72ff] font-semibold transition-colors appearance-none"
                       >
                         {SERVICES.map((s, idx) => (
-                          <option key={idx} value={s.name} className="bg-neutral-900 text-white">{s.name} ({s.price.split(' ')[0]}...)</option>
+                          <option key={idx} value={s.name} className="bg-neutral-900 text-white">{s.name}</option>
                         ))}
                       </select>
                     </div>
@@ -1697,7 +1694,7 @@ export default function App() {
             <span className="text-[9px] font-black text-[#5b72ff] uppercase tracking-widest">Frequently Asked Questions</span>
             <h2 className="text-3xl sm:text-4xl font-black uppercase text-neutral-900 leading-tight">
               Clinical Inquiries <br />
-              <span className="font-editorial italic normal-case font-light text-neutral-500">Implant, Aligner & Price details</span>
+              <span className="font-editorial italic normal-case font-light text-neutral-500">Implant, Aligner & Treatment details</span>
             </h2>
           </div>
 
