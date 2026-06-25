@@ -310,5 +310,123 @@ export const BLOGS: BlogArticle[] = [
         </ol>
       </div>
     )
+  },
+  {
+    slug: "dental-implants-in-patna",
+    title: "Dental Implants in Patna: The Ultimate Guide to Tooth Replacement",
+    category: "Implants",
+    readTime: "5 min read",
+    publishDate: "June 25, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Need to replace a missing tooth? Learn why dental implants are the gold standard for tooth replacement in Patna and how the procedure works.",
+    featuredImage: "/assets/yourdentist/premium_implants.png",
+    metaDescription: "Read the ultimate patient guide to dental implants in Patna. Learn about procedure steps, titanium implants, and 0% interest EMI options at YOUR DENTIST.",
+    faqs: [
+      {
+        question: "What is a dental implant?",
+        answer: "A dental implant is a titanium post surgically positioned into the jawbone beneath your gums. Once in place, it allows your dentist to mount replacement teeth or a bridge onto them, mimicking natural tooth roots."
+      },
+      {
+        question: "How long do dental implants last?",
+        answer: "With proper oral hygiene and regular dental checkups, dental implants can last a lifetime. Unlike traditional bridges or dentures, implants integrate directly with your jawbone."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Missing teeth can affect your self-confidence, alter your speech, and lead to jawbone deterioration over time. While dentures and bridges are traditional solutions, <strong>dental implants in Patna</strong> have emerged as the gold standard for permanent, natural-looking tooth replacement.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Choose Dental Implants?</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Dental implants look, feel, and function exactly like your natural teeth. Here are the top benefits:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Preserves Jaw Structure:</strong> Implants stimulate bone growth and prevent the bone loss that naturally occurs after tooth extraction.</li>
+          <li><strong>No Damage to Adjacent Teeth:</strong> Traditional bridges require grinding down adjacent healthy teeth to support the bridge. Implants are standalone.</li>
+          <li><strong>Superior Stability:</strong> Eat, talk, and smile comfortably without worrying about slipping or moving parts.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">The Implant Journey at YOUR DENTIST</h2>
+        <ol className="list-decimal pl-6 space-y-4 text-neutral-700">
+          <li>
+            <strong>Digital Assessment & Planning:</strong>
+            <br />
+            We perform advanced 3D CBCT scans to evaluate your bone density and design a digital surgical template for microscopic placement accuracy.
+          </li>
+          <li>
+            <strong>Implant Placement:</strong>
+            <br />
+            The titanium fixture is gently placed into the jawbone under computerized local anesthesia to ensure a painless experience.
+          </li>
+          <li>
+            <strong>Osseointegration:</strong>
+            <br />
+            Over a period of 3 to 6 months, the jawbone naturally grows and fuses around the titanium implant, creating an unbreakable anchor.
+          </li>
+          <li>
+            <strong>Crown Placement:</strong>
+            <br />
+            A custom porcelain or zirconia crown is securely attached, instantly restoring your chew capability and smile aesthetics.
+          </li>
+        </ol>
+
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Interested in permanent tooth replacement? Book a diagnostic checkup at YOUR DENTIST Patna to receive a customized implant treatment blueprint. We offer zero-interest EMI financing plans for your comfort.
+          </p>
+        </div>
+      </div>
+    )
+  },
+  {
+    slug: "painless-root-canal-in-patna",
+    title: "Painless Root Canal Treatment in Patna: Technology & Timelines",
+    category: "Endodontics",
+    readTime: "4 min read",
+    publishDate: "June 25, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Worried about root canal pain? Discover how computerized micro-dentistry makes root canal treatments (RCT) painless, fast, and comfortable at YOUR DENTIST.",
+    featuredImage: "/assets/yourdentist/painless_root_canal.png",
+    metaDescription: "Worried about root canal pain? Learn about painless root canal treatment (RCT) in Patna using advanced rotary tools and single-visit procedures at YOUR DENTIST.",
+    faqs: [
+      {
+        question: "Is root canal treatment painful?",
+        answer: "No. With advanced local anesthetics and computerized rotary instruments, modern root canal treatment is completely painless and feels similar to receiving a standard dental filling."
+      },
+      {
+        question: "Can a root canal be completed in a single visit?",
+        answer: "Yes. For many cases where infection has not spread severely, we perform single-visit root canal treatments at YOUR DENTIST Patna, saving you multiple clinic trips."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          A severe toothache is often a sign that dental decay has reached the pulp—the innermost chamber containing nerves and blood vessels. When this happens, a root canal is the only way to save your natural tooth. If you are anxious about the procedure, here is why modern <strong>root canal treatment in Patna</strong> is completely painless.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">How Modern Technology Removes the Pain</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          The days of noisy, uncomfortable dental procedures are gone. At YOUR DENTIST Patliputra Colony, we employ cutting-edge endodontic systems:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Computerized Local Anesthesia:</strong> Pre-programmed micro-delivery ensures targeted numbing with zero sting.</li>
+          <li><strong>Rotary Endodontics:</strong> Flexible nickel-titanium files clean the root canal system faster and far more smoothly than manual hand files.</li>
+          <li><strong>Digital Apex Locators:</strong> High-precision electronic trackers calculate root lengths instantly, preventing over-instrumentation and post-op soreness.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">RCT vs. Tooth Extraction</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Many patients ask if they should simply pull the painful tooth. Saving your natural tooth is always the superior health choice. Extracted teeth cause neighboring teeth to drift, resulting in bite misalignment and chewing difficulties. A root canal saves the tooth structure, which is then reinforced with a custom porcelain crown to restore 100% chew capacity.
+        </p>
+
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Don't let dental pain disrupt your life. Schedule a digital diagnostics scan and consultation with Dr. Aryan Parmar to relieve your pain safely and comfortably.
+          </p>
+        </div>
+      </div>
+    )
   }
 ];
+
