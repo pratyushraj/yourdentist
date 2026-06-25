@@ -72,6 +72,14 @@ const SERVICES: Service[] = [
     img: "/assets/yourdentist/clear_aligners.png"
   },
   {
+    name: "Traditional & Ceramic Braces",
+    duration: "45 mins",
+    price: "",
+    description: "Traditional metal and tooth-colored ceramic orthodontic braces for structural smile correction.",
+    icon: "braces",
+    img: "/assets/yourdentist/clear_aligners.png"
+  },
+  {
     name: "Painless Root Canal",
     duration: "90 mins",
     price: "",
@@ -105,6 +113,8 @@ const renderServiceIcon = (iconName: string) => {
       return <Smile className="h-5 w-5 text-[#5b72ff]" />;
     case 'aligners':
       return <Target className="h-5 w-5 text-[#5b72ff]" />;
+    case 'braces':
+      return <ShieldCheck className="h-5 w-5 text-[#5b72ff]" />;
     case 'rootcanal':
       return <Stethoscope className="h-5 w-5 text-[#5b72ff]" />;
     case 'cleaning':
