@@ -502,14 +502,14 @@ export default function App() {
             ? `${activeBlog.title} | YOUR DENTIST Patna`
             : isBlogIndex
             ? "Dental Blogs & FAQ Guides | YOUR DENTIST Patna"
-            : "YOUR DENTIST | Dr. Aryan Parmar Patna — Painless Dentistry"
+            : "Best Dentist in Patna | Painless Implant & Aligner Clinic | YOUR DENTIST"
         }
         description={
           isBlogDetail && activeBlog
             ? activeBlog.metaDescription
             : isBlogIndex
             ? "Browse articles about clear aligners, braces treatments, teeth cleaning safety, and teeth gap closure options at YOUR DENTIST."
-            : "Premium dental clinic in Patna. Painless implants, laser whitening, root canals, and invisible aligners under Dr. Aryan Parmar."
+            : "Looking for the best dentist in Patna? YOUR DENTIST by Dr. Aryan Parmar is a premium dental clinic in Patliputra Colony offering painless implants, invisible aligners, teeth whitening, and root canals. Book your slot today."
         }
         image={
           isBlogDetail && activeBlog
@@ -763,11 +763,11 @@ export default function App() {
               </div>
               
               <p className="text-[10px] sm:text-xs text-[#5b72ff] font-black uppercase tracking-widest">
-                Premium Implants, Aligners & Smile Makeovers · Patna
+                Best Dental Clinic in Patna for Painless Implants & Clear Aligners
               </p>
 
               <p className="hidden sm:block text-xs text-neutral-600 font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
-                Skip the generic dental clinic experience. Dr. Aryan Parmar offers state-of-the-art computerized procedures, pain-free anesthesia, and natural-looking cosmetic veneer transformations tailored for your facial structure.
+                Skip the generic dentist near me search. Dr. Aryan Parmar offers state-of-the-art computerized procedures, pain-free root canals, and natural-looking cosmetic veneer transformations tailored for your facial structure.
               </p>
 
               <div className="flex flex-row gap-2.5 justify-center lg:justify-start pt-1">
