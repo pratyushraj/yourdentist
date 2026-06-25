@@ -434,50 +434,8 @@ export default function App() {
       setBookingConfirmed(true);
       toast.success("Free Smile Assessment Slot Reserved!");
 
-      // 4. Dispatch WhatsApp confirmation alert
-      if (clinic && clinic.whatsapp_phone_number_id && clinic.whatsapp_access_token) {
-        const wabaPhoneId = clinic.whatsapp_phone_number_id;
-        const wabaToken = clinic.whatsapp_access_token.split('|')[0];
-        const formattedPhone = cleanPhone.length === 10 ? `91${cleanPhone}` : cleanPhone;
-        const formattedDateString = new Date(selectedDate).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' });
-
-        const rxTemplateName = clinic.booking_template_name || 'booking';
-
-        let appTimeVal = selectedTime;
-        if (rxTemplateName === 'booking') {
-          appTimeVal = `${selectedTime}\n📍 Directions: https://maps.google.com/?q=YOUR+DENTIST+Tara+Kunj+Road+No+1F+Patliputra+Colony+Patna`;
-        }
-
-        const payload = {
-          messaging_product: 'whatsapp',
-          to: formattedPhone,
-          type: 'template',
-          template: {
-            name: rxTemplateName,
-            language: { code: 'en' },
-            components: [
-              {
-                type: 'body',
-                parameters: [
-                  { type: 'text', text: patientName },
-                  { type: 'text', text: formattedDateString },
-                  { type: 'text', text: appTimeVal }
-                ]
-              }
-            ]
-          }
-        };
-
-        fetch('/api/whatsapp-helper/send-message', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            wabaPhoneId,
-            wabaToken,
-            payload
-          })
-        }).catch(err => console.error('Automated WhatsApp booking alert failed:', err));
-      }
+      // Note: WhatsApp confirmation alert is handled automatically by the Supabase database webhook trigger 
+      // on the dental_appointments table to prevent duplicate notifications.
     } catch (err: any) {
       console.error('Booking submission failed:', err);
       toast.error('Failed to reserve slot: ' + err.message);
