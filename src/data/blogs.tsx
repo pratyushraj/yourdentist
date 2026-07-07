@@ -427,6 +427,181 @@ export const BLOGS: BlogArticle[] = [
         </div>
       </div>
     )
+  },
+  {
+    slug: "teeth-whitening-in-patna",
+    title: "Laser Teeth Whitening in Patna: Procedure, Cost & Safety",
+    category: "Aesthetics",
+    readTime: "4 min read",
+    publishDate: "July 6, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Want a brighter smile? Learn about professional laser teeth whitening options, results, and what to expect during the session at YOUR DENTIST Patna.",
+    featuredImage: "/assets/yourdentist/laser_whitening.png",
+    metaDescription: "Looking for teeth whitening in Patna? Compare professional laser whitening vs. home kits, check treatment safety, and find out details at YOUR DENTIST.",
+    faqs: [
+      {
+        question: "How long does laser teeth whitening take in Patna?",
+        answer: "A typical in-office laser teeth whitening session at YOUR DENTIST Patna takes about 45 to 60 minutes, offering immediate shade improvement."
+      },
+      {
+        question: "Is professional teeth whitening safe for enamel?",
+        answer: "Yes, professional teeth whitening under dental supervision is 100% safe. We use high-quality, pH-balanced bleaching gels that protect your enamel."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          A bright, sparkling smile is one of your best social assets. However, consuming tea, coffee, mustard oil, or smoking can yellow teeth over time. If you want to restore your smile's natural brightness, here is a patient guide to <strong>laser teeth whitening in Patna</strong>.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Professional Laser Whitening vs. Over-the-Counter Kits</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          While many store-bought pastes and charcoal powders claim to whiten teeth, they often contain highly abrasive substances that permanently wear down your protective enamel. 
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Controlled Bleaching:</strong> We use medical-grade hydrogen peroxide gels activated by specialized light frequencies.</li>
+          <li><strong>Gum Protection:</strong> Before applying the whitening agent, a light-cured liquid barrier is applied to your gums to prevent chemical sensitivity.</li>
+          <li><strong>Predictable Results:</strong> Professional treatments can brighten your teeth by 3 to 8 shades in a single 60-minute appointment.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">What to Expect During Your Session</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          The procedure is simple, straightforward, and painless:
+        </p>
+        <ol className="list-decimal pl-6 space-y-3 text-neutral-700">
+          <li><strong>Shade Assessment:</strong> We measure your starting tooth shade using a standard dental guide.</li>
+          <li><strong>Teeth Cleaning:</strong> We perform a quick scaling to remove surface plaque and tartar for optimal whitening results.</li>
+          <li><strong>Gel Application:</strong> The whitening gel is carefully painted on the front surface of your teeth.</li>
+          <li><strong>Laser Activation:</strong> The dental laser activates the gel's oxygen molecules, lifting deep-set stains. This step is repeated in 2-3 cycles of 15 minutes.</li>
+        </ol>
+
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Keep your smile looking brand new. Book a cosmetic smile evaluation at YOUR DENTIST Patna today.
+          </p>
+        </div>
+      </div>
+    )
+  },
+  {
+    slug: "wisdom-tooth-extraction-in-patna",
+    title: "Wisdom Tooth Extraction in Patna: Painless Removal & Care",
+    category: "Oral Surgery",
+    readTime: "4 min read",
+    publishDate: "July 6, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Experiencing pain in the back of your jaw? Read our comprehensive patient guide to painless wisdom tooth removal, extraction procedure, and post-op care in Patna.",
+    featuredImage: "/assets/yourdentist/clinic_in_action.jpg",
+    metaDescription: "Need a wisdom tooth extraction in Patna? Learn about painless surgical removal, recovery tips, and custom consultations at YOUR DENTIST Patliputra Colony.",
+    faqs: [
+      {
+        question: "Is wisdom tooth extraction painful?",
+        answer: "No. At YOUR DENTIST Patna, we use advanced local anesthesia to ensure the entire extraction process is completely painless. Post-treatment recovery is managed with simple medications."
+      },
+      {
+        question: "How long does it take to recover from wisdom tooth surgery?",
+        answer: "Most patients recover within 3 to 5 days. We provide a detailed post-care guide and a complimentary follow-up appointment to monitor healing."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Wisdom teeth, or third molars, usually erupt between the ages of 17 and 25. If there is insufficient space in your jawbone, these teeth can become impacted (trapped under the bone or gums) or grow sideways, causing swelling, decay, and pressure-pain on adjacent healthy teeth. If you are experiencing discomfort, here is what you need to know about <strong>wisdom tooth extraction in Patna</strong>.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">When is Wisdom Tooth Removal Necessary?</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Not all wisdom teeth require removal, but an extraction is highly recommended in the following cases:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Pericoronitis:</strong> Recurrent infections in the gum flaps surrounding a partially erupted tooth.</li>
+          <li><strong>Damage to Second Molars:</strong> Sideways-growing wisdom molars pushing directly against neighboring roots, causing cavities.</li>
+          <li><strong>Cysts or Bone Loss:</strong> Fluid-filled sacs forming around impacted teeth, weakening the jawbone structure.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Painless Extractions at YOUR DENTIST</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Many patients delay extraction due to dental fear. However, modern surgical techniques make this a routine, low-discomfort process:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Advanced Anesthesia Protocols:</strong> We ensure the extraction site is fully numb. You will feel minor pressure, but zero sharp pain.</li>
+          <li><strong>Micro-Surgical Instruments:</strong> We use specialized instruments to extract teeth with minimal bone removal, expediting post-op healing.</li>
+          <li><strong>Stitch Care:</strong> When required, we place dissolvable sutures that vanish naturally within a week.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Crucial Post-Extraction Recovery Tips</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Following these guidelines during the first 24 hours ensures smooth healing and prevents dry socket:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>No Spitting or Using Straws:</strong> Creating suction in your mouth can dislodge the healing blood clot.</li>
+          <li><strong>Eat Soft, Cool Foods:</strong> Stick to ice creams, yogurts, or lukewarm porridge. Avoid hot, spicy, or crunchy foods.</li>
+          <li><strong>Apply Cold Packs:</strong> Place a cold compress on the outside of your cheek for 10-minute intervals to limit swelling.</li>
+        </ul>
+
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Experiencing wisdom tooth pressure or inflammation? Book an digital diagnostic scan at YOUR DENTIST Patliputra Colony for a quick, painless solution.
+          </p>
+        </div>
+      </div>
+    )
+  },
+  {
+    slug: "best-5-dentist-in-patna",
+    title: "5 Best Dentists in Patna: The Ultimate Comparison & Choices Guide",
+    category: "Guides",
+    readTime: "5 min read",
+    publishDate: "July 6, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Looking for the best dentist in Patna? Compare the top dental clinics, technology, qualifications, and patient transparency to make the right choice.",
+    featuredImage: "/assets/yourdentist/clinic_in_action.jpg",
+    metaDescription: "Compare the 5 best dentists in Patna. Read our comprehensive guide on clinic technology, qualifications, and patient transparency to make the right choice.",
+    faqs: [
+      {
+        question: "How do I find the best dentist in Patna?",
+        answer: "When choosing a dentist in Patna, prioritize clinics equipped with digital 3D scanners, certified specialists (such as implantologists or orthodontists), sterilization chambers, and clear pricing models."
+      },
+      {
+        question: "Who is the top dentist in Patna for painless treatments?",
+        answer: "Dr. Aryan Parmar at YOUR DENTIST Patna is highly rated for painless, digitized treatments using computerized anesthesia and micro-dentistry."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Finding the right dental care is crucial for long-term health. With hundreds of clinics in Bihar, patients often search for the <strong>best dentists in Patna</strong> to ensure they receive quality treatment. Here is an objective guide comparing what key metrics separate a premium dental studio from standard clinics.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">5 Key Criteria for Evaluating a Dental Clinic</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Before booking an appointment, verify if the clinic fulfills these vital standards:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Specialist Expertise:</strong> Ensure your dentist has dedicated postgraduate qualifications for specific procedures (e.g. Master of Dental Surgery for Implants or Orthodontics).</li>
+          <li><strong>Digital Treatment Planning:</strong> Leading clinics use 3D intraoral scanners and CBCT radiography instead of manual clay impressions.</li>
+          <li><strong>Hygiene and Sterilization:</strong> Look for class-B autoclave certification, ensuring medical-grade tool sterilization.</li>
+          <li><strong>Painless Delivery Systems:</strong> Painless dentistry is now achievable via computerized local anesthesia delivery systems.</li>
+          <li><strong>Transparent Pricing & Financing:</strong> Top clinics provide clear upfront quotes and offer interest-free monthly installment (EMI) options.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why YOUR DENTIST in Patna is Highly Recommended</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Led by <strong>Dr. Aryan Parmar</strong>, YOUR DENTIST is a premium dental center in New Patliputra Colony, Patna. The clinic stands out for:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Full Smile Makeovers:</strong> Certified computerized Veneers and Smile design treatments.</li>
+          <li><strong>Computerized Implantology:</strong> Safe, surgical-guided, pain-free dental implants.</li>
+          <li><strong>Affordable Premium Care:</strong> Zero-interest EMI packages through banking partners.</li>
+        </ul>
+
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Compare options and prioritize quality for your dental health. Contact YOUR DENTIST Patna today to book your detailed smile assessment session.
+          </p>
+        </div>
+      </div>
+    )
   }
 ];
 

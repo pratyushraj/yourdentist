@@ -201,6 +201,22 @@ const FAQS = [
   {
     question: "Do you accept health insurance policies?",
     answer: "Yes, we accept major health insurance plans covering dental procedures, including Star Health, Niva Bupa, and ICICI Lombard. Please consult our front desk before booking."
+  },
+  {
+    question: "Who is the best dentist in Patna for implants?",
+    answer: "Dr. Aryan Parmar at YOUR DENTIST, New Patliputra Colony is widely regarded as one of the top implantologists in Patna. The clinic uses computerized 3D CBCT scanning and guided surgery protocols to place implants with precision and zero pain."
+  },
+  {
+    question: "Where is YOUR DENTIST clinic located in Patna?",
+    answer: "YOUR DENTIST is located at Tara Kunj, House No. 111, Road No. 1F, Near Lotus Apartment, New Patliputra Colony, Patna – 800013. It is easily accessible from Patliputra Colony, Rajendra Nagar, and Bailey Road."
+  },
+  {
+    question: "How much does a dental implant cost in Patna?",
+    answer: "The cost of a dental implant in Patna varies by case complexity. At YOUR DENTIST, we provide complete transparent cost breakdowns during your free diagnostic consultation. We also offer 0% interest EMI plans to make treatment affordable."
+  },
+  {
+    question: "What are the clinic timings of YOUR DENTIST Patna?",
+    answer: "YOUR DENTIST Patna is open Monday to Saturday, 10:00 AM to 8:00 PM. We are closed on Sundays. You can book your slot by calling 062014 78033 or using the online booking form on our website."
   }
 ];
 
@@ -248,9 +264,14 @@ const PATIENT_CASES = [
 
 
 export default function App() {
-  const { slug } = useParams<{ slug?: string }>();
+  const { slug: routeSlug } = useParams<{ slug?: string }>();
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Manually parse slug from path as backup for flat SPA architectures
+  const pathParts = location.pathname.split('/');
+  const pathSlug = pathParts[1] === 'blog' && pathParts[2] ? pathParts[2] : undefined;
+  const slug = pathSlug || routeSlug;
 
   const isBlogIndex = location.pathname === '/blog' || location.pathname === '/blog/';
   const isBlogDetail = location.pathname.startsWith('/blog/') && slug;
@@ -502,6 +523,44 @@ export default function App() {
             "@type": "Dentist",
             "@id": "https://yourdentistpatna.in/#clinic",
             "name": "YOUR DENTIST - Dr. Aryan Parmar",
+            "logo": "https://yourdentistpatna.in/assets/yourdentist/logo_cropped.png",
+            "medicalSpecialty": "http://schema.org/Dentistry",
+            "knowsAbout": [
+              "Dental Implants",
+              "Clear Aligners",
+              "Invisible Braces",
+              "Teeth Gap Closure",
+              "Painless Root Canal Treatment (RCT)",
+              "Teeth Whitening",
+              "Teeth Scaling and Polishing",
+              "Cosmetic Smile Makeover",
+              "Veneers",
+              "Wisdom Tooth Extraction",
+              "Oral Surgery"
+            ],
+            "founder": {
+              "@type": "Person",
+              "name": "Dr. Aryan Parmar",
+              "jobTitle": "Lead Dentist & Implantologist",
+              "alumniOf": "Patna Dental College & Hospital"
+            },
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Patna"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Bihar"
+              }
+            ],
+            "paymentAccepted": [
+              "Cash",
+              "Credit Card",
+              "Debit Card",
+              "UPI",
+              "Financing (Bajaj Finance EMI)"
+            ],
             "image": [
               "https://yourdentistpatna.in/assets/yourdentist/exterior_day.jpg",
               "https://yourdentistpatna.in/assets/yourdentist/interior_operatory.jpg"
@@ -569,8 +628,63 @@ export default function App() {
                   "ratingValue": "5"
                 },
                 "reviewBody": "Best clinic in Patna for dental implants. Dr. Aryan explained the computerized surgery in detail and the process was extremely smooth."
+              },
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Priya Singh"
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5"
+                },
+                "reviewBody": "Best dentist in Patna for braces and clear aligners. My gap closure treatment finished in exactly 6 months as predicted. Totally transparent pricing."
+              },
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Rohit Verma"
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5"
+                },
+                "reviewBody": "Had my wisdom tooth extraction done here. Zero pain during the procedure. Recovery was smooth with the post-care instructions provided."
+              },
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Neha Gupta"
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5"
+                },
+                "reviewBody": "Laser teeth whitening result was outstanding. 6-8 shades improvement in one session. Best dental clinic in Patliputra Colony area without a doubt."
               }
             ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://yourdentistpatna.in/#website",
+            "url": "https://yourdentistpatna.in/",
+            "name": "YOUR DENTIST Patna",
+            "description": "Premium dental clinic in Patna offering painless implants, aligners, teeth whitening, and root canals by Dr. Aryan Parmar.",
+            "publisher": {
+              "@id": "https://yourdentistpatna.in/#clinic"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://yourdentistpatna.in/blog?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
           }
         ]}
       />
@@ -1714,6 +1828,67 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/* SECTION: Patient Resources & Guides */}
+      <section className="py-14 sm:py-28 px-6 bg-white relative overflow-hidden border-t border-neutral-100">
+        <div className="max-w-6xl mx-auto space-y-16 relative z-10">
+          <div className="text-center space-y-4">
+            <span className="text-[9px] font-black text-[#5b72ff] uppercase tracking-widest">PATIENT EDUCATION</span>
+            <h2 className="text-3xl sm:text-4xl font-black uppercase text-neutral-900 leading-tight">
+              Dental Guides & Insights <br />
+              <span className="font-editorial italic normal-case font-light text-neutral-500">Evidence-based advice from Dr. Aryan Parmar</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {BLOGS.filter(b => [
+              "best-5-dentist-in-patna",
+              "aligners-treatment-in-patna",
+              "best-dentist-in-patna-for-braces"
+            ].includes(b.slug)).map((blog) => (
+              <Link
+                key={blog.slug}
+                to={`/blog/${blog.slug}`}
+                className="group flex flex-col justify-between bg-neutral-50 border border-neutral-100 rounded-3xl overflow-hidden hover:border-[#5b72ff]/30 hover:shadow-lg hover:shadow-[#5b72ff]/5 transition-all duration-300"
+              >
+                <div>
+                  <div className="aspect-[16/10] overflow-hidden bg-neutral-100 border-b border-neutral-100">
+                    <img
+                      src={blog.featuredImage}
+                      alt={blog.title}
+                      className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6 space-y-3">
+                    <span className="text-[8px] font-black uppercase tracking-widest text-[#5b72ff] bg-[#5b72ff]/10 px-2.5 py-1 rounded-full">
+                      {blog.category}
+                    </span>
+                    <h3 className="text-sm font-black uppercase text-neutral-900 leading-snug group-hover:text-[#5b72ff] transition-colors line-clamp-2">
+                      {blog.title}
+                    </h3>
+                    <p className="text-xs text-neutral-500 font-medium leading-relaxed line-clamp-3">
+                      {blog.summary}
+                    </p>
+                  </div>
+                </div>
+                <div className="px-6 pb-6 pt-3 flex items-center justify-between border-t border-neutral-100/50 mt-4 text-[9px] font-black uppercase tracking-wider text-neutral-400 group-hover:text-neutral-900 transition-colors">
+                  <span>{blog.publishDate}</span>
+                  <span className="flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read Article &rarr;</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center pt-4">
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-neutral-900 text-white rounded-full text-xs font-black uppercase tracking-wider hover:bg-[#5b72ff] transition-colors"
+            >
+              View All Dental Guides &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
         </>
       ) : (
         /* BLOG VIEWS */
@@ -1939,7 +2114,7 @@ export default function App() {
         </div>
 
         <div className="max-w-6xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[9px] text-neutral-500 font-black uppercase tracking-widest font-mono">
-          <span>© 2026 YOUR DENTIST Patna. Managed by Creator Armour.</span>
+          <span>© 2026 YOUR DENTIST Patna. All rights reserved.</span>
           <span>Restorative Dental Marketing Bihar</span>
         </div>
       </footer>

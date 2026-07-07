@@ -1,0 +1,21 @@
+{
+  "name": "YOUR DENTIST - Dr. Aryan Parmar Patna",
+  "short_name": "YOUR DENTIST",
+  "description": "Premium painless dental clinic in Patna offering implants, invisible aligners, teeth whitening, and root canals.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/assets/yourdentist/logo_cropped.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/yourdentist/logo_cropped.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
