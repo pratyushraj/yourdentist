@@ -23,7 +23,7 @@ export const BLOGS: BlogArticle[] = [
     publishDate: "July 8, 2026",
     author: "Dr. Aryan Parmar",
     summary: "Yash Agarwal from Patna had a central diastema (gap between front teeth) that stopped him from smiling freely. Read how Dr. Aryan Parmar transformed his smile in a single visit at YOUR DENTIST, Patliputra Colony.",
-    featuredImage: "/assets/yourdentist/gap_after.png",
+    featuredImage: "/assets/yourdentist/yash_gap_after.png",
     metaDescription: "Read Yash Agarwal's real smile transformation story — gap closure treatment at YOUR DENTIST Patna by Dr. Aryan Parmar. One visit. Painless. Permanent results.",
     faqs: [
       {
@@ -68,7 +68,7 @@ export const BLOGS: BlogArticle[] = [
 
         <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6">
           <img
-            src="/assets/yourdentist/gap_before.png"
+            src="/assets/yourdentist/yash_gap_before.png"
             alt="Yash Agarwal before gap closure treatment at YOUR DENTIST Patna"
             className="w-full object-cover"
           />
@@ -99,7 +99,7 @@ export const BLOGS: BlogArticle[] = [
 
         <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6">
           <img
-            src="/assets/yourdentist/gap_after.png"
+            src="/assets/yourdentist/yash_gap_after.png"
             alt="Yash Agarwal after gap closure treatment at YOUR DENTIST Patna — beautiful smile transformation"
             className="w-full object-cover"
           />
