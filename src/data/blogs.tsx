@@ -16,6 +16,123 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "yash-agarwal-gap-closure-patna",
+    title: "Yash Agarwal's Smile Makeover: Gap Closure at YOUR DENTIST Patna",
+    category: "Patient Stories",
+    readTime: "4 min read",
+    publishDate: "July 8, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Yash Agarwal from Patna had a central diastema (gap between front teeth) that stopped him from smiling freely. Read how Dr. Aryan Parmar transformed his smile in a single visit at YOUR DENTIST, Patliputra Colony.",
+    featuredImage: "/assets/yourdentist/gap_after.png",
+    metaDescription: "Read Yash Agarwal's real smile transformation story — gap closure treatment at YOUR DENTIST Patna by Dr. Aryan Parmar. One visit. Painless. Permanent results.",
+    faqs: [
+      {
+        question: "Can front teeth gaps be closed in one visit in Patna?",
+        answer: "Yes. At YOUR DENTIST Patna, we routinely close front teeth gaps (diastema) using composite bonding in a single 45-minute visit. As seen in Yash Agarwal's case, the results are immediate, painless, and completely natural-looking."
+      },
+      {
+        question: "What is the best treatment for gap closure in Patna?",
+        answer: "For small to medium gaps, composite bonding is the fastest and most affordable option — completed in one session. For larger gaps or when combined with whitening, porcelain veneers offer a more permanent and premium result. Dr. Aryan Parmar at YOUR DENTIST will recommend the best option after a free diagnostic assessment."
+      },
+      {
+        question: "Is gap closure painful?",
+        answer: "No. Composite bonding for gap closure is completely painless and requires no anesthesia. The resin is shaped and bonded directly to your natural teeth without any drilling or grinding."
+      },
+      {
+        question: "Who is the best dentist in Patna for smile makeovers?",
+        answer: "Dr. Aryan Parmar at YOUR DENTIST, New Patliputra Colony, Patna is widely recognized as one of the top cosmetic dentists in Patna. With 5,000+ patients treated and a 5.0 Google rating, the clinic specializes in gap closures, veneers, implants, and full smile makeovers."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Yash Agarwal, a 24-year-old from Patna, had always felt self-conscious about the gap between his front teeth. Despite having a bright personality, he would instinctively cover his mouth when laughing or smiling in photos. He came to <strong>YOUR DENTIST, Patliputra Colony</strong> after searching for <strong>gap closure treatment in Patna</strong> and reading about Dr. Aryan Parmar's work on Google.
+        </p>
+
+        <div className="bg-neutral-50 border border-neutral-100 rounded-2xl p-6 my-6">
+          <h3 className="text-lg font-bold text-neutral-900 mb-2">Patient Profile</h3>
+          <ul className="space-y-1 text-sm text-neutral-600">
+            <li><strong>Patient:</strong> Yash Agarwal</li>
+            <li><strong>Age:</strong> 24 years</li>
+            <li><strong>Concern:</strong> Central diastema (gap between upper front teeth)</li>
+            <li><strong>Treatment:</strong> Composite Bonding Gap Closure</li>
+            <li><strong>Duration:</strong> 1 session, 45 minutes</li>
+            <li><strong>Result:</strong> Immediate, painless, natural-looking closure</li>
+          </ul>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">The Before: What Yash Came In With</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Yash presented with a visible central diastema — a gap between his two upper central incisors. His teeth were otherwise healthy, well-aligned, and in good condition. The gap was causing him aesthetic concern but no functional issues. After a thorough diagnostic assessment, Dr. Aryan Parmar confirmed that <strong>composite bonding</strong> was the ideal solution — fast, conservative (no drilling required), and completely painless.
+        </p>
+
+        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6">
+          <img
+            src="/assets/yourdentist/gap_before.png"
+            alt="Yash Agarwal before gap closure treatment at YOUR DENTIST Patna"
+            className="w-full object-cover"
+          />
+          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">Before: Yash's central diastema before treatment at YOUR DENTIST Patna</p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">The Treatment: Composite Bonding in One Visit</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Dr. Aryan Parmar used a shade-matched composite resin to gently sculpt and fill the gap between Yash's front teeth. The entire process took under 45 minutes, with no injections and no pain. The resin was carefully layered, shaped, and polished to blend seamlessly with his natural tooth structure.
+        </p>
+        <ol className="list-decimal pl-6 space-y-3 text-neutral-700">
+          <li>
+            <strong>Shade Matching:</strong> A composite resin color was selected to perfectly match Yash's natural tooth enamel.
+          </li>
+          <li>
+            <strong>Surface Preparation:</strong> The tooth surface was lightly etched with a bonding agent — no drilling required.
+          </li>
+          <li>
+            <strong>Resin Application:</strong> The composite was applied in thin layers and sculpted to the ideal tooth shape.
+          </li>
+          <li>
+            <strong>Light Curing:</strong> A UV curing light was used to harden each layer in seconds.
+          </li>
+          <li>
+            <strong>Final Polish:</strong> The bonded area was polished to a natural shine, indistinguishable from the surrounding teeth.
+          </li>
+        </ol>
+
+        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6">
+          <img
+            src="/assets/yourdentist/gap_after.png"
+            alt="Yash Agarwal after gap closure treatment at YOUR DENTIST Patna — beautiful smile transformation"
+            className="w-full object-cover"
+          />
+          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">After: Yash's smile after composite bonding gap closure at YOUR DENTIST Patna</p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Yash's Reaction</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-4">
+          <p className="text-neutral-700 italic leading-relaxed">
+            "I honestly didn't expect it to be this quick. I walked in, sat in the chair, and 45 minutes later I had a completely new smile. No pain, no injections — nothing. Dr. Aryan Parmar explained every step, which made me feel at ease. I've already recommended YOUR DENTIST to three of my friends."
+          </p>
+          <p className="text-sm font-bold text-neutral-500 mt-3">— Yash Agarwal, Patna</p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why YOUR DENTIST is the Best Choice for Gap Closure in Patna</h2>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Single-Visit Results:</strong> Most gap closures are completed in one 45-minute appointment.</li>
+          <li><strong>Zero Pain:</strong> Composite bonding requires no injections or drilling.</li>
+          <li><strong>Natural Look:</strong> Our shade-matched composite resin is virtually indistinguishable from your natural enamel.</li>
+          <li><strong>Experienced Specialist:</strong> Dr. Aryan Parmar has completed 500+ aesthetic bonding and veneer cases in Patna.</li>
+          <li><strong>Transparent Pricing:</strong> Full cost breakdown provided at the diagnostic visit. No hidden charges.</li>
+        </ul>
+
+        <div className="bg-neutral-900 text-white rounded-2xl p-6 my-8">
+          <p className="text-lg font-bold mb-2">Want a smile like Yash's?</p>
+          <p className="text-neutral-300 text-sm mb-4">Book your free smile assessment at YOUR DENTIST, New Patliputra Colony, Patna. Dr. Aryan Parmar will evaluate your case and recommend the best gap closure treatment for you.</p>
+          <p className="text-sm font-bold text-[#a0b0ff]">📞 062014 78033 &nbsp;|&nbsp; Mon–Sat: 10 AM – 8 PM</p>
+        </div>
+      </div>
+    )
+  },
+  {
+
     slug: "best-dentist-in-patna-for-braces",
     title: "Best Dentist in Patna for Braces: The Ultimate Patient Guide",
     category: "Orthodontics",
