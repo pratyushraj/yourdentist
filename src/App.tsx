@@ -695,11 +695,22 @@ export default function App() {
             title={activeBlog.title}
             description={activeBlog.metaDescription}
             image={`https://yourdentistpatna.in${activeBlog.featuredImage}`}
-            datePublished="2026-06-24"
+            datePublished={new Date(activeBlog.publishDate).toISOString().split('T')[0]}
+            dateModified={new Date(activeBlog.publishDate).toISOString().split('T')[0]}
             author={{ name: activeBlog.author, type: "Person" }}
             publisher={{ name: "YOUR DENTIST Patna", logo: "https://yourdentistpatna.in/assets/yourdentist/logo_cropped.png" }}
           />
           <FAQSchema faqs={activeBlog.faqs} />
+          {/* BreadcrumbList schema for rich breadcrumb results in Google */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourdentistpatna.in/" },
+              { "@type": "ListItem", "position": 2, "name": "Blogs", "item": "https://yourdentistpatna.in/blog" },
+              { "@type": "ListItem", "position": 3, "name": activeBlog.title, "item": `https://yourdentistpatna.in/blog/${activeBlog.slug}` }
+            ]
+          }) }} />
         </>
       ) : (
         <FAQSchema faqs={FAQS} />
@@ -2008,6 +2019,41 @@ export default function App() {
                     </div>
                   </div>
                 )}
+
+                {/* Related Articles — Internal Linking for SEO */}
+                {(() => {
+                  const related = BLOGS.filter(b => b.slug !== activeBlog.slug).slice(0, 3);
+                  if (related.length === 0) return null;
+                  return (
+                    <div className="border-t border-neutral-200 pt-10 mt-12 space-y-5">
+                      <h3 className="text-xl font-black uppercase tracking-tight text-neutral-900">
+                        Related Articles
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        {related.map(blog => (
+                          <Link
+                            key={blog.slug}
+                            to={`/blog/${blog.slug}`}
+                            className="group block rounded-2xl overflow-hidden border border-neutral-200 hover:border-[#5b72ff]/40 transition-all hover:shadow-md"
+                          >
+                            <div className="aspect-video bg-neutral-100 overflow-hidden">
+                              <img
+                                src={blog.featuredImage}
+                                alt={blog.title}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              />
+                            </div>
+                            <div className="p-4 space-y-1.5">
+                              <span className="text-[8px] font-black uppercase tracking-widest text-[#5b72ff]">{blog.category}</span>
+                              <p className="text-xs font-black uppercase tracking-tight text-neutral-900 leading-tight line-clamp-2">{blog.title}</p>
+                              <p className="text-[10px] text-neutral-500 font-bold">{blog.readTime}</p>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Sidebar Booking CTA */}
