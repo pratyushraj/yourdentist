@@ -16,6 +16,140 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "composite-veneers-patna-smile-makeover",
+    title: "Composite Veneers in Patna: The Fast Path to a Perfect Smile",
+    category: "Smile Makeover",
+    readTime: "5 min read",
+    publishDate: "July 9, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Want to fix chipped, discolored, or gapped teeth without waiting weeks? Discover how composite veneers at YOUR DENTIST Patna can completely transform your smile in just one visit.",
+    featuredImage: "/assets/yourdentist/composite_veneers_case.png",
+    metaDescription: "Get the smile of your dreams with composite veneers in Patna at YOUR DENTIST. Read our case study, compare costs with porcelain veneers, and book your smile makeover today.",
+    faqs: [
+      {
+        question: "What are composite veneers?",
+        answer: "Composite veneers are thin layers of tooth-colored composite resin applied directly to the front surface of your teeth to correct gaps, chips, stains, or minor misalignments in a single visit."
+      },
+      {
+        question: "How long do composite veneers last?",
+        answer: "Typically, composite veneers last between 4 to 8 years depending on your oral hygiene, diet, and habits (like teeth grinding or drinking coffee). They can be easily repaired or polished if they chip or stain over time."
+      },
+      {
+        question: "What is the difference between composite and porcelain veneers?",
+        answer: "Composite veneers are built directly on your teeth in a single visit, require minimal tooth preparation (no drilling), and are highly affordable. Porcelain veneers are custom-made in a laboratory, require two visits, have higher stain-resistance, and last 10–15 years."
+      },
+      {
+        question: "How much do veneers cost in Patna?",
+        answer: "The cost of veneers in Patna depends on the material (composite vs. porcelain) and the number of teeth treated. At YOUR DENTIST, we provide clear, transparent pricing during your initial diagnostic scan. We also offer 0% EMI payment options through Bajaj Finance."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          If you have ever felt self-conscious about gaps, discolorations, or chips in your front teeth, you are not alone. A beautiful smile is a key part of your self-confidence. Traditional cosmetic dental options often require multiple diagnostic visits and tooth shaving. Today, however, <strong>composite veneers in Patna</strong> offer a fast, conservative, and highly aesthetic solution that can be completed in a single afternoon.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Real Patient Case Study: Diastema & Aesthetic Alignment</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          At <strong>YOUR DENTIST, New Patliputra Colony</strong>, we recently treated a patient who wanted to fix a dark gap between her front teeth and improve the shape of her central incisors. She was looking for a solution that was non-invasive, fast, and within a moderate budget. 
+        </p>
+        <p className="text-neutral-700 leading-relaxed">
+          Dr. Aryan Parmar recommended direct composite veneers. The result speaks for itself:
+        </p>
+
+        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6">
+          <img
+            src="/assets/yourdentist/composite_veneers_case.png"
+            alt="Composite veneers before and after transformation at YOUR DENTIST Patna"
+            className="w-full object-cover"
+          />
+          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">Before (Left) vs After (Right): Front teeth gap closure and cosmetic alignment using composite veneers</p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Step-by-Step Procedure at YOUR DENTIST</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Unlike laboratory-made porcelain veneers, direct composite veneers are crafted artistically by the dentist directly on your teeth. Here is how Dr. Aryan Parmar completes the process:
+        </p>
+        <ol className="list-decimal pl-6 space-y-3 text-neutral-700">
+          <li>
+            <strong>Digital Diagnostics & Planning:</strong> We analyze your smile architecture to match the length, width, and proportions of your natural teeth.
+          </li>
+          <li>
+            <strong>Teeth Cleaning & Prep:</strong> The teeth are thoroughly cleaned and polished. A mild conditioning gel is applied to ensure a strong chemical bond — no tooth reduction or drilling is required.
+          </li>
+          <li>
+            <strong>Resin Layering:</strong> Using premium composite materials, Dr. Aryan carefully builds up the veneers layer by layer, shaping the margins to close gaps and fix misalignments.
+          </li>
+          <li>
+            <strong>Curing & Hardening:</strong> A special ultraviolet curing light is used to dry and set the composite resin in seconds.
+          </li>
+          <li>
+            <strong>Sculpting & High-Shine Polishing:</strong> The veneers are polished using specialized micro-grain disks to mimic the natural gloss and light reflection of real enamel.
+          </li>
+        </ol>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Composite vs. Porcelain Veneers: Which is right for you?</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="min-w-full divide-y divide-neutral-200 border border-neutral-100">
+            <thead className="bg-neutral-50">
+              <tr>
+                <th className="px-6 py-3 text-left text-xs font-bold text-neutral-500 uppercase">Feature</th>
+                <th className="px-6 py-3 text-left text-xs font-bold text-neutral-500 uppercase">Composite Veneers</th>
+                <th className="px-6 py-3 text-left text-xs font-bold text-neutral-500 uppercase">Porcelain Veneers</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-neutral-100 text-sm">
+              <tr>
+                <td className="px-6 py-4 font-bold text-neutral-800">Time Required</td>
+                <td className="px-6 py-4 text-[#5b72ff] font-bold">1 Visit (Single Day)</td>
+                <td className="px-6 py-4 text-neutral-600">2 Visits (10–14 days)</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4 font-bold text-neutral-800">Tooth Shaving</td>
+                <td className="px-6 py-4 text-neutral-600">Minimal to None (Reversible)</td>
+                <td className="px-6 py-4 text-neutral-600">Mild Shaving required</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4 font-bold text-neutral-800">Durability</td>
+                <td className="px-6 py-4 text-neutral-600">4 – 8 years</td>
+                <td className="px-6 py-4 text-neutral-600">10 – 15 years</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4 font-bold text-neutral-800">Stain Resistance</td>
+                <td className="px-6 py-4 text-neutral-600">Moderate</td>
+                <td className="px-6 py-4 text-neutral-600">Excellent (Stain-proof)</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4 font-bold text-neutral-800">Repairability</td>
+                <td className="px-6 py-4 text-neutral-600">Easy to repair in clinic</td>
+                <td className="px-6 py-4 text-neutral-600">Must be remade in lab</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Post-Treatment Care Tips</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          To maintain the high-gloss shine and maximize the life of your composite veneers:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Avoid Hard Foods:</strong> Do not use your front veneers to open packaging, bite nails, or chew ice.</li>
+          <li><strong>Limit Staining Agents:</strong> Rinse your mouth with water after drinking coffee, tea, red wine, or eating turmeric-rich foods.</li>
+          <li><strong>Regular Polishing:</strong> Schedule a professional cleaning and polishing visit at YOUR DENTIST every 6 months to maintain their bright luster.</li>
+        </ul>
+
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-6 rounded-r-xl my-8">
+          <h3 className="text-lg font-bold text-neutral-800 mb-2">Book Your Smile Design Session Today</h3>
+          <p className="text-neutral-600 text-sm mb-4">
+            If you are looking for the best cosmetic dentist in Patna to evaluate your suitability for composite veneers, book your slot at YOUR DENTIST, Tara Kunj, Patliputra Colony. We offer complete computerized diagnostics and flexible 0% interest EMI options.
+          </p>
+          <p className="text-sm font-bold text-neutral-800">📞 Call: 062014 78033 &nbsp;|&nbsp; Monday – Saturday: 10 AM – 8 PM</p>
+        </div>
+      </div>
+    )
+  },
+  {
+
     slug: "yash-agarwal-gap-closure-patna",
     title: "Yash Agarwal's Smile Makeover: Gap Closure at YOUR DENTIST Patna",
     category: "Patient Stories",
