@@ -47,7 +47,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   videoThumbnail,
 }) => {
   const location = useLocation();
-  const baseUrl = 'https://yourdentistpatna.in';
+  const baseUrl = 'https://www.yourdentistpatna.in';
   const currentUrl = canonicalUrl || `${baseUrl}${location.pathname}`;
 
   useEffect(() => {

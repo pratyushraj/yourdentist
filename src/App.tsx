@@ -512,18 +512,18 @@ export default function App() {
         }
         canonicalUrl={
           isBlogDetail && activeBlog
-            ? `https://yourdentistpatna.in/blog/${activeBlog.slug}`
+            ? `https://www.yourdentistpatna.in/blog/${activeBlog.slug}`
             : isBlogIndex
-            ? "https://yourdentistpatna.in/blog"
-            : "https://yourdentistpatna.in/"
+            ? "https://www.yourdentistpatna.in/blog"
+            : "https://www.yourdentistpatna.in/"
         }
         jsonLd={[
           {
             "@context": "https://schema.org",
             "@type": "Dentist",
-            "@id": "https://yourdentistpatna.in/#clinic",
+            "@id": "https://www.yourdentistpatna.in/#clinic",
             "name": "YOUR DENTIST - Dr. Aryan Parmar",
-            "logo": "https://yourdentistpatna.in/assets/yourdentist/logo_cropped.png",
+            "logo": "https://www.yourdentistpatna.in/assets/yourdentist/logo_cropped.png",
             "medicalSpecialty": "http://schema.org/Dentistry",
             "knowsAbout": [
               "Dental Implants",
@@ -562,10 +562,10 @@ export default function App() {
               "Financing (Bajaj Finance EMI)"
             ],
             "image": [
-              "https://yourdentistpatna.in/assets/yourdentist/exterior_day.jpg",
-              "https://yourdentistpatna.in/assets/yourdentist/interior_operatory.jpg"
+              "https://www.yourdentistpatna.in/assets/yourdentist/exterior_day.jpg",
+              "https://www.yourdentistpatna.in/assets/yourdentist/interior_operatory.jpg"
             ],
-            "url": "https://yourdentistpatna.in/",
+            "url": "https://www.yourdentistpatna.in/",
             "telephone": "+916201478033",
             "priceRange": "INR",
             "geo": {
@@ -670,18 +670,18 @@ export default function App() {
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "@id": "https://yourdentistpatna.in/#website",
-            "url": "https://yourdentistpatna.in/",
+            "@id": "https://www.yourdentistpatna.in/#website",
+            "url": "https://www.yourdentistpatna.in/",
             "name": "YOUR DENTIST Patna",
             "description": "Premium dental clinic in Patna offering painless implants, aligners, teeth whitening, and root canals by Dr. Aryan Parmar.",
             "publisher": {
-              "@id": "https://yourdentistpatna.in/#clinic"
+              "@id": "https://www.yourdentistpatna.in/#clinic"
             },
             "potentialAction": {
               "@type": "SearchAction",
               "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://yourdentistpatna.in/blog?q={search_term_string}"
+                "urlTemplate": "https://www.yourdentistpatna.in/blog?q={search_term_string}"
               },
               "query-input": "required name=search_term_string"
             }
@@ -694,11 +694,11 @@ export default function App() {
           <ArticleSchema
             title={activeBlog.title}
             description={activeBlog.metaDescription}
-            image={`https://yourdentistpatna.in${activeBlog.featuredImage}`}
+            image={`https://www.yourdentistpatna.in${activeBlog.featuredImage}`}
             datePublished={new Date(activeBlog.publishDate).toISOString().split('T')[0]}
             dateModified={new Date(activeBlog.publishDate).toISOString().split('T')[0]}
             author={{ name: activeBlog.author, type: "Person" }}
-            publisher={{ name: "YOUR DENTIST Patna", logo: "https://yourdentistpatna.in/assets/yourdentist/logo_cropped.png" }}
+            publisher={{ name: "YOUR DENTIST Patna", logo: "https://www.yourdentistpatna.in/assets/yourdentist/logo_cropped.png" }}
           />
           <FAQSchema faqs={activeBlog.faqs} />
           {/* BreadcrumbList schema for rich breadcrumb results in Google */}
@@ -706,9 +706,9 @@ export default function App() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourdentistpatna.in/" },
-              { "@type": "ListItem", "position": 2, "name": "Blogs", "item": "https://yourdentistpatna.in/blog" },
-              { "@type": "ListItem", "position": 3, "name": activeBlog.title, "item": `https://yourdentistpatna.in/blog/${activeBlog.slug}` }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.yourdentistpatna.in/" },
+              { "@type": "ListItem", "position": 2, "name": "Blogs", "item": "https://www.yourdentistpatna.in/blog" },
+              { "@type": "ListItem", "position": 3, "name": activeBlog.title, "item": `https://www.yourdentistpatna.in/blog/${activeBlog.slug}` }
             ]
           }) }} />
         </>

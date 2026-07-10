@@ -38,13 +38,13 @@ interface BreadcrumbSchemaProps {
 export const ArticleSchema: React.FC<ArticleSchemaProps> = ({
   title,
   description,
-  image = 'https://yourdentistpatna.in/assets/yourdentist/exterior_day.jpg',
+  image = 'https://www.yourdentistpatna.in/assets/yourdentist/exterior_day.jpg',
   datePublished,
   dateModified,
   author = { name: 'YOUR DENTIST', type: 'Organization' },
   publisher = {
     name: 'YOUR DENTIST',
-    logo: 'https://yourdentistpatna.in/assets/yourdentist/logo_cropped.png',
+    logo: 'https://www.yourdentistpatna.in/assets/yourdentist/logo_cropped.png',
   },
 }) => {
   useEffect(() => {
@@ -65,12 +65,12 @@ export const ArticleSchema: React.FC<ArticleSchemaProps> = ({
         name: publisher.name,
         logo: {
           '@type': 'ImageObject',
-          url: publisher.logo || 'https://yourdentistpatna.in/assets/yourdentist/logo_cropped.png',
+          url: publisher.logo || 'https://www.yourdentistpatna.in/assets/yourdentist/logo_cropped.png',
         },
       },
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': typeof window !== 'undefined' ? window.location.href : 'https://yourdentistpatna.in',
+        '@id': typeof window !== 'undefined' ? window.location.href : 'https://www.yourdentistpatna.in',
       },
     };
 
