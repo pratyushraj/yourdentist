@@ -150,6 +150,7 @@ const BEFORE_AFTER_IMAGES = [
 const CLINIC_PHOTOS = [
   { id: "operatory", name: "Operatory Studio", desc: "Sterile surgical operatory with digital alignment systems.", img: "/assets/yourdentist/interior_operatory.jpg" },
   { id: "mastership", name: "Implantology Mastership", desc: "Dr. Aryan Parmar's official Clinical Implant Mastership board certification.", img: "/assets/yourdentist/implantology_mastership.jpg" },
+  { id: "award", name: "State Award Winner", desc: "Dr. Aryan Parmar receiving the Best Youngest Dentist in Bihar award from the Indian Dental Association.", img: "/assets/yourdentist/best_young_dentist_award.jpg" },
   { id: "consult", name: "Clinical Consult", desc: "Dr. Aryan performing diagnostic digital scanner screening with a patient.", img: "/assets/yourdentist/dr_with_patient_1.png" },
   { id: "treatment", name: "Clinical Action", desc: "Dr. Aryan operating under computerized micro-dentistry systems.", img: "/assets/yourdentist/clinic_in_action.jpg" },
   { id: "lobby", name: "Executive Lobby", desc: "Patient lounge and custom wall branding reception.", img: "/assets/yourdentist/wall_brand.png" },
@@ -544,7 +545,10 @@ export default function App() {
               "name": "Dr. Aryan Parmar",
               "jobTitle": "Lead Dentist & Implantologist",
               "alumniOf": "Patna Dental College & Hospital",
-              "award": "Clinical Implant Mastership (DENTIS)"
+              "award": [
+                "Clinical Implant Mastership (DENTIS)",
+                "Best Youngest Dentist 2022 Bihar (IDA State Program)"
+              ]
             },
             "areaServed": [
               {
@@ -1279,9 +1283,9 @@ export default function App() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   { label: "Clinical Volume", value: "5,000+ Patients Treated" },
+                  { label: "State Recognition", value: "Best Youngest Dentist Bihar" },
                   { label: "Patient Feedback", value: "163+ Five Star Reviews" },
-                  { label: "Active Practice", value: "Patna & Purnea Studios" },
-                  { label: "Diagnostic Tech", value: "Modern Digital Dentistry" }
+                  { label: "Active Practice", value: "Patna & Purnea Studios" }
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 bg-white border border-neutral-200/80 p-3.5 rounded-xl shadow-sm">
                     <div className="w-5.5 h-5.5 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-[10px] font-bold shrink-0">
