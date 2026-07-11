@@ -16,6 +16,89 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "free-dental-camp-patna-community-dentistry",
+    title: "Free Dental Camp in Patna: Community Health Initiative by YOUR DENTIST",
+    category: "Community Service",
+    readTime: "4 min read",
+    publishDate: "July 11, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "YOUR DENTIST organized a Free Dental Camp in Patna to check, diagnose, and guide local families on oral hygiene. Read about the event highlights, key findings, and future camp schedules.",
+    featuredImage: "/assets/yourdentist/dental_camp.jpg",
+    metaDescription: "Read about the Free Dental Camp in Patna hosted by YOUR DENTIST. Free oral health screening, expert diagnostic sessions, and community dental care schedules.",
+    faqs: [
+      {
+        question: "When is the next free dental camp in Patna?",
+        answer: "YOUR DENTIST Patna organizes community dental camps periodically. To receive notifications on future schedules, registration links, and checkup slots, call our front desk at 062014 78033 or subscribe to our newsletter."
+      },
+      {
+        question: "What is included in the free dental checkup camp?",
+        answer: "Our free checkup camps include visual oral screening, dental diagnostics, dental hygiene guidance, orthodontic assessments, and custom treatment planning. Basic procedures are also offered at exclusive camp discounts."
+      },
+      {
+        question: "Where was the dental camp held in Patna?",
+        answer: "Our recent free oral screening camp was held in the local Patliputra Colony community center to provide easy diagnostic access to families, children, and elderly residents in North and West Patna."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Access to high-quality dental care is a cornerstone of a healthy community. To support families in Patna and raise awareness about oral health, the clinical team at <strong>YOUR DENTIST, New Patliputra Colony</strong>, successfully hosted a comprehensive <strong>Free Dental Camp in Patna</strong>. Led by Dr. Aryan Parmar and senior dental associates, the camp focused on visual oral screenings, expert diagnostics, and education on preventing oral diseases.
+        </p>
+
+        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6">
+          <img
+            src="/assets/yourdentist/dental_camp.jpg"
+            alt="Dr. Aryan Parmar and clinical team at the Free Dental Camp in Patna hosted by YOUR DENTIST"
+            className="w-full object-cover"
+          />
+          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">Community Outreach: Dr. Aryan Parmar and team receiving flowers at the Free Dental Camp in Patna</p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Highlights & Patient Impact</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          The event was open to all local residents, with a particular focus on children, teenagers, and elderly citizens who benefit from early preventive diagnostics. Here are the key highlights of the day:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>150+ Patient Screenings:</strong> Over 150 local residents received free visual diagnostics and clinical assessments.</li>
+          <li><strong>Orthodontic Screening:</strong> Specialized screening for kids and teenagers to identify early signs of teeth misalignment and recommend braces or clear aligners.</li>
+          <li><strong>Hygiene Kits & Education:</strong> Free dental hygiene kits (brushes, pastes, and clinical guides) were distributed to raise awareness on brushing techniques and plaque control.</li>
+        </ul>
+
+        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6">
+          <img
+            src="/assets/yourdentist/dental_camp_team.png"
+            alt="YOUR DENTIST Patna clinical staff and doctors at the free dental camp event"
+            className="w-full object-cover"
+          />
+          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">Team Dedication: Our doctors, clinical staff, and support team at the camp venue</p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Common Oral Health Findings in Patna</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          During the screening camp, our diagnostic board identified several recurring oral health issues among Patna residents:
+        </p>
+        <ol className="list-decimal pl-6 space-y-3 text-neutral-700">
+          <li>
+            <strong>Early Stage Cavities (Teens & Young Adults):</strong> Caused by high sugar intake and inconsistent brushing habits. These can be treated with simple fillings before they require painful root canals.
+          </li>
+          <li>
+            <strong>Plaque Accumulation & Gingivitis:</strong> Gum bleeding and tartar build-up were found in over 60% of screened adults. Professional scaling (teeth cleaning) every 6 months was highly recommended to prevent gum deterioration.
+          </li>
+          <li>
+            <strong>Gaps & Bite Misalignment:</strong> Many teenagers presented with untreated diastema (gaps) and orthodontic issues, which can be easily resolved using modern cosmetic bonding or invisible aligners.
+          </li>
+        </ol>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Join Our Next Community Dental Initiative</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            YOUR DENTIST is committed to raising oral health standards in Patna. If you want us to host a free screening camp in your school, society, or corporate office, please get in touch with our team at <strong>062014 78033</strong> or visit our clinic at Tara Kunj, New Patliputra Colony.
+          </p>
+        </div>
+      </div>
+    )
+  },
+  {
     slug: "composite-veneers-patna-smile-makeover",
     title: "Composite Veneers in Patna: The Fast Path to a Perfect Smile",
     category: "Smile Makeover",
