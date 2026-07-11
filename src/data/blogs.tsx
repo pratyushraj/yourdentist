@@ -724,10 +724,10 @@ export const BLOGS: BlogArticle[] = [
               className="w-full sm:w-[180px] rounded-xl border border-neutral-200 object-cover shadow-sm"
             />
             <div className="space-y-2 text-left">
-              <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-600 rounded text-[8px] font-black uppercase tracking-wider">Clinical Credential</span>
-              <h4 className="text-sm font-black uppercase tracking-wide text-neutral-900">Clinical Implantology Mastership</h4>
+              <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-600 rounded text-[8px] font-black uppercase tracking-wider">Clinical Credentials</span>
+              <h4 className="text-sm font-black uppercase tracking-wide text-neutral-900">Advanced Implantology Training</h4>
               <p className="text-xs text-neutral-500 leading-relaxed font-medium">
-                Dr. Aryan Parmar holds an official <strong>Clinical Implant Mastership</strong> board certification, demonstrating expertise in advanced 3D guided surgery, clinical diagnostics, and complex prosthodontic implant placements.
+                Dr. Aryan Parmar holds an official <strong>Clinical Implant Mastership</strong> board certification and has completed a prestigious international <strong>Fellowship in Implantology in South Korea</strong>, specializing in advanced 3D guided surgery, digital smile scanning, and complex prosthodontic oral rehabilitation.
               </p>
             </div>
           </div>

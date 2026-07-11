@@ -548,6 +548,7 @@ export default function App() {
               "alumniOf": "Patna Dental College & Hospital",
               "award": [
                 "Clinical Implant Mastership (DENTIS)",
+                "Fellowship in Implantology (South Korea)",
                 "Fellowship in Aesthetic Dentistry (FAD)",
                 "Best Youngest Dentist 2022 Bihar (IDA State Program)"
               ]
@@ -1277,7 +1278,7 @@ export default function App() {
               <div className="space-y-3">
                 <h3 className="text-lg font-black uppercase text-neutral-900">Clinical Excellence & Authority</h3>
                 <p className="text-xs text-neutral-500 font-medium leading-relaxed">
-                  Our specialist board holds verified MDS/BDS credentials from India's premier dental institutes, executing combined therapy with computerized precision. Dr. Aryan treats patients at two primary locations: Patna and Purnea.
+                  Our specialist board holds verified MDS/BDS credentials from India's premier dental institutes and has completed an international Fellowship in Implantology from South Korea, executing combined therapy with computerized precision. Dr. Aryan treats patients at two primary locations: Patna and Purnea.
                 </p>
               </div>
 
