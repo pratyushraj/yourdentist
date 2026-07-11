@@ -128,6 +128,12 @@ const renderServiceIcon = (iconName: string) => {
 
 const BEFORE_AFTER_IMAGES = [
   {
+    title: "Veneer Smile Makeover",
+    before: "/assets/yourdentist/veneer_smile_before.jpg",
+    after: "/assets/yourdentist/veneer_smile_after.jpg",
+    desc: "Complete smile transformation with porcelain veneers — brighter, aligned, and natural-looking teeth."
+  },
+  {
     title: "Teeth Gap Closure",
     before: "/assets/yourdentist/gap_before.png",
     after: "/assets/yourdentist/gap_after.png",
