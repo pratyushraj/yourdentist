@@ -221,6 +221,23 @@ export const BLOGS: BlogArticle[] = [
           <li><strong>Regular Polishing:</strong> Schedule a professional cleaning and polishing visit at YOUR DENTIST every 6 months to maintain their bright luster.</li>
         </ul>
 
+        <div className="bg-neutral-50 border border-neutral-200/60 rounded-2xl p-5 my-8 space-y-4">
+          <div className="flex flex-col sm:flex-row gap-5 items-center">
+            <img
+              src="/assets/yourdentist/aesthetic_dentistry_fellowship.jpg"
+              alt="Dr. Aryan Parmar Fellowship in Aesthetic Dentistry FAD board certification"
+              className="w-full sm:w-[180px] rounded-xl border border-neutral-200 object-cover shadow-sm"
+            />
+            <div className="space-y-2 text-left">
+              <span className="px-2 py-0.5 bg-[#5b72ff]/10 text-[#5b72ff] rounded text-[8px] font-black uppercase tracking-wider">Cosmetic Credential</span>
+              <h4 className="text-sm font-black uppercase tracking-wide text-neutral-900">Aesthetic Dentistry Fellowship</h4>
+              <p className="text-xs text-neutral-500 leading-relaxed font-medium">
+                Dr. Aryan Parmar holds an official <strong>Fellowship in Aesthetic Dentistry (FAD)</strong> board certification, demonstrating specialized training in cosmetic smile makeovers, dental veneer sculpting, and advanced facial harmony analysis.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-6 rounded-r-xl my-8">
           <h3 className="text-lg font-bold text-neutral-800 mb-2">Book Your Smile Design Session Today</h3>
           <p className="text-neutral-600 text-sm mb-4">

@@ -150,6 +150,7 @@ const BEFORE_AFTER_IMAGES = [
 const CLINIC_PHOTOS = [
   { id: "operatory", name: "Operatory Studio", desc: "Sterile surgical operatory with digital alignment systems.", img: "/assets/yourdentist/interior_operatory.jpg" },
   { id: "mastership", name: "Implantology Mastership", desc: "Dr. Aryan Parmar's official Clinical Implant Mastership board certification.", img: "/assets/yourdentist/implantology_mastership.jpg" },
+  { id: "fellowship", name: "Aesthetic Fellowship", desc: "Dr. Aryan Parmar receiving his Fellowship in Aesthetic Dentistry (FAD) board certification.", img: "/assets/yourdentist/aesthetic_dentistry_fellowship.jpg" },
   { id: "award", name: "State Award Winner", desc: "Dr. Aryan Parmar receiving the Best Youngest Dentist in Bihar award from the Indian Dental Association.", img: "/assets/yourdentist/best_young_dentist_award.jpg" },
   { id: "consult", name: "Clinical Consult", desc: "Dr. Aryan performing diagnostic digital scanner screening with a patient.", img: "/assets/yourdentist/dr_with_patient_1.png" },
   { id: "treatment", name: "Clinical Action", desc: "Dr. Aryan operating under computerized micro-dentistry systems.", img: "/assets/yourdentist/clinic_in_action.jpg" },
@@ -547,6 +548,7 @@ export default function App() {
               "alumniOf": "Patna Dental College & Hospital",
               "award": [
                 "Clinical Implant Mastership (DENTIS)",
+                "Fellowship in Aesthetic Dentistry (FAD)",
                 "Best Youngest Dentist 2022 Bihar (IDA State Program)"
               ]
             },
