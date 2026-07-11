@@ -1,4 +1,58 @@
+# Standard search engine crawlers
 User-agent: *
 Allow: /
 
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Google AI (Gemini training / Search Generative Experience)
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# OpenAI browsing plugin
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI (Llama)
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# Bing / Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Common AI web scrapers / indexers
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# Sitemap location
 Sitemap: https://www.yourdentistpatna.in/sitemap.xml
