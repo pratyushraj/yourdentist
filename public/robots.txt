@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdentistpatna.in/sitemap.xml
+Sitemap: https://www.yourdentistpatna.in/sitemap.xml

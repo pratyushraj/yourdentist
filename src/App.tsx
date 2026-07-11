@@ -496,6 +496,34 @@ export default function App() {
             ? "Dental Blogs & FAQ Guides | YOUR DENTIST Patna"
             : "Best Dentist in Patna | Painless Implant & Aligner Clinic | YOUR DENTIST"
         }
+        keywords={
+          isBlogDetail && activeBlog
+            ? [activeBlog.title, 'dentist in Patna', 'dental clinic Patna', 'Dr. Aryan Parmar']
+            : isBlogIndex
+            ? ['dental blog Patna', 'dentist FAQ Patna', 'dental tips Bihar', 'best dentist Patna']
+            : [
+                'best dentist in Patna',
+                'dentist in Patna',
+                'dental clinic Patna',
+                'dental implants Patna',
+                'teeth whitening Patna',
+                'clear aligners Patna',
+                'invisible braces Patna',
+                'braces in Patna',
+                'root canal Patna',
+                'dental veneers Patna',
+                'best dental clinic Patliputra Colony',
+                'painless dentist Patna',
+                'teeth gap closure Patna',
+                'Dr Aryan Parmar dentist',
+                'smile makeover Patna',
+                'tooth extraction Patna',
+                'dental scaling Patna',
+                'implantologist Patna',
+                'cosmetic dentist Patna',
+                'teeth cleaning Patna Bihar'
+              ]
+        }
         description={
           isBlogDetail && activeBlog
             ? activeBlog.metaDescription
@@ -513,6 +541,18 @@ export default function App() {
             ? activeBlog.title
             : "YOUR DENTIST Patna Clinic"
         }
+        type={isBlogDetail && activeBlog ? 'article' : 'website'}
+        publishedTime={
+          isBlogDetail && activeBlog
+            ? new Date(activeBlog.publishDate).toISOString()
+            : undefined
+        }
+        modifiedTime={
+          isBlogDetail && activeBlog
+            ? new Date(activeBlog.publishDate).toISOString()
+            : undefined
+        }
+        author={isBlogDetail && activeBlog ? activeBlog.author : 'YOUR DENTIST'}
         canonicalUrl={
           isBlogDetail && activeBlog
             ? `https://www.yourdentistpatna.in/blog/${activeBlog.slug}`
@@ -605,8 +645,11 @@ export default function App() {
                 "closes": "20:00"
               }
             ],
+            "hasMap": "https://maps.app.goo.gl/qGPvkFLWjnF8XkWy7",
             "sameAs": [
-              "https://www.instagram.com/yourdentist_patna/"
+              "https://www.instagram.com/yourdentist_patna/",
+              "https://maps.app.goo.gl/qGPvkFLWjnF8XkWy7",
+              "https://www.justdial.com/Patna/YOUR-DENTIST-Near-Lotus-Apartment-New-Patliputra-Colony/0612PX612-X612-240425112218-W1Y7_BZDET"
             ],
             "aggregateRating": {
               "@type": "AggregateRating",
@@ -831,6 +874,7 @@ export default function App() {
               <h1 className="text-[42px] sm:text-5xl lg:text-[62px] font-black uppercase tracking-tight leading-[0.9] text-neutral-900">
                 Smile With <br />
                 <span className="text-neutral-500 font-editorial italic normal-case block font-light mt-1">Confidence Again</span>
+                <span className="sr-only"> — Best Dentist in Patna | Dr. Aryan Parmar | YOUR DENTIST New Patliputra Colony</span>
               </h1>
 
               {/* Trust stats directly below the headline */}
