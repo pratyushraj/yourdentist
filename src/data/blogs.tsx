@@ -616,6 +616,23 @@ export const BLOGS: BlogArticle[] = [
           </li>
         </ol>
 
+        <div className="bg-neutral-50 border border-neutral-200/60 rounded-2xl p-5 my-8 space-y-4">
+          <div className="flex flex-col sm:flex-row gap-5 items-center">
+            <img
+              src="/assets/yourdentist/implantology_mastership.jpg"
+              alt="Dr. Aryan Parmar clinical implant mastership board certification"
+              className="w-full sm:w-[180px] rounded-xl border border-neutral-200 object-cover shadow-sm"
+            />
+            <div className="space-y-2 text-left">
+              <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-600 rounded text-[8px] font-black uppercase tracking-wider">Clinical Credential</span>
+              <h4 className="text-sm font-black uppercase tracking-wide text-neutral-900">Clinical Implantology Mastership</h4>
+              <p className="text-xs text-neutral-500 leading-relaxed font-medium">
+                Dr. Aryan Parmar holds an official <strong>Clinical Implant Mastership</strong> board certification, demonstrating expertise in advanced 3D guided surgery, clinical diagnostics, and complex prosthodontic implant placements.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
           <p className="text-sm font-semibold text-neutral-800">
             Interested in permanent tooth replacement? Book a diagnostic checkup at YOUR DENTIST Patna to receive a customized implant treatment blueprint. We offer zero-interest EMI financing plans for your comfort.
