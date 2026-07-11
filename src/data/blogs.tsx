@@ -16,6 +16,170 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "dental-implant-case-study-patna-missing-teeth",
+    title: "Real Patient Story: Replacing 2 Missing Teeth with Dental Implants in Patna",
+    category: "Implants",
+    readTime: "5 min read",
+    publishDate: "July 11, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "A real patient came to YOUR DENTIST with two missing lower front teeth. See the complete before-and-after of a dual dental implant procedure performed by Dr. Aryan Parmar using premium DENTIS titanium implants.",
+    featuredImage: "/assets/yourdentist/implant_case_before_after.png",
+    metaDescription: "Real before-and-after case of 2 missing teeth replaced with dental implants at YOUR DENTIST Patna. See the procedure, DENTIS implant technology, and final ceramic crown results by Dr. Aryan Parmar.",
+    faqs: [
+      {
+        question: "How many sittings does a dental implant take in Patna?",
+        answer: "A standard dental implant at YOUR DENTIST Patna involves 2–3 sittings: the implant placement surgery, a healing/osseointegration period of 2–4 months, and the final crown fitting. The surgical session itself takes 45–90 minutes depending on the number of implants."
+      },
+      {
+        question: "Is dental implant surgery painful?",
+        answer: "Dental implant surgery at YOUR DENTIST is performed under strong local anaesthesia — you will feel zero pain during the procedure. Mild soreness for 2–3 days after surgery is normal and is easily managed with prescribed pain relief. Most patients return to work the very next day."
+      },
+      {
+        question: "How much do dental implants cost in Patna?",
+        answer: "Dental implants at YOUR DENTIST Patna start from ₹25,000 per tooth using premium DENTIS implants from South Korea. 0% EMI financing is available through Bajaj Finance. The cost includes implant placement, healing abutment, and final ceramic crown."
+      },
+      {
+        question: "How long do dental implants last?",
+        answer: "With proper oral hygiene — brushing twice daily, regular 6-month checkups, and avoiding hard foods — dental implants can last 15–25 years or even a lifetime. The titanium post fuses with the jawbone permanently through a process called osseointegration."
+      },
+      {
+        question: "What brand of implants does YOUR DENTIST use?",
+        answer: "YOUR DENTIST uses DENTIS implants — a premium South Korean implant system. Dr. Aryan Parmar holds a Clinical Implant Mastership from DENTIS and a Fellowship in Implantology from South Korea, giving him specialized expertise in this implant system."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Missing teeth are more than just a cosmetic concern — they affect chewing, speech, and even jawbone density over time. When this patient from Patna walked into <strong>YOUR DENTIST, New Patliputra Colony</strong>, they had two missing lower front teeth that had been left untreated for over a year. Dr. Aryan Parmar evaluated the case and recommended <strong>two individual dental implants</strong> — the gold-standard, permanent solution for missing teeth.
+        </p>
+
+        {/* Before/After Image */}
+        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6 shadow-sm">
+          <img
+            src="/assets/yourdentist/implant_case_before_after.png"
+            alt="Before and after dental implant case at YOUR DENTIST Patna — two missing lower teeth replaced with DENTIS titanium implants and ceramic crowns by Dr. Aryan Parmar"
+            className="w-full object-cover"
+          />
+          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">
+            Real Patient Case: <strong>Before</strong> (titanium abutment posts placed) → <strong>After</strong> (ceramic crowns fitted, smile fully restored) | YOUR DENTIST Patna
+          </p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">The Problem: Two Missing Lower Teeth</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          The patient presented with two adjacent missing teeth in the lower front region of the jaw. The remaining teeth had begun to shift slightly toward the gap — a common and accelerating problem when missing teeth are left untreated. The patient reported difficulty chewing, self-consciousness while smiling, and mild speech difficulty.
+        </p>
+        <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl my-4">
+          <p className="text-sm font-semibold text-neutral-800">
+            ⚠️ <strong>Did You Know?</strong> Leaving a missing tooth untreated for over 6 months causes the jawbone to shrink (resorb) below the gap — making future implant placement harder and sometimes requiring a bone graft. Early treatment is always better.
+          </p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">The Solution: DENTIS Titanium Implants</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          After reviewing the patient's CBCT (3D jaw X-ray) scan and bone density measurements, Dr. Aryan Parmar confirmed that bone volume was sufficient for direct implant placement — no bone grafting required. Two <strong>DENTIS titanium implants</strong> (South Korea) were selected for this case.
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700 mt-3">
+          <li><strong>DENTIS Implants:</strong> Premium South Korean titanium implant brand — known for superior osseointegration rates and long-term stability. Dr. Parmar holds a Clinical Mastership from DENTIS.</li>
+          <li><strong>Minimally Invasive Surgery:</strong> Guided implant placement with a surgical stent ensures precise positioning with minimal tissue disruption.</li>
+          <li><strong>Single-Stage Protocol:</strong> Healing abutments were placed at the same time as the implants, reducing the total number of surgical visits.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Step-by-Step: What Happened at YOUR DENTIST</h2>
+        <ol className="list-decimal pl-6 space-y-4 text-neutral-700">
+          <li>
+            <strong>Consultation & 3D Scan (Day 1):</strong> CBCT scan taken to assess bone height, width, and nerve proximity. Treatment plan created and shared with the patient with full cost transparency.
+          </li>
+          <li>
+            <strong>Implant Placement Surgery (Day 2):</strong> Under local anaesthesia, two small titanium posts were drilled into the jawbone at precise angles and depths as planned. The entire surgery took under 60 minutes. The patient felt no pain during the procedure.
+          </li>
+          <li>
+            <strong>Osseointegration — Healing Phase (Weeks 6–12):</strong> The titanium implants fused with the surrounding bone (osseointegration). Temporary guidance was provided for diet and care during this period.
+          </li>
+          <li>
+            <strong>Final Crown Fitting (Day of Completion):</strong> Custom-shade-matched ceramic crowns were attached to the healed implant abutments. The patient left the clinic with a fully restored, natural-looking smile — as seen in the "After" photo above.
+          </li>
+        </ol>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">The Result: A Complete, Natural Smile</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          As visible in the clinical photograph above, the two ceramic implant crowns blend seamlessly with the patient's natural teeth. The shape, shade, and spacing were custom-designed to match the upper arch. The patient reported immediate improvement in chewing ability, speech, and confidence.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+          <div className="bg-neutral-50 border border-neutral-100 rounded-2xl p-4 text-center">
+            <span className="block text-2xl font-black text-neutral-900">2</span>
+            <span className="block text-xs text-neutral-500 font-semibold uppercase tracking-wider mt-1">Implants Placed</span>
+          </div>
+          <div className="bg-neutral-50 border border-neutral-100 rounded-2xl p-4 text-center">
+            <span className="block text-2xl font-black text-neutral-900">~10 Weeks</span>
+            <span className="block text-xs text-neutral-500 font-semibold uppercase tracking-wider mt-1">Total Treatment Time</span>
+          </div>
+          <div className="bg-neutral-50 border border-neutral-100 rounded-2xl p-4 text-center">
+            <span className="block text-2xl font-black text-neutral-900">Zero</span>
+            <span className="block text-xs text-neutral-500 font-semibold uppercase tracking-wider mt-1">Pain During Surgery</span>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Dental Implants Are the Best Option for Missing Teeth</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Unlike removable dentures or fixed bridges, <strong>dental implants are the only solution that replaces both the root and the crown</strong>. This is critical because it's the root that stimulates the jawbone and prevents bone loss.
+        </p>
+        <div className="overflow-x-auto my-4">
+          <table className="w-full text-sm text-left border-collapse">
+            <thead>
+              <tr className="bg-neutral-100">
+                <th className="px-4 py-3 font-bold text-neutral-800 rounded-tl-xl">Feature</th>
+                <th className="px-4 py-3 font-bold text-[#5b72ff]">Implants ✓</th>
+                <th className="px-4 py-3 font-bold text-neutral-500">Bridge</th>
+                <th className="px-4 py-3 font-bold text-neutral-500 rounded-tr-xl">Denture</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-neutral-100">
+              <tr>
+                <td className="px-4 py-3 font-medium text-neutral-700">Bone Loss Prevention</td>
+                <td className="px-4 py-3 text-green-600 font-bold">✅ Yes</td>
+                <td className="px-4 py-3 text-red-500">❌ No</td>
+                <td className="px-4 py-3 text-red-500">❌ No</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 font-medium text-neutral-700">Natural Feel</td>
+                <td className="px-4 py-3 text-green-600 font-bold">✅ Yes</td>
+                <td className="px-4 py-3 text-yellow-600">⚠️ Partial</td>
+                <td className="px-4 py-3 text-red-500">❌ No</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-neutral-700">Adjacent Teeth Affected</td>
+                <td className="px-4 py-3 text-green-600 font-bold">✅ None</td>
+                <td className="px-4 py-3 text-red-500">❌ Shaved</td>
+                <td className="px-4 py-3 text-green-600 font-bold">✅ None</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 font-medium text-neutral-700">Lifespan</td>
+                <td className="px-4 py-3 text-green-600 font-bold">✅ 15–25+ yrs</td>
+                <td className="px-4 py-3 text-yellow-600">⚠️ 7–10 yrs</td>
+                <td className="px-4 py-3 text-yellow-600">⚠️ 3–5 yrs</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-neutral-700">Eating Comfort</td>
+                <td className="px-4 py-3 text-green-600 font-bold">✅ Full</td>
+                <td className="px-4 py-3 text-yellow-600">⚠️ Good</td>
+                <td className="px-4 py-3 text-red-500">❌ Limited</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Book a Free Implant Assessment in Patna</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Are you missing one or more teeth? Don't wait — the longer you wait, the more bone you lose. Visit <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong> for a free implant consultation. Dr. Aryan Parmar will review your CBCT scan, assess bone density, and provide a full treatment plan with transparent pricing. Call <strong>062014 78033</strong> or walk in during clinic hours (Mon–Sat, 10 AM – 8 PM).
+          </p>
+        </div>
+      </div>
+    )
+  },
+
+  {
     slug: "free-dental-camp-patna-community-dentistry",
     title: "Free Dental Camp in Patna: Community Health Initiative by YOUR DENTIST",
     category: "Community Service",
