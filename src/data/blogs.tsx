@@ -72,13 +72,21 @@ export const BLOGS: BlogArticle[] = [
         <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6 shadow-sm max-w-md mx-auto">
           <img
             src="/assets/yourdentist/scaling_bonding_before_after.jpg"
-            alt="Before and After dental scaling and composite teeth gap restoration at YOUR DENTIST Patna"
+            alt="Before and After dental scaling and broken tooth replacement with a premium Zirconia crown at YOUR DENTIST Patna"
             className="w-full object-cover"
           />
           <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">
-            Case 2: Heavy tartar removal along with upper tooth restoration.
+            Case 2: Heavy tartar/calculus scaling and gum treatment, combined with a premium CAD/CAM Zirconia Crown to replace a broken upper front tooth.
           </p>
         </div>
+
+        <h3 className="text-xl font-bold text-neutral-900 mt-6 mb-3">Case study details: Broken Tooth & Deep Scaling</h3>
+        <p className="text-neutral-700 leading-relaxed">
+          In Case 2 shown above, the patient had two major dental challenges: a broken central incisor (front tooth) and severe calculus (tartar) build-up with inflamed gums along the lower arch. 
+        </p>
+        <p className="text-neutral-700 leading-relaxed">
+          Dr. Aryan Parmar performed full-mouth ultrasonic scaling to restore gum health and remove the dark deposits. The broken front tooth was then prepared and restored using a metal-free, premium <strong>Zirconia Crown</strong>. Engineered using CAD/CAM technology, the Zirconia crown mimics natural light transmission and tooth shading perfectly while offering maximum chewing durability.
+        </p>
 
         <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Choose an Instant Smile Makeover?</h2>
         <p className="text-neutral-700 leading-relaxed">
