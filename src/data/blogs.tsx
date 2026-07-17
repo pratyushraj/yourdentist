@@ -16,7 +16,7 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
-    slug: "instant-smile-makeover-patna-composite-bonding",
+    slug: "instant-smile-makeover-patna",
     title: "60-Minute Smile Makeover: Instant Composite Bonding & Scaling in Patna",
     category: "Cosmetic Dentistry",
     readTime: "4 min read",
