@@ -16,6 +16,116 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "instant-smile-makeover-patna-composite-bonding",
+    title: "60-Minute Smile Makeover: Instant Composite Bonding & Scaling in Patna",
+    category: "Cosmetic Dentistry",
+    readTime: "4 min read",
+    publishDate: "July 17, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Can you get a perfect smile in just one sitting? Learn how professional dental scaling combined with direct composite bonding can fix gaps, chips, tartar, and staining in under 60 minutes at YOUR DENTIST Patna.",
+    featuredImage: "/assets/yourdentist/instant_transformation_card.png",
+    metaDescription: "Discover how single-visit composite bonding and deep scaling at YOUR DENTIST Patna can instantly transform your smile in just 60 minutes. Read our real patient case study.",
+    faqs: [
+      {
+        question: "How long does a composite bonding procedure take?",
+        answer: "At YOUR DENTIST Patna, direct composite bonding takes about 30 to 60 minutes per tooth. For a full front-teeth smile makeover (closing multiple gaps and smoothing edges), the entire procedure is completed in a single session of 1 to 2 hours."
+      },
+      {
+        question: "Does dental scaling remove enamel or weaken teeth?",
+        answer: "No. Professional ultrasonic dental scaling only removes hardened tartar (calculus) and plaque deposits from the tooth surface. It does not affect or damage your natural tooth enamel. In fact, scaling is essential to prevent gum disease and bone loss."
+      },
+      {
+        question: "How long do composite veneers or bonding last?",
+        answer: "With good oral hygiene (regular brushing, flossing, and 6-month checkups), composite bonding typically lasts between 3 to 7 years. Unlike porcelain veneers, they can be easily touched up or polished if they stain or chip over time."
+      },
+      {
+        question: "Is the 60-minute smile makeover painful?",
+        answer: "No, the procedure is completely painless. Professional scaling might cause mild, temporary sensitivity, but composite bonding requires zero drilling or tooth shaving, meaning no needles or anesthesia are necessary."
+      },
+      {
+        question: "What is the cost of composite bonding in Patna?",
+        answer: "Composite bonding at YOUR DENTIST Patna starts from ₹2,500 to ₹4,500 per tooth depending on the complexity of the gap closure or tooth reconstruction. Schedule a free consultation to get an exact estimate."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Many people believe that correcting dental gaps, removing stubborn stains, or replacing chipped teeth requires multiple clinic visits, temporary crowns, and weeks of waiting. However, with modern adhesive dentistry, a <strong>complete smile transformation can happen in just under 60 minutes</strong>. 
+        </p>
+        <p className="text-neutral-700 leading-relaxed">
+          At <strong>YOUR DENTIST, New Patliputra Colony</strong>, Dr. Aryan Parmar frequently performs single-visit smile makeovers using a combination of professional ultrasonic scaling (teeth cleaning) and direct composite bonding.
+        </p>
+
+        {/* Feature Image - Card */}
+        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6 shadow-sm">
+          <img
+            src="/assets/yourdentist/instant_transformation_card.png"
+            alt="60-Minute Instant Smile Transformation by Dr. Aryan Parmar at YOUR DENTIST Patna"
+            className="w-full object-cover"
+          />
+          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">
+            Case 1: 60-Minute instant gap closure and scaling for a brighter, highly aligned smile.
+          </p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">The Dual Approach: Clean first, then Bond</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          For an instant smile makeover to look natural and last long, the foundation must be perfectly clean. That is why Dr. Aryan Parmar uses a dual-step clinical protocol:
+        </p>
+        <ol className="list-decimal pl-6 space-y-4 text-neutral-700">
+          <li>
+            <strong>Ultrasonic Scaling & Polishing:</strong> Hardened tartar (calculus) builds up at the gum line over time, causing dark stains and bleeding gums. We use micro-vibrational ultrasonic tips to instantly release these deposits and wash them away.
+          </li>
+          <li>
+            <strong>Direct Composite Artistry:</strong> Once the teeth are clean and dry, a biocompatible dental composite resin is shade-matched to the natural teeth. Dr. Aryan manually sculpts this resin to close gaps, rebuild worn edges, or replace missing tooth structure in real-time.
+          </li>
+        </ol>
+
+        {/* Vertical Before/After Image */}
+        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6 shadow-sm max-w-md mx-auto">
+          <img
+            src="/assets/yourdentist/scaling_bonding_before_after.jpg"
+            alt="Before and After dental scaling and composite teeth gap restoration at YOUR DENTIST Patna"
+            className="w-full object-cover"
+          />
+          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">
+            Case 2: Heavy tartar removal along with upper tooth restoration.
+          </p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Choose an Instant Smile Makeover?</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Direct composite bonding and scaling offers several distinct clinical advantages over traditional treatments like crowns or braces:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>No Tooth Prep / Drilling:</strong> Unlike porcelain veneers or crowns, composite bonding does not require shaving down your healthy enamel. Your natural tooth structure remains completely intact.</li>
+          <li><strong>Single Appointment:</strong> Completed in just one visit. You walk in with self-consciousness and walk out with a brand-new smile.</li>
+          <li><strong>Zero Pain:</strong> Because it is non-invasive, no anesthesia or injections are needed.</li>
+          <li><strong>Highly Budget-Friendly:</strong> An excellent alternative to orthodontic braces or porcelain laminates, especially for closing minor midline gaps (diastemas).</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Post-Treatment Care for Composite Bonding</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          While modern composite materials are incredibly strong, they are made of a dental resin that requires basic care to keep looking shiny and stain-free:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li>Avoid biting directly into very hard foods (like bones, hard candy, or ice) with your front bonded teeth.</li>
+          <li>Minimize foods and drinks that cause heavy staining, such as black coffee, tea, and turmeric-heavy dishes, or rinse your mouth immediately after consuming them.</li>
+          <li>Brush twice daily with a soft-bristled toothbrush and use non-abrasive toothpaste.</li>
+          <li>Visit your dentist every 6 months for a routine polish to maintain the composite’s natural luster.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Get a Free Smile Assessment Today</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            If you want to instantly fix gaps, staining, or chipped teeth, visit <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong>. Call our team at <strong>6201478043</strong> or <strong>6201478033</strong> to secure your slot for a personalized consultation with Dr. Aryan Parmar.
+          </p>
+        </div>
+      </div>
+    )
+  },
+
+  {
     slug: "dental-implant-case-study-patna-missing-teeth",
     title: "Real Patient Story: Replacing 2 Missing Teeth with Dental Implants in Patna",
     category: "Implants",
