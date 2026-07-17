@@ -55,19 +55,6 @@ export const BLOGS: BlogArticle[] = [
         <p className="text-neutral-700 leading-relaxed">
           At <strong>YOUR DENTIST, New Patliputra Colony</strong>, Dr. Aryan Parmar frequently performs single-visit smile makeovers using a combination of professional ultrasonic scaling (teeth cleaning) and direct composite bonding.
         </p>
-
-        {/* Feature Image - Card */}
-        <div className="rounded-2xl overflow-hidden border border-neutral-100 my-6 shadow-sm">
-          <img
-            src="/assets/yourdentist/instant_transformation_card.png"
-            alt="60-Minute Instant Smile Transformation by Dr. Aryan Parmar at YOUR DENTIST Patna"
-            className="w-full object-cover"
-          />
-          <p className="text-center text-xs text-neutral-400 py-2 bg-neutral-50">
-            Case 1: 60-Minute instant gap closure and scaling for a brighter, highly aligned smile.
-          </p>
-        </div>
-
         <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">The Dual Approach: Clean first, then Bond</h2>
         <p className="text-neutral-700 leading-relaxed">
           For an instant smile makeover to look natural and last long, the foundation must be perfectly clean. That is why Dr. Aryan Parmar uses a dual-step clinical protocol:
