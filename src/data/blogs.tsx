@@ -16,6 +16,114 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "kids-painless-tooth-extraction-patna",
+    title: "Painless Kids Tooth Extraction in Patna: A Gentle, Fear-Free Experience",
+    category: "Pediatric Dentistry",
+    readTime: "4 min read",
+    publishDate: "July 21, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Is your child afraid of tooth extractions? See how Dr. Aryan Parmar at YOUR DENTIST Patna makes milk tooth and permanent tooth extractions completely painless, comfortable, and stress-free for kids.",
+    featuredImage: "/assets/yourdentist/kids_tooth_extraction.png",
+    metaDescription: "Gentle and painless milk tooth extraction for kids at YOUR DENTIST Patna by Dr. Aryan Parmar. Read pediatric dental care tips, post-extraction advice, and space maintainers guidance.",
+    faqs: [
+      {
+        question: "Is milk tooth extraction painful for kids?",
+        answer: "No. At YOUR DENTIST Patna, we apply a flavored topical numbing gel to the gums first so your child doesn't even feel the local anesthesia pinch. The extraction itself is completed in seconds with zero pain."
+      },
+      {
+        question: "When does a child need a milk tooth extracted?",
+        answer: "A milk tooth (deciduous tooth) is extracted if it has severe decay beyond repair, an abscess/infection, or if it is an over-retained tooth blocking the normal eruption path of the underlying permanent tooth."
+      },
+      {
+        question: "What should kids eat after a tooth extraction?",
+        answer: "For the first 24 hours, children should eat soft, cool foods like ice cream, yogurt, mashed potatoes, or cold smoothies. Avoid hot soups, crunchy chips, or drinking through a straw to allow proper blood clot formation."
+      },
+      {
+        question: "What is a space maintainer and when is it needed?",
+        answer: "If a milk tooth is extracted prematurely due to cavity or trauma long before the permanent tooth is ready to emerge, a space maintainer appliance is placed to hold the gap open so surrounding teeth don't shift."
+      },
+      {
+        question: "How do you handle dental anxiety in young children?",
+        answer: "Dr. Aryan Parmar uses child-friendly communication (the 'Tell-Show-Do' technique), positive reinforcement, and a calm clinic environment. Children leave with a happy smile and a bravery thumbs-up!"
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Dental visits can be intimidating for young children — especially when a stubborn milk tooth needs to come out. However, with modern pediatric dental techniques, gentle behavior management, and painless numbing gels, <strong>a child's tooth extraction can be a completely positive, fear-free milestone</strong>.
+        </p>
+        <p className="text-neutral-700 leading-relaxed">
+          At <strong>YOUR DENTIST, New Patliputra Colony</strong>, Dr. Aryan Parmar provides specialized child dentistry (pediatric care) that ensures young patients feel safe, brave, and comfortable throughout their visit.
+        </p>
+
+        {/* Featured Patient Photo */}
+        <div className="rounded-2xl overflow-hidden border border-neutral-200 my-6 shadow-lg max-w-md mx-auto bg-white">
+          <img
+            src="/assets/yourdentist/kids_tooth_extraction.png"
+            alt="Brave young patient giving a thumbs up in the dental chair after painless milk tooth extraction by Dr. Aryan Parmar at YOUR DENTIST Patna"
+            className="w-full object-cover"
+          />
+          <div className="p-3 bg-neutral-50 text-center border-t border-neutral-100">
+            <p className="text-xs font-bold text-neutral-800">
+              Brave Champion! Thumbs Up After a 100% Painless Tooth Extraction with Dr. Aryan Parmar
+            </p>
+            <p className="text-[10px] text-neutral-500 mt-0.5">
+              YOUR DENTIST Patna — Gentle Pediatric & Family Dental Care
+            </p>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Do Milk Teeth Sometimes Need Extraction?</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          While we always aim to preserve natural baby teeth until they fall out on their own, certain conditions require clinical removal to protect your child’s permanent smile:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Over-Retained Milk Teeth:</strong> When a baby tooth refuses to loosen, causing the permanent tooth to erupt behind it (double row of teeth or "shark teeth").</li>
+          <li><strong>Severe Tooth Decay:</strong> Deep cavities that have extended beyond what a pediatric root canal (pulpotomy) or filling can repair.</li>
+          <li><strong>Dental Infection or Abscess:</strong> Infection at the root tip that could damage the developing permanent tooth underneath.</li>
+          <li><strong>Orthodontic Crowding:</strong> Removing over-crowded teeth to create space for braces or clear aligners.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Our Gentle 4-Step Kids Extraction Process</h2>
+        <ol className="list-decimal pl-6 space-y-4 text-neutral-700">
+          <li>
+            <strong>Friendly Consultation & 'Tell-Show-Do':</strong> We explain everything to your child in fun, friendly terms so there are no surprises or scary medical jargon.
+          </li>
+          <li>
+            <strong>Flavored Topical Numbing Gel:</strong> A pleasant fruit-flavored gel is applied to the gums to completely numb the surface before any local anesthesia is administered.
+          </li>
+          <li>
+            <strong>Micro-Gentle Removal:</strong> Using specialized pediatric instruments, Dr. Aryan gently loosens and removes the tooth in just a few seconds.
+          </li>
+          <li>
+            <strong>Ice Cream & Bravery Celebration:</strong> The patient bites on a sterile gauze pad, receives post-op instructions, and gets to enjoy cold ice cream to soothe the area!
+          </li>
+        </ol>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Post-Extraction Care Tips for Parents</h2>
+        <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl my-4">
+          <p className="text-sm font-semibold text-neutral-800 mb-2">
+            🍦 <strong>Parent Checklist After Extraction:</strong>
+          </p>
+          <ul className="list-disc pl-5 text-xs text-neutral-700 space-y-1">
+            <li>Keep the gauze pad in place for 30 minutes with gentle biting pressure.</li>
+            <li>Give cool, soft foods (ice cream, custard, cold milk) for the rest of the day.</li>
+            <li>Do NOT allow drinking through a straw or forceful spitting for 24 hours.</li>
+            <li>Ensure your child does not bite their numb cheek or lip while the anesthesia wears off.</li>
+          </ul>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Book a Gentle Pediatric Checkup in Patna</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Is your child experiencing tooth pain or loose milk teeth? Visit <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong>. Call <strong>062014 78033</strong> or <strong>6201478043</strong> to schedule a gentle, child-friendly appointment with Dr. Aryan Parmar.
+          </p>
+        </div>
+      </div>
+    )
+  },
+
+  {
     slug: "rct-tooth-infection-healed-patna",
     title: "Tooth Infection Healed by Painless Root Canal (RCT) in Patna: Video & Case Study",
     category: "Endodontics",

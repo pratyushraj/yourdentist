@@ -154,6 +154,7 @@ const BEFORE_AFTER_IMAGES = [
 ];
 
 const CLINIC_PHOTOS = [
+  { id: "kids_dentistry", name: "Pediatric Dentistry", desc: "Gentle, painless milk tooth extraction and child-friendly dental care by Dr. Aryan Parmar.", img: "/assets/yourdentist/kids_tooth_extraction.png" },
   { id: "operatory", name: "Operatory Studio", desc: "Sterile surgical operatory with digital alignment systems.", img: "/assets/yourdentist/interior_operatory.jpg" },
   { id: "mastership", name: "Implantology Mastership", desc: "Dr. Aryan Parmar's official Clinical Implant Mastership board certification.", img: "/assets/yourdentist/implantology_mastership.jpg" },
   { id: "fellowship", name: "Aesthetic Fellowship", desc: "Dr. Aryan Parmar receiving his Fellowship in Aesthetic Dentistry (FAD) board certification.", img: "/assets/yourdentist/aesthetic_dentistry_fellowship.jpg" },
