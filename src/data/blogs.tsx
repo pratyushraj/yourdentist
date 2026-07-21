@@ -16,6 +16,114 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "rct-tooth-infection-healed-patna",
+    title: "Tooth Infection Healed by Painless Root Canal (RCT) in Patna: Video & Case Study",
+    category: "Endodontics",
+    readTime: "4 min read",
+    publishDate: "July 21, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Experiencing severe toothache, gum swelling, or pus from a deep infection? Watch how computerized rotary Root Canal Treatment (RCT) at YOUR DENTIST Patna saved the natural tooth and completely healed the infection.",
+    featuredImage: "/assets/yourdentist/exterior_day.jpg",
+    metaDescription: "Watch real clinical video of a severe tooth infection healed by painless Root Canal Treatment (RCT) at YOUR DENTIST Patna by Dr. Aryan Parmar. Read symptoms, treatment steps, and recovery tips.",
+    faqs: [
+      {
+        question: "Can a root canal heal a tooth infection completely?",
+        answer: "Yes! Root Canal Treatment (RCT) physically removes the infected pulp, bacteria, and nerve tissue inside the root canals. The canal is then thoroughly disinfected with antibacterial irrigants, sealed with gutta-percha, and topped with a crown to prevent re-infection."
+      },
+      {
+        question: "Is root canal treatment for an infected tooth painful?",
+        answer: "No. At YOUR DENTIST Patna, RCT is performed using painless computerized local anesthesia. Once the area is numb, you will feel zero pain during the procedure. Relief from severe toothache is often immediate once the pressure inside the infected pulp is released."
+      },
+      {
+        question: "How long does it take for a tooth infection to heal after RCT?",
+        answer: "Most acute pain subsides within 24 to 48 hours after the first sitting. Any surrounding gum swelling or bone infection heals completely within 1 to 2 weeks as the body naturally resorbs inflammation."
+      },
+      {
+        question: "How many sittings are needed for an RCT on an infected tooth?",
+        answer: "In cases with active infection or swelling, a 2-sitting RCT is typically recommended. The first sitting cleans and places antibacterial medication inside the tooth. The second sitting (after 3–5 days) seals the canals and prepares the tooth for a porcelain or zirconia crown."
+      },
+      {
+        question: "What is the cost of Root Canal Treatment in Patna?",
+        answer: "RCT at YOUR DENTIST Patna starts from ₹3,000 to ₹5,500 depending on whether it is a front tooth or a multi-rooted molar, and whether single-visit rotary endodontics is selected."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          A deep toothache is rarely just a cavity — when bacteria penetrate through enamel and dentin into the dental pulp, it causes a painful, throbbing <strong>root canal infection</strong>. If left untreated, the infection can spread into the surrounding jawbone, causing severe swelling, pus discharge, and eventual tooth loss.
+        </p>
+        <p className="text-neutral-700 leading-relaxed">
+          At <strong>YOUR DENTIST, New Patliputra Colony</strong>, Dr. Aryan Parmar specializes in <strong>painless rotary root canal treatments (RCT)</strong> that eliminate infection while saving your natural tooth.
+        </p>
+
+        {/* Clinical Video Component */}
+        <div className="rounded-2xl overflow-hidden border border-neutral-200 my-6 shadow-lg max-w-sm mx-auto bg-neutral-950">
+          <video
+            src="/assets/yourdentist/rct_infection_healed.mp4"
+            controls
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full aspect-[9/16] object-cover"
+          />
+          <div className="p-3 bg-neutral-900 text-white text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-wider">
+              Clinical Video Case: Painless RCT & Complete Infection Healing
+            </p>
+            <p className="text-[10px] text-neutral-400 mt-1">
+              Demonstrating full healing and natural tooth preservation by Dr. Aryan Parmar
+            </p>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Signs Your Tooth Has a Deep Infection</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          You should consult a dentist immediately if you experience any of the following symptoms:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Severe, Throbbing Tooth Pain:</strong> Especially when biting, chewing, or lying down at night.</li>
+          <li><strong>Pimple-like Bump on Gums:</strong> A gum boil or fistula discharging pus or bad taste.</li>
+          <li><strong>Extreme Sensitivity:</strong> Lingering pain after eating hot or cold foods and liquids.</li>
+          <li><strong>Dark Discoloration:</strong> The tooth turns greyish or yellow-brown due to dead pulp tissue inside.</li>
+          <li><strong>Swollen Jaw or Face:</strong> Facial swelling indicating that bacteria has spread into soft tissues.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">How Rotary RCT Heals the Infection</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Unlike traditional manual root canals that were slow and uncomfortable, Dr. Aryan Parmar utilizes <strong>computerized rotary endodontics</strong>:
+        </p>
+        <ol className="list-decimal pl-6 space-y-4 text-neutral-700">
+          <li>
+            <strong>Painless Local Anesthesia:</strong> Computerized delivery ensures 100% pain-free numbness before any work begins.
+          </li>
+          <li>
+            <strong>Pulp & Infection Removal:</strong> Flexible nickel-titanium (NiTi) rotary instruments clean out infected nerve tissue and bacteria down to the apex of the root.
+          </li>
+          <li>
+            <strong>Medicament & Sterilization:</strong> Antibacterial calcium hydroxide medicament is placed inside the root canal to neutralize deep-seated bacteria and promote bone healing.
+          </li>
+          <li>
+            <strong>Hermetic Sealing & Crown Placement:</strong> Canals are sealed with bio-compatible gutta-percha. A high-strength Zirconia or Porcelain crown is fitted to restore 100% chewing force.
+          </li>
+        </ol>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Save Your Natural Tooth?</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Nothing looks, feels, or functions as well as a natural tooth. Saving your tooth with an RCT prevents neighboring teeth from drifting out of alignment, preserves jawbone structure, and eliminates the higher cost of extractions and dental implants.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Schedule a Painless Emergency Consultation</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            If you are suffering from severe tooth pain or gum swelling in Patna, don't wait for the infection to worsen. Visit <strong>YOUR DENTIST, New Patliputra Colony</strong>. Call <strong>062014 78033</strong> or <strong>6201478043</strong> for emergency RCT appointment booking with Dr. Aryan Parmar.
+          </p>
+        </div>
+      </div>
+    )
+  },
+
+  {
     slug: "instant-smile-makeover-patna",
     title: "60-Minute Smile Makeover: Instant Composite Bonding & Scaling in Patna",
     category: "Cosmetic Dentistry",
