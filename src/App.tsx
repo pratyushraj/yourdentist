@@ -2083,11 +2083,11 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="aspect-[16/9] rounded-[24px] overflow-hidden bg-neutral-100 border border-neutral-200">
+                <div className="rounded-[24px] overflow-hidden bg-neutral-100 border border-neutral-200">
                   <img
                     src={activeBlog.featuredImage}
                     alt={activeBlog.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
 
