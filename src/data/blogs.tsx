@@ -16,6 +16,100 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "aligners-7-months-protruded-teeth-patna",
+    title: "7-Month Aligners Case: Protruded Upper Front Teeth Corrected Without Braces in Patna",
+    category: "Orthodontics",
+    readTime: "4 min read",
+    publishDate: "August 3, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "A real patient with protruded upper anterior teeth (upper front tooth proclination) achieved a perfectly aligned bite in just 7 months using clear aligners at YOUR DENTIST Patna — no metal braces, no extractions.",
+    featuredImage: "/assets/yourdentist/aligners_7month_before_after.jpg",
+    metaDescription: "See a real before/after case of protruded upper front teeth corrected in 7 months with clear aligners at YOUR DENTIST Patna by Dr. Aryan Parmar. No braces, no extractions.",
+    faqs: [
+      {
+        question: "Can clear aligners fix protruded front teeth?",
+        answer: "Yes. Mild to moderate upper anterior proclination (protruded front teeth) is one of the most common and highly treatable conditions with clear aligners. Depending on severity, correction takes 5 to 12 months."
+      },
+      {
+        question: "Why are my upper front teeth protruding forward?",
+        answer: "Upper anterior proclination is most commonly caused by prolonged habits like thumb sucking or mouth breathing during childhood, a narrow upper jaw, missing lower teeth that allow the upper teeth to tip forward, or a genetics-related skeletal discrepancy."
+      },
+      {
+        question: "How long does it take to fix protruded teeth with aligners?",
+        answer: "In this case, the treatment was completed in 7 months. Simpler cases can take 4 to 6 months, while more complex skeletal protrusions may take 10 to 14 months. Each aligner tray is worn for 7 to 10 days before progressing."
+      },
+      {
+        question: "Will fixing protruded teeth change my facial profile?",
+        answer: "Yes, one of the most satisfying outcomes of correcting proclination with aligners is the noticeable improvement in lip posture and facial side profile. Lips that previously appeared strained or 'stretched' over protruded teeth naturally relax into a more harmonious, balanced appearance."
+      },
+      {
+        question: "Are clear aligners better than braces for protruded teeth?",
+        answer: "For most cases of anterior proclination, clear aligners achieve the same clinical result as metal braces but are completely invisible, removable for eating and brushing, and far more comfortable. Dr. Aryan Parmar will recommend the best option after a digital treatment planning scan."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Protruded upper front teeth — medically known as <strong>upper anterior proclination</strong> — is one of the most common orthodontic concerns seen at YOUR DENTIST Patna. The upper front teeth tip forward excessively, creating a visible protrusion that affects both bite function and facial appearance. In this case, the patient's condition was fully corrected in just <strong>7 months</strong> using a customized clear aligner protocol.
+        </p>
+
+        {/* Before / After Clinical Photo */}
+        <div className="rounded-2xl overflow-hidden border border-neutral-200 my-6 shadow-lg max-w-md mx-auto bg-white">
+          <img
+            src="/assets/yourdentist/aligners_7month_before_after.jpg"
+            alt="Before and After 7-month clear aligners treatment for protruded upper front teeth at YOUR DENTIST Patna by Dr. Aryan Parmar"
+            className="w-full object-cover"
+          />
+          <div className="p-3 bg-neutral-50 text-center border-t border-neutral-100">
+            <p className="text-xs font-bold text-neutral-800">
+              7-Month Aligners Journey: Protruded Upper Anteriors → Perfectly Aligned Bite
+            </p>
+            <p className="text-[10px] text-neutral-500 mt-0.5">
+              Real patient case — YOUR DENTIST, New Patliputra Colony, Patna
+            </p>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Understanding Upper Anterior Proclination</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          When upper front teeth angle forward beyond their ideal inclination, it creates a cascade of problems beyond cosmetic concerns:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Lip Incompetence:</strong> Difficulty closing lips naturally without straining the facial muscles, leading to a constantly open mouth or 'stretched' lip appearance.</li>
+          <li><strong>Deep Bite:</strong> Protruded uppers often pair with excessive overbite where the upper teeth heavily overlap the lower, accelerating lower tooth wear.</li>
+          <li><strong>Trauma Risk:</strong> Protruding teeth are at higher risk of fracture from a fall or facial impact, as they extend beyond the natural lip cushion.</li>
+          <li><strong>Speech Effects:</strong> Severe proclination can cause a soft lisp or sibilant speech difficulty.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Clear Aligners Were the Right Choice</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          After a detailed digital intraoral scan and treatment simulation, Dr. Aryan Parmar recommended clear aligners over traditional braces for this specific case because:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Precise Torque Control:</strong> Modern aligner systems can precisely control the <em>torque</em> (root tipping direction) of each individual tooth, allowing safe retraction of the upper anteriors without over-correcting or creating spaces.</li>
+          <li><strong>No Extraction Required:</strong> The mild-to-moderate severity of this case allowed correction through tooth inclination changes and slight arch expansion rather than requiring the extraction of premolars.</li>
+          <li><strong>Invisible & Comfortable:</strong> The patient wore each set of custom-fabricated trays for 7 to 10 days, progressing through the correction plan without anyone at work or college noticing.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Timeline of the 7-Month Journey</h2>
+        <ol className="list-decimal pl-6 space-y-3 text-neutral-700">
+          <li><strong>Month 1:</strong> Digital 3D scan, treatment simulation shared with patient for approval, aligners fabricated and first trays delivered.</li>
+          <li><strong>Month 2–3:</strong> Arch expansion phase — aligners gently widen the upper arch to create space for the anteriors to retract.</li>
+          <li><strong>Month 4–5:</strong> Active retraction phase — upper front teeth begin visibly tipping backward to their ideal position.</li>
+          <li><strong>Month 6–7:</strong> Refinement trays — final adjustments to ensure complete torque control and perfect bite alignment. Retainers prescribed.</li>
+        </ol>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Book Your Free Aligners Consultation</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            If your upper or lower front teeth are protruding or misaligned, a clear aligner solution may be simpler and faster than you think. Visit <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong>. Call <strong>062014 78033</strong> or <strong>6201478043</strong> for a free digital aligner scan and treatment simulation with Dr. Aryan Parmar.
+          </p>
+        </div>
+      </div>
+    )
+  },
+
+  {
     slug: "zirconia-prosthesis-smile-designing-patna",
     title: "Zirconia Prosthesis Smile Designing in Patna: Natural & Durable Restorations",
     category: "Cosmetic Dentistry",
