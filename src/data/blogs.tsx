@@ -53,22 +53,6 @@ export const BLOGS: BlogArticle[] = [
           Protruded upper front teeth — medically known as <strong>upper anterior proclination</strong> — is one of the most common orthodontic concerns seen at YOUR DENTIST Patna. The upper front teeth tip forward excessively, creating a visible protrusion that affects both bite function and facial appearance. In this case, the patient's condition was fully corrected in just <strong>7 months</strong> using a customized clear aligner protocol.
         </p>
 
-        {/* Before / After Clinical Photo */}
-        <div className="rounded-2xl overflow-hidden border border-neutral-200 my-6 shadow-lg max-w-md mx-auto bg-white">
-          <img
-            src="/assets/yourdentist/aligners_7month_before_after.jpg"
-            alt="Before and After 7-month clear aligners treatment for protruded upper front teeth at YOUR DENTIST Patna by Dr. Aryan Parmar"
-            className="w-full object-cover"
-          />
-          <div className="p-3 bg-neutral-50 text-center border-t border-neutral-100">
-            <p className="text-xs font-bold text-neutral-800">
-              7-Month Aligners Journey: Protruded Upper Anteriors → Perfectly Aligned Bite
-            </p>
-            <p className="text-[10px] text-neutral-500 mt-0.5">
-              Real patient case — YOUR DENTIST, New Patliputra Colony, Patna
-            </p>
-          </div>
-        </div>
 
         <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Understanding Upper Anterior Proclination</h2>
         <p className="text-neutral-700 leading-relaxed">
