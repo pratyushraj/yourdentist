@@ -2162,12 +2162,9 @@ export default function App() {
                   </div>
 
                   <a
-                    href="#booking"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const el = document.getElementById("booking");
-                      if (el) el.scrollIntoView({ behavior: "smooth" });
-                    }}
+                    href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan%2C%20I%20want%20to%20claim%20my%20free%20consultation%20slot%20at%20YOUR%20DENTIST%20Patna."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full py-3 bg-white text-black hover:bg-neutral-100 rounded-full text-center text-[10px] font-black uppercase tracking-widest transition-colors shadow-md"
                   >
                     Claim Free Slot
