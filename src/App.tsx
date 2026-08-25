@@ -1357,7 +1357,7 @@ export default function App() {
               <div className="absolute bottom-6 left-6 right-6 z-20 bg-neutral-950/95 border border-white/5 p-4 rounded-xl shadow-2xl text-white">
                 <h4 className="text-xs font-black uppercase tracking-wider">Dr. Aryan Parmar</h4>
                 <p className="text-[7px] text-neutral-400 font-bold uppercase tracking-widest mt-1">Lead Surgeon & Restorative Director</p>
-                <p className="text-[9px] text-[#5b72ff] font-mono font-black uppercase tracking-widest mt-2">BDS • 12+ Years Exp</p>
+                <p className="text-[9px] text-[#5b72ff] font-mono font-black uppercase tracking-widest mt-2">BDS • 7+ Years Exp</p>
               </div>
             </div>
           </div>
