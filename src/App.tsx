@@ -128,12 +128,6 @@ const renderServiceIcon = (iconName: string) => {
 
 const BEFORE_AFTER_IMAGES = [
   {
-    title: "7-Month Aligners Result",
-    before: "/assets/yourdentist/aligners_7month_before.jpg",
-    after: "/assets/yourdentist/aligners_7month_after.jpg",
-    desc: "Protruded upper front teeth (proclination) corrected in just 7 months with clear aligners — no braces, no extractions."
-  },
-  {
     title: "Veneer Smile Makeover",
     before: "/assets/yourdentist/veneer_smile_before.jpg",
     after: "/assets/yourdentist/veneer_smile_after.jpg",
