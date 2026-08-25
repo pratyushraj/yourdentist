@@ -791,7 +791,7 @@ export default function App() {
           <span className="text-neutral-600">·</span>
           <span className="text-[10px] font-black uppercase tracking-widest">✓ Laser Whitening Discounts</span>
           <span className="text-neutral-600">·</span>
-          <a href="#booking" className="text-[10px] font-black uppercase tracking-widest text-emerald-400 hover:text-emerald-300 transition-colors">Secure Free Slot →</a>
+          <a href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment." target="_blank" rel="noopener noreferrer" className="text-[10px] font-black uppercase tracking-widest text-emerald-400 hover:text-emerald-300 transition-colors">Secure Free Slot →</a>
           <span className="text-neutral-600 mx-4">·</span>
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
           <span className="text-[10px] font-black uppercase tracking-widest">✓ Free Smile Assessment</span>
@@ -800,7 +800,7 @@ export default function App() {
           <span className="text-neutral-600">·</span>
           <span className="text-[10px] font-black uppercase tracking-widest">✓ Laser Whitening Discounts</span>
           <span className="text-neutral-600">·</span>
-          <a href="#booking" className="text-[10px] font-black uppercase tracking-widest text-emerald-400 hover:text-emerald-300 transition-colors">Secure Free Slot →</a>
+          <a href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment." target="_blank" rel="noopener noreferrer" className="text-[10px] font-black uppercase tracking-widest text-emerald-400 hover:text-emerald-300 transition-colors">Secure Free Slot →</a>
         </div>
       </div>
 
@@ -873,7 +873,9 @@ export default function App() {
             </div>
 
             <a
-              href="#booking"
+              href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment."
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2.5 border border-neutral-200 hover:border-neutral-400 hover:bg-neutral-100 text-neutral-900 rounded-full text-[9px] font-black uppercase tracking-widest transition-all"
             >
               Book Free Slot
@@ -931,7 +933,9 @@ export default function App() {
 
               <div className="flex flex-row gap-2.5 justify-center lg:justify-start pt-1">
                 <a
-                  href="#booking"
+                  href="https://wa.me/916201478033?text=Hi%20Dr.%20Aryan,%20I'd%20like%20to%20reserve%20a%20free%20smile%20assessment."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 sm:flex-none px-5 py-3.5 bg-neutral-900 text-white hover:bg-neutral-800 rounded-full text-[10px] font-black uppercase tracking-widest transition-all shadow-lg text-center"
                 >
                   Book Free Slot
