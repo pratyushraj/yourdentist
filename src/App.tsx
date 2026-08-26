@@ -1220,21 +1220,6 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Video 3: RCT Infection Healed (Original) */}
-              <div className="relative aspect-[9/16] w-full rounded-[24px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
-                <video
-                  src="/assets/yourdentist/rct_infection_healed.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-neutral-900/90 border border-neutral-800 px-2 py-1 rounded-lg text-[7px] font-black uppercase tracking-widest text-cyan-400 whitespace-nowrap z-20">
-                  RCT Infection Healed
-                </div>
-              </div>
-
               {/* Video 4: Zirconia Smile Design (Original) */}
               <div className="relative aspect-[9/16] w-full rounded-[24px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
                 <video
