@@ -154,16 +154,17 @@ const BEFORE_AFTER_IMAGES = [
 ];
 
 const CLINIC_PHOTOS = [
+  { id: "full_rehab_case", name: "Smile Rehabilitation Case", desc: "Full mouth restorative smile designing procedure in action by Dr. Aryan Parmar.", video: "/assets/yourdentist/full_smile_rehabilitation_case.mp4", img: "/assets/yourdentist/clinic_in_action.jpg" },
+  { id: "chair_consultation", name: "Patient Consultation", desc: "Dr. Aryan conducting a personalized clinical evaluation at YOUR DENTIST Patna.", video: "/assets/yourdentist/patient_consultation_chair.mp4", img: "/assets/yourdentist/dr_with_patient_1.png" },
+  { id: "intraoral_procedure", name: "Intraoral Precision", desc: "Micro-dentistry intraoral examination and tooth alignment checking.", video: "/assets/yourdentist/clinical_intraoral_procedure.mp4", img: "/assets/yourdentist/interior_operatory.jpg" },
+  { id: "tooth_prep", name: "Operatory Procedure", desc: "High-precision tooth preparation and crown fitting in sterile operatory.", video: "/assets/yourdentist/tooth_preparation_operatory.mp4", img: "/assets/yourdentist/interior_operatory.jpg" },
   { id: "kids_dentistry", name: "Pediatric Dentistry", desc: "Gentle, painless milk tooth extraction and child-friendly dental care by Dr. Aryan Parmar.", img: "/assets/yourdentist/kids_tooth_extraction.png" },
   { id: "operatory", name: "Operatory Studio", desc: "Sterile surgical operatory with digital alignment systems.", img: "/assets/yourdentist/interior_operatory.jpg" },
   { id: "mastership", name: "Implantology Mastership", desc: "Dr. Aryan Parmar's official Clinical Implant Mastership board certification.", img: "/assets/yourdentist/implantology_mastership.jpg" },
   { id: "fellowship", name: "Aesthetic Fellowship", desc: "Dr. Aryan Parmar receiving his Fellowship in Aesthetic Dentistry (FAD) board certification.", img: "/assets/yourdentist/aesthetic_dentistry_fellowship.jpg" },
   { id: "award", name: "State Award Winner", desc: "Dr. Aryan Parmar receiving the Best Youngest Dentist in Bihar award from the Indian Dental Association.", img: "/assets/yourdentist/best_young_dentist_award.jpg" },
-  { id: "consult", name: "Clinical Consult", desc: "Dr. Aryan performing diagnostic digital scanner screening with a patient.", img: "/assets/yourdentist/dr_with_patient_1.png" },
-  { id: "treatment", name: "Clinical Action", desc: "Dr. Aryan operating under computerized micro-dentistry systems.", img: "/assets/yourdentist/clinic_in_action.jpg" },
   { id: "lobby", name: "Executive Lobby", desc: "Patient lounge and custom wall branding reception.", img: "/assets/yourdentist/wall_brand.png" },
-  { id: "exterior_day", name: "Day Exterior", desc: "Centrally located premium clinic facade in Patliputra Colony.", img: "/assets/yourdentist/exterior_day.jpg" },
-  { id: "exterior_night", name: "Night Exterior", desc: "Lighted facade for convenient after-hours consultation.", img: "/assets/yourdentist/exterior_night.jpg" }
+  { id: "exterior_day", name: "Day Exterior", desc: "Centrally located premium clinic facade in Patliputra Colony.", img: "/assets/yourdentist/exterior_day.jpg" }
 ];
 
 const DENTISTS = [
@@ -1429,27 +1430,57 @@ export default function App() {
               <div>
                 <div className="relative rounded-[28px] overflow-hidden border border-neutral-200 bg-neutral-950 shadow-xl aspect-[16/10] flex items-center justify-center">
                   <AnimatePresence mode="wait">
-                    <motion.img
-                      key={activeStudioPhoto.id}
-                      src={activeStudioPhoto.img}
-                      alt={activeStudioPhoto.name}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="w-full h-full object-cover"
-                    />
+                    {activeStudioPhoto.video ? (
+                      <motion.video
+                        key={activeStudioPhoto.id}
+                        src={activeStudioPhoto.video}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <motion.img
+                        key={activeStudioPhoto.id}
+                        src={activeStudioPhoto.img}
+                        alt={activeStudioPhoto.name}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="w-full h-full object-cover"
+                      />
+                    )}
                   </AnimatePresence>
                   {/* Desktop absolute-positioned overlay */}
                   <div className="hidden sm:block absolute bottom-6 left-6 right-6 z-20 bg-neutral-950/90 border border-white/5 p-5 rounded-2xl text-white backdrop-blur-sm text-left">
-                    <span className="text-[8px] font-black text-[#5b72ff] uppercase tracking-widest">Studio Perspective</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[8px] font-black text-[#5b72ff] uppercase tracking-widest">Studio Perspective</span>
+                      {activeStudioPhoto.video && (
+                        <span className="px-2 py-0.5 rounded bg-red-500/20 text-red-400 border border-red-500/30 text-[7px] font-black uppercase tracking-widest">
+                          ▶ Video Reel
+                        </span>
+                      )}
+                    </div>
                     <h4 className="text-sm font-black uppercase tracking-wider mt-1">{activeStudioPhoto.name}</h4>
                     <p className="text-xs text-neutral-400 font-medium mt-1.5 leading-relaxed">{activeStudioPhoto.desc}</p>
                   </div>
                 </div>
-                {/* Mobile description card below the image */}
+                {/* Mobile description card below the image/video */}
                 <div className="block sm:hidden mt-3 p-4 bg-neutral-50 border border-neutral-200/60 rounded-2xl text-left">
-                  <span className="text-[8px] font-black text-[#5b72ff] uppercase tracking-widest">Studio Perspective</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[8px] font-black text-[#5b72ff] uppercase tracking-widest">Studio Perspective</span>
+                    {activeStudioPhoto.video && (
+                      <span className="px-2 py-0.5 rounded bg-red-500/20 text-red-600 border border-red-500/30 text-[7px] font-black uppercase tracking-widest">
+                        ▶ Video Reel
+                      </span>
+                    )}
+                  </div>
                   <h4 className="text-xs font-black uppercase tracking-wider text-neutral-900 mt-1">{activeStudioPhoto.name}</h4>
                   <p className="text-[11px] text-neutral-500 font-semibold mt-1 leading-relaxed">{activeStudioPhoto.desc}</p>
                 </div>
@@ -1468,14 +1499,19 @@ export default function App() {
                       : 'bg-neutral-50 hover:bg-neutral-100 text-neutral-800 border-neutral-200/60'
                   }`}
                 >
-                  {/* Small image preview in the button */}
-                  <div className="w-12 h-12 rounded-xl overflow-hidden bg-neutral-200 shrink-0 border border-neutral-300/40">
+                  {/* Small image/video preview in the button */}
+                  <div className="w-12 h-12 rounded-xl overflow-hidden bg-neutral-200 shrink-0 border border-neutral-300/40 relative">
                     <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
+                    {item.video && (
+                      <div className="absolute inset-0 bg-neutral-950/40 flex items-center justify-center">
+                        <span className="text-white text-xs font-black">▶</span>
+                      </div>
+                    )}
                   </div>
                   <div className="leading-tight">
                     <h4 className={`text-[10px] font-black uppercase tracking-wider ${activeStudioPhoto.id === item.id ? 'text-white' : 'text-neutral-900'}`}>{item.name}</h4>
                     <p className={`text-[8px] font-bold uppercase tracking-wider mt-1 ${activeStudioPhoto.id === item.id ? 'text-neutral-400' : 'text-neutral-500'}`}>
-                      {item.id === 'lobby' ? 'Reception Lounge' : item.id === 'consult' ? 'Consultation Room' : item.id.includes('exterior') ? 'External Facade' : 'Clinical Area'}
+                      {item.video ? '▶ Clinical Procedure Video' : item.id === 'lobby' ? 'Reception Lounge' : item.id.includes('exterior') ? 'External Facade' : 'Clinical Area'}
                     </p>
                   </div>
                 </button>
