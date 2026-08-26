@@ -1250,7 +1250,7 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Video 6: Intraoral Procedure (New) */}
+              {/* Video 5: Laser Cautery */}
               <div className="relative aspect-[9/16] w-full rounded-[24px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
                 <video
                   src="/assets/yourdentist/clinical_intraoral_procedure.mp4"
@@ -1261,11 +1261,11 @@ export default function App() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-neutral-900/90 border border-neutral-800 px-2 py-1 rounded-lg text-[7px] font-black uppercase tracking-widest text-purple-400 whitespace-nowrap z-20">
-                  Intraoral Procedure
+                  Laser Cautery
                 </div>
               </div>
 
-              {/* Video 7: Tooth Preparation Operatory (New) */}
+              {/* Video 6: Teeth Cleaning */}
               <div className="relative aspect-[9/16] w-full rounded-[24px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
                 <video
                   src="/assets/yourdentist/tooth_preparation_operatory.mp4"
@@ -1276,11 +1276,11 @@ export default function App() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-neutral-900/90 border border-neutral-800 px-2 py-1 rounded-lg text-[7px] font-black uppercase tracking-widest text-teal-400 whitespace-nowrap z-20">
-                  Operatory Procedure
+                  Teeth Cleaning
                 </div>
               </div>
 
-              {/* Video 8: Full Smile Rehabilitation (New) */}
+              {/* Video 7: Braces Treatment */}
               <div className="relative aspect-[9/16] w-full rounded-[24px] overflow-hidden bg-neutral-950 border border-neutral-200/80 shadow-lg group">
                 <video
                   src="/assets/yourdentist/full_smile_rehabilitation_case.mp4"
@@ -1291,7 +1291,7 @@ export default function App() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-neutral-900/90 border border-neutral-800 px-2 py-1 rounded-lg text-[7px] font-black uppercase tracking-widest text-rose-400 whitespace-nowrap z-20">
-                  Smile Rehabilitation
+                  Braces Treatment
                 </div>
               </div>
             </div>
