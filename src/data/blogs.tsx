@@ -16,6 +16,195 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "laser-gum-cautery-depigmentation-patna",
+    title: "Laser Gum Cautery & Gum Depigmentation in Patna: Painless Dark Gum Treatment",
+    category: "Laser Dentistry",
+    readTime: "5 min read",
+    publishDate: "September 4, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Discover how diode laser cautery and cosmetic gum depigmentation permanently treat dark hyperpigmented gums and overgrown gingiva in Patna without scalpels, sutures, or bleeding.",
+    featuredImage: "/assets/yourdentist/clinical_intraoral_procedure.mp4",
+    metaDescription: "Painless diode laser gum cautery & depigmentation in Patna by Dr. Aryan Parmar. Lighten dark brown/black gums & correct gummy smiles without surgery or bleeding.",
+    faqs: [
+      {
+        question: "What is laser gum depigmentation (cautery)?",
+        answer: "Laser gum depigmentation (also known as laser gum bleaching or cautery) is a non-invasive cosmetic dental procedure that uses a precise diode laser beam to remove dark melanin pigmentation from hyperpigmented gums, restoring a natural pink color."
+      },
+      {
+        question: "Is laser gum cautery painful?",
+        answer: "No. The procedure is performed under mild local anesthesia. The laser instantly cauterizes nerve endings and blood vessels, resulting in zero bleeding, minimal swelling, and virtually no post-operative discomfort."
+      },
+      {
+        question: "How long does laser gum cautery take and what is the recovery time?",
+        answer: "The laser procedure typically takes 20 to 30 minutes in a single visit. Complete healing occurs within 4 to 7 days, and patients can resume normal eating and work immediately after leaving the clinic."
+      },
+      {
+        question: "Are dark gums permanent and will pigmentation return after laser treatment?",
+        answer: "Laser depigmentation provides long-lasting results. For most patients, melanin dark spots do not recur for many years. Maintaining good oral hygiene and avoiding smoking further preserves the pink gum shade."
+      },
+      {
+        question: "How much does laser gum treatment cost in Patna?",
+        answer: "The cost of laser gum cautery or depigmentation in Patna depends on the extent of gum hyperpigmentation (arch coverage). Contact YOUR DENTIST Patna at 062014 78033 for a transparent laser evaluation."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Dark brown or black patches on gums — clinically caused by excess <strong>melanin hyperpigmentation</strong> or gingival enlargement — can make even perfectly straight white teeth look dull. At <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong>, Dr. Aryan Parmar uses advanced <strong>diode laser cautery</strong> and <strong>cosmetic gum depigmentation</strong> to safely lighten dark gums and recontour overgrown gingival tissue in a single, painless sitting.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">What Causes Dark or Overgrown Gums?</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Hyperpigmentation of oral tissues is extremely common in the Indian subcontinent. Key factors include:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Melanocyte Activity:</strong> Genetic predisposition leading to active melanin production in the basal layer of the gingival epithelium.</li>
+          <li><strong>Gingival Hyperplasia:</strong> Overgrowth of gum tissue caused by chronic plaque irritation, mouth breathing, or certain medications.</li>
+          <li><strong>Lifestyle Factors:</strong> Prolonged smoking or tobacco use, which stimulates melanocytes to produce dark spots (smoker's melanosis).</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Diode Laser Cautery Outperforms Scalpel Surgery</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Traditional surgical gum recontouring required scalpels, heavy bleeding, and painful sutures. Diode laser dentistry has completely revolutionized this procedure:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-200">
+            <h4 className="font-bold text-neutral-900 text-sm mb-1">✓ Instant Hemostasis (No Bleeding)</h4>
+            <p className="text-xs text-neutral-600">The 810nm–980nm laser wavelength vaporizes dark melanin cells while instantly sealing microscopic blood vessels.</p>
+          </div>
+          <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-200">
+            <h4 className="font-bold text-neutral-900 text-sm mb-1">✓ Sterilization & Zero Infection</h4>
+            <p className="text-xs text-neutral-600">The thermal energy sterilizes the surgical field as it glides, killing oral bacteria and preventing post-op infection.</p>
+          </div>
+          <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-200">
+            <h4 className="font-bold text-neutral-900 text-sm mb-1">✓ No Sutures or Scalpels</h4>
+            <p className="text-xs text-neutral-600">Eliminates surgical cuts. Gums heal cleanly with natural epithelial regeneration in 4–7 days.</p>
+          </div>
+          <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-200">
+            <h4 className="font-bold text-neutral-900 text-sm mb-1">✓ Precision Smile Symmetry</h4>
+            <p className="text-xs text-neutral-600">Allows micron-level precision to shape gum margins around teeth for a perfectly balanced cosmetic smile line.</p>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Step-by-Step Laser Cautery Procedure</h2>
+        <ol className="list-decimal pl-6 space-y-3 text-neutral-700">
+          <li><strong>Digital Assessment:</strong> Evaluation of gum thickness and pigmentation depth by Dr. Aryan Parmar.</li>
+          <li><strong>Targeted Topical Anesthesia:</strong> Application of numbing gel followed by localized light anesthetic for 100% comfort.</li>
+          <li><strong>Laser Vaporization:</strong> The fiber-optic diode tip gently glides over pigmented zones, removing dark layers in 20–30 minutes.</li>
+          <li><strong>Immediate Pink Shade Reveal:</strong> Healthy, light pink underlying tissue is exposed immediately.</li>
+          <li><strong>Post-Op Care:</strong> Vitamin E gel prescribed for fast epithelial cell turnover; normal solid food resumed the same day.</li>
+        </ol>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Schedule Your Laser Gum Assessment in Patna</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Transform dark or uneven gums into a healthy, vibrant pink smile with painless laser cautery. Visit <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong>. Call <strong>062014 78033</strong> or <strong>6201478043</strong> for a free laser consultation with Dr. Aryan Parmar.
+          </p>
+        </div>
+      </div>
+    )
+  },
+  {
+    slug: "clear-aligners-vs-braces-patna-cost-comparison",
+    title: "Clear Aligners vs Traditional Braces in Patna: Complete Cost, Duration & Results Guide",
+    category: "Orthodontics",
+    readTime: "6 min read",
+    publishDate: "September 4, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Compare invisible clear aligners vs metal and ceramic braces in Patna. Understand price differences, treatment duration, comfort, and clinical suitabilities with Dr. Aryan Parmar.",
+    featuredImage: "/assets/yourdentist/aligners_promo.mp4",
+    metaDescription: "Clear aligners vs braces in Patna: Compare costs, duration, pain levels, and invisible advantages. Book a free 3D aligner scan with Dr. Aryan Parmar at YOUR DENTIST Patna.",
+    faqs: [
+      {
+        question: "What is the price difference between clear aligners and metal braces in Patna?",
+        answer: "Traditional metal braces in Patna generally range from ₹25,000 to ₹45,000, while custom clear aligners range from ₹55,000 to ₹1,20,000 depending on case complexity and tray count. 0% interest monthly EMI options are available."
+      },
+      {
+        question: "Are clear aligners faster than braces?",
+        answer: "Yes, for mild to moderate crowding or gap closure, clear aligners often complete treatment in 6 to 12 months, whereas traditional braces usually require 12 to 24 months due to monthly wire adjustments."
+      },
+      {
+        question: "Can I remove clear aligners for eating and events?",
+        answer: "Absolutely. Aligners are completely removable. You take them out to eat your favorite foods, brush, floss, or attend special occasions, provided you wear them for 20-22 hours daily."
+      },
+      {
+        question: "Are braces better than aligners for severe teeth misalignments?",
+        answer: "For severe skeletal discrepancies or complex surgical orthodontic cases, traditional braces or hybrid aligner protocols may be recommended. Dr. Aryan Parmar provides a 3D scan during consultation to confirm suitability."
+      },
+      {
+        question: "Do clear aligners hurt compared to metal braces?",
+        answer: "Clear aligners exert gentle, continuous micro-forces, causing significantly less soreness than monthly wire tightening in braces. There are also no sharp metal brackets to scratch your cheeks or gums."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Deciding between <strong>Invisible Clear Aligners</strong> and <strong>Traditional Braces</strong> is one of the most common decisions patients face when seeking orthodontic treatment in Patna. At <strong>YOUR DENTIST Patna</strong>, Dr. Aryan Parmar utilizes 3D intraoral scanning and digital treatment simulation to give patients a clear breakdown of costs, timelines, and clinical outcomes for both options.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Direct Comparison: Aligners vs. Braces</h2>
+        <div className="overflow-x-auto my-6">
+          <table className="w-full text-left border-collapse border border-neutral-200 text-sm">
+            <thead>
+              <tr className="bg-neutral-900 text-white">
+                <th className="p-3 font-bold border border-neutral-800">Feature</th>
+                <th className="p-3 font-bold border border-neutral-800 text-[#5b72ff]">Clear Aligners</th>
+                <th className="p-3 font-bold border border-neutral-800">Traditional Braces</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-neutral-200 text-neutral-700">
+              <tr>
+                <td className="p-3 font-semibold bg-neutral-50">Appearance</td>
+                <td className="p-3 font-bold text-emerald-600">Nearly 100% Invisible</td>
+                <td className="p-3">Visible Metal/Ceramic Brackets</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold bg-neutral-50">Removability</td>
+                <td className="p-3 font-bold text-emerald-600">Removable for eating & brushing</td>
+                <td className="p-3">Fixed to teeth permanently until finished</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold bg-neutral-50">Average Duration</td>
+                <td className="p-3 font-bold text-emerald-600">6 to 12 Months</td>
+                <td className="p-3">12 to 24 Months</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold bg-neutral-50">Dietary Restrictions</td>
+                <td className="p-3 font-bold text-emerald-600">None (Remove tray to eat anything)</td>
+                <td className="p-3">Avoid hard, sticky, or chewy foods</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold bg-neutral-50">Clinic Visits</td>
+                <td className="p-3 font-bold text-emerald-600">Every 6–8 weeks (or remote monitoring)</td>
+                <td className="p-3">Every 3–4 weeks for wire tightening</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold bg-neutral-50">Comfort Level</td>
+                <td className="p-3 font-bold text-emerald-600">High (Smooth medical polymer)</td>
+                <td className="p-3">Moderate (Sharp edges can cause mouth sores)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">How Clear Aligners Work at YOUR DENTIST Patna</h2>
+        <ol className="list-decimal pl-6 space-y-3 text-neutral-700">
+          <li><strong>3D Digital Scanning:</strong> A high-resolution intraoral scanner captures thousands of optical data points of your bite within 5 minutes. No uncomfortable putty impressions.</li>
+          <li><strong>Digital Simulation:</strong> Dr. Aryan Parmar creates a 3D video simulation showing week-by-week tooth movement from initial state to final smile before you start.</li>
+          <li><strong>Custom Fabrication:</strong> US-FDA approved clear thermoplastic aligner sets are produced tailored to your exact tooth biology.</li>
+          <li><strong>Progress Tracking:</strong> You wear each tray for 7 to 10 days, gradually shifting teeth into ideal alignment.</li>
+        </ol>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Book Your Free 3D Aligner Scan in Patna</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            See your future smile before starting treatment! Book a free 3D digital aligner assessment at <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong>. Call <strong>062014 78033</strong> or <strong>6201478043</strong>. 0% EMI financing plans available.
+          </p>
+        </div>
+      </div>
+    )
+  },
+  {
     slug: "aligners-7-months-protruded-teeth-patna",
     title: "7-Month Aligners Case: Protruded Upper Front Teeth Corrected Without Braces in Patna",
     category: "Orthodontics",
