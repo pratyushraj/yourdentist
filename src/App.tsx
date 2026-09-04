@@ -2366,7 +2366,17 @@ export default function App() {
 
         <div className="max-w-6xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[9px] text-neutral-500 font-black uppercase tracking-widest font-mono">
           <span>© 2026 YOUR DENTIST Patna. All rights reserved.</span>
-          <span>Restorative Dental Marketing Bihar</span>
+          <span className="flex items-center gap-1.5">
+            <span>Powered & Financed by</span>
+            <a
+              href="https://clinaza.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#5b72ff] hover:text-[#7a5cff] font-bold underline transition-colors"
+            >
+              Clinaza
+            </a>
+          </span>
         </div>
       </footer>
 
