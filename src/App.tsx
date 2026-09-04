@@ -1039,7 +1039,7 @@ export default function App() {
               {/* BEFORE Image (Underlay) */}
               <img
                 src={BEFORE_AFTER_IMAGES[activeGalleryIndex].before}
-                alt="Before Treatment"
+                alt={`${BEFORE_AFTER_IMAGES[activeGalleryIndex].title} - Before treatment at YOUR DENTIST Patna by Dr. Aryan Parmar`}
                 className="absolute inset-0 w-full h-full object-cover"
               />
 
@@ -1054,7 +1054,7 @@ export default function App() {
               >
                 <img
                   src={BEFORE_AFTER_IMAGES[activeGalleryIndex].after}
-                  alt="After Treatment"
+                  alt={`${BEFORE_AFTER_IMAGES[activeGalleryIndex].title} - After smile transformation at YOUR DENTIST Patna by Dr. Aryan Parmar`}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute top-4 right-4 z-20 bg-white border border-neutral-200 text-neutral-950 px-3 py-1.5 rounded-lg text-[9px] font-black uppercase tracking-widest shadow-md">
@@ -1390,7 +1390,7 @@ export default function App() {
               <div className="relative w-full h-full rounded-[24px] overflow-hidden bg-neutral-950">
                 <img
                   src="/assets/yourdentist/doctor_profile.png"
-                  alt="Dr. Aryan Parmar"
+                  alt="Dr. Aryan Parmar - Best Implantologist and Cosmetic Dentist in Patna at YOUR DENTIST Patliputra Colony"
                   className="w-full h-full object-cover object-left group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
