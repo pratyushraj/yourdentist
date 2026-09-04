@@ -16,6 +16,86 @@ export interface BlogArticle {
 
 export const BLOGS: BlogArticle[] = [
   {
+    slug: "clinaza-patient-financing-dental-emi-patna",
+    title: "Flexible Dental Treatment Financing in Patna: Easy Monthly Installments with Clinaza",
+    category: "Patient Care & Financing",
+    readTime: "4 min read",
+    publishDate: "September 4, 2026",
+    author: "Dr. Aryan Parmar",
+    summary: "Learn how Clinaza healthcare patient financing enables patients at YOUR DENTIST Patna to break dental implants, aligners, and smile design treatments into easy monthly installments.",
+    featuredImage: "/assets/yourdentist/patient_consultation_chair.mp4",
+    metaDescription: "Flexible dental EMI financing in Patna with Clinaza at YOUR DENTIST Patna by Dr. Aryan Parmar. Quick paperless approvals for dental implants, aligners & cosmetic treatments.",
+    faqs: [
+      {
+        question: "What is Clinaza healthcare financing?",
+        answer: "Clinaza is a specialized healthcare patient financing infrastructure that enables dental clinics to offer flexible, point-of-care monthly installment (EMI) options to patients for major treatments."
+      },
+      {
+        question: "How do I apply for dental EMI at YOUR DENTIST Patna?",
+        answer: "Applying is 100% digital and paperless. During your consultation with Dr. Aryan Parmar, our clinic desk assists you with a quick 2-minute online pre-assessment via Clinaza."
+      },
+      {
+        question: "Which dental treatments can be financed using Clinaza?",
+        answer: "Clinaza financing can be used for dental implants, clear aligners, full-mouth restorations, CAD/CAM zirconia crowns, composite veneers, and complex surgical procedures."
+      },
+      {
+        question: "Who provides and services the loan under Clinaza?",
+        answer: "Loans are funded and serviced directly by RBI-regulated banking partners and non-banking financial companies (NBFCs) connected through Clinaza's secure platform."
+      },
+      {
+        question: "Can I start my treatment immediately after Clinaza approval?",
+        answer: "Yes! Once pre-approval is complete through Clinaza, Dr. Aryan Parmar can immediately begin your treatment plan without delay."
+      }
+    ],
+    content: (
+      <div className="space-y-6">
+        <p className="text-lg leading-relaxed text-neutral-700">
+          Advanced dental procedures like <strong>Dental Implants</strong>, <strong>Clear Aligners</strong>, and <strong>Zirconia Smile Designing</strong> are investments in your long-term health, confidence, and quality of life. At <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong>, Dr. Aryan Parmar has partnered with <a href="https://clinaza.in" target="_blank" rel="noopener noreferrer" className="text-[#5b72ff] font-bold underline">Clinaza</a> to offer point-of-care flexible monthly installment (EMI) financing options to our patients.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Why Patient Financing Matters</h2>
+        <p className="text-neutral-700 leading-relaxed">
+          Many patients delay essential or restorative dental care due to the requirement of paying full treatment costs upfront. Flexible patient financing through Clinaza eliminates financial stress by dividing treatment costs into manageable monthly installments tailored to your budget.
+        </p>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Key Benefits of Clinaza at YOUR DENTIST Patna</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-200">
+            <h4 className="font-bold text-neutral-900 text-sm mb-1">✓ Instant Point-of-Care Approval</h4>
+            <p className="text-xs text-neutral-600">Quick 2-minute digital pre-assessment right in the consultation room — no long waiting periods.</p>
+          </div>
+          <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-200">
+            <h4 className="font-bold text-neutral-900 text-sm mb-1">✓ 100% Paperless Process</h4>
+            <p className="text-xs text-neutral-600">Complete application online using your smartphone without carrying physical document stacks.</p>
+          </div>
+          <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-200">
+            <h4 className="font-bold text-neutral-900 text-sm mb-1">✓ RBI-Regulated Lenders</h4>
+            <p className="text-xs text-neutral-600">Financing is serviced safely through verified RBI-registered banking partners connected via Clinaza.</p>
+          </div>
+          <div className="bg-neutral-50 p-4 rounded-xl border border-neutral-200">
+            <h4 className="font-bold text-neutral-900 text-sm mb-1">✓ Immediate Treatment Start</h4>
+            <p className="text-xs text-neutral-600">Start your implant or aligner journey the same day approval is received without delaying care.</p>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Treatments Covered Under Clinaza EMI</h2>
+        <ul className="list-disc pl-6 space-y-2 text-neutral-700">
+          <li><strong>Dental Implants:</strong> Single tooth replacement or full-mouth titanium implant rehabilitations.</li>
+          <li><strong>Clear Aligners:</strong> Custom invisible alignment trays for crowded or protruded teeth.</li>
+          <li><strong>Zirconia Prosthesis:</strong> Full-arch CAD/CAM ceramic crowns and bridges.</li>
+          <li><strong>Root Canal Therapy & Restorations:</strong> Multi-visit rotary endodontic treatments.</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-neutral-900 mt-8 mb-4">Book Your Consultation with Flexible Financing</h2>
+        <div className="bg-[#5b72ff]/5 border-l-4 border-[#5b72ff] p-5 rounded-r-xl my-6">
+          <p className="text-sm font-semibold text-neutral-800">
+            Don't let budget constraints delay your smile transformation. Visit <strong>YOUR DENTIST, New Patliputra Colony, Patna</strong>. Call <strong>062014 78033</strong> or <strong>6201478043</strong> to discuss your treatment plan and explore Clinaza monthly installment options with Dr. Aryan Parmar.
+          </p>
+        </div>
+      </div>
+    )
+  },
+  {
     slug: "laser-gum-cautery-depigmentation-patna",
     title: "Laser Gum Cautery & Gum Depigmentation in Patna: Painless Dark Gum Treatment",
     category: "Laser Dentistry",
