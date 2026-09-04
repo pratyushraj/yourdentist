@@ -2102,13 +2102,24 @@ export default function App() {
                     className="group bg-neutral-50 border border-neutral-200/80 rounded-[24px] overflow-hidden shadow-sm hover:shadow-md hover:border-neutral-300 transition-all flex flex-col justify-between"
                   >
                     <div>
-                      <div className="aspect-[16/10] overflow-hidden bg-neutral-200 relative">
-                        <img
-                          src={blog.featuredImage}
-                          alt={blog.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md text-neutral-900 rounded-full text-[9px] font-black uppercase tracking-wider shadow-sm">
+                      <div className="aspect-[16/10] overflow-hidden bg-neutral-900 relative">
+                        {blog.featuredImage.endsWith('.mp4') || blog.featuredImage.endsWith('.mov') ? (
+                          <video
+                            src={blog.featuredImage}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        ) : (
+                          <img
+                            src={blog.featuredImage}
+                            alt={blog.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        )}
+                        <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md text-neutral-900 rounded-full text-[9px] font-black uppercase tracking-wider shadow-sm z-10">
                           {blog.category}
                         </span>
                       </div>
@@ -2162,12 +2173,23 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="rounded-[24px] overflow-hidden bg-neutral-100 border border-neutral-200">
-                  <img
-                    src={activeBlog.featuredImage}
-                    alt={activeBlog.title}
-                    className="w-full h-auto object-contain"
-                  />
+                <div className="rounded-[24px] overflow-hidden bg-neutral-950 border border-neutral-200">
+                  {activeBlog.featuredImage.endsWith('.mp4') || activeBlog.featuredImage.endsWith('.mov') ? (
+                    <video
+                      src={activeBlog.featuredImage}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-auto object-cover max-h-[500px]"
+                    />
+                  ) : (
+                    <img
+                      src={activeBlog.featuredImage}
+                      alt={activeBlog.title}
+                      className="w-full h-auto object-contain"
+                    />
+                  )}
                 </div>
 
                 <article className="prose prose-neutral max-w-none font-sora">
@@ -2211,12 +2233,23 @@ export default function App() {
                             to={`/blog/${blog.slug}`}
                             className="group block rounded-2xl overflow-hidden border border-neutral-200 hover:border-[#5b72ff]/40 transition-all hover:shadow-md"
                           >
-                            <div className="aspect-video bg-neutral-100 overflow-hidden">
-                              <img
-                                src={blog.featuredImage}
-                                alt={blog.title}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                              />
+                            <div className="aspect-video bg-neutral-900 overflow-hidden relative">
+                              {blog.featuredImage.endsWith('.mp4') || blog.featuredImage.endsWith('.mov') ? (
+                                <video
+                                  src={blog.featuredImage}
+                                  autoPlay
+                                  loop
+                                  muted
+                                  playsInline
+                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                              ) : (
+                                <img
+                                  src={blog.featuredImage}
+                                  alt={blog.title}
+                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                              )}
                             </div>
                             <div className="p-4 space-y-1.5">
                               <span className="text-[8px] font-black uppercase tracking-widest text-[#5b72ff]">{blog.category}</span>
