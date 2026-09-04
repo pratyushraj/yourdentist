@@ -23,7 +23,7 @@ export const BLOGS: BlogArticle[] = [
     publishDate: "September 4, 2026",
     author: "Dr. Aryan Parmar",
     summary: "Learn how Clinaza healthcare patient financing enables patients at YOUR DENTIST Patna to break dental implants, aligners, and smile design treatments into easy monthly installments.",
-    featuredImage: "/assets/yourdentist/patient_consultation_chair.mp4",
+    featuredImage: "/assets/yourdentist/dr_with_patient_1.jpg",
     metaDescription: "Flexible dental EMI financing in Patna with Clinaza at YOUR DENTIST Patna by Dr. Aryan Parmar. Quick paperless approvals for dental implants, aligners & cosmetic treatments.",
     faqs: [
       {
@@ -103,7 +103,7 @@ export const BLOGS: BlogArticle[] = [
     publishDate: "September 4, 2026",
     author: "Dr. Aryan Parmar",
     summary: "Discover how diode laser cautery and cosmetic gum depigmentation permanently treat dark hyperpigmented gums and overgrown gingiva in Patna without scalpels, sutures, or bleeding.",
-    featuredImage: "/assets/yourdentist/clinical_intraoral_procedure.mp4",
+    featuredImage: "/assets/yourdentist/interior_operatory.jpg",
     metaDescription: "Painless diode laser gum cautery & depigmentation in Patna by Dr. Aryan Parmar. Lighten dark brown/black gums & correct gummy smiles without surgery or bleeding.",
     faqs: [
       {
@@ -192,7 +192,7 @@ export const BLOGS: BlogArticle[] = [
     publishDate: "September 4, 2026",
     author: "Dr. Aryan Parmar",
     summary: "Compare invisible clear aligners vs metal and ceramic braces in Patna. Understand price differences, treatment duration, comfort, and clinical suitabilities with Dr. Aryan Parmar.",
-    featuredImage: "/assets/yourdentist/aligners_promo.mp4",
+    featuredImage: "/assets/yourdentist/clear_aligners.png",
     metaDescription: "Clear aligners vs braces in Patna: Compare costs, duration, pain levels, and invisible advantages. Book a free 3D aligner scan with Dr. Aryan Parmar at YOUR DENTIST Patna.",
     faqs: [
       {
